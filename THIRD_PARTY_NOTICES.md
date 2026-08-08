@@ -1,8 +1,8 @@
 # Third-Party Notices
 
-状态：Phase 2.5。当前项目实际使用 zod 4.4.3 作为数据校验依赖；使用 Vite、TypeScript、Vitest 作为开发、构建和测试工具；Fuse.js 7.5.0 已作为 dependency 安装，尚未被当前源码 import。尚未接入外部数据。
+状态：Phase 3 起点。当前项目实际使用 zod 4.4.3 作为数据校验依赖；使用 Vite、TypeScript、Vitest 作为开发、构建和测试工具；Fuse.js 7.5.0 已作为 dependency 安装，尚未被当前源码 import。尚未接入外部数据。
 
-本文件记录 `llm-price-lens` 实际复用的第三方材料及其声明。每次实际复用后必须更新本文件。完整许可证文本随 npm 安装保留在 `node_modules` 对应包目录；固定 tag/commit 与核实依据见 `UPSTREAM_REUSE_PLAN.md`。
+本文件记录 `llm-price-lens` 实际复用的第三方材料及其声明。每次实际复用后必须更新本文件。完整许可证文本已随仓库保留在 `THIRD_PARTY_LICENSES/`，不再以 `node_modules` 作为唯一许可证来源；固定 tag/commit 与核实依据见 `UPSTREAM_REUSE_PLAN.md`。
 
 ## 1. 直接 npm 依赖
 
@@ -14,6 +14,7 @@
 - Version: 8.2.0
 - 固定 commit: `fa79f9ab699f9a22a6f9b50f3d247be6b51f684d`
 - Source: https://registry.npmjs.org/vite/-/vite-8.2.0.tgz（package-lock.json `resolved`）
+- 许可证文本: `THIRD_PARTY_LICENSES/vite-MIT-LICENSE.txt`
 
 ### Vitest 4.1.10
 
@@ -23,6 +24,7 @@
 - Version: 4.1.10
 - 固定 commit: `db616d227b6e0cb07a94f5d1bba262ee95db7e46`
 - Source: https://registry.npmjs.org/vitest/-/vitest-4.1.10.tgz（package-lock.json `resolved`）
+- 许可证文本: `THIRD_PARTY_LICENSES/vitest-MIT-LICENSE.txt`
 
 ### Fuse.js 7.5.0
 
@@ -32,6 +34,7 @@
 - Version: 7.5.0
 - 固定 commit: `45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a`
 - Source: https://registry.npmjs.org/fuse.js/-/fuse.js-7.5.0.tgz（package-lock.json `resolved`）
+- 许可证文本: `THIRD_PARTY_LICENSES/fuse-js-APACHE-2.0-LICENSE.txt`
 
 ### zod 4.4.3
 
@@ -41,6 +44,7 @@
 - Version: 4.4.3
 - 固定 commit: `1fb56a5c18c27102dbc92260a4007c7732a0ccca`
 - Source: https://registry.npmjs.org/zod/-/zod-4.4.3.tgz（package-lock.json `resolved`）
+- 许可证文本: `THIRD_PARTY_LICENSES/zod-MIT-LICENSE.txt`
 
 ### TypeScript 7.0.2
 
@@ -54,10 +58,12 @@
 - 固定 tag: `typescript/v7.0.2`
 - 固定 commit: `2bd066d87f5bafd315be9f40889d0a60b9e58e0b`
 - Source: https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz（package-lock.json `resolved`）
+- 许可证文本: `THIRD_PARTY_LICENSES/typescript-APACHE-2.0-LICENSE.txt`
+- NOTICE 文本: `THIRD_PARTY_LICENSES/typescript-NOTICE.txt`
 
 ## 2. 传递依赖
 
-传递依赖的 Version、License、`resolved` 与 `integrity` 声明记录在 `package-lock.json` 中，许可证文本保留在 `node_modules`。本文件记录项目直接声明并实际使用的 npm 依赖。
+传递依赖的 Version、License、`resolved` 与 `integrity` 声明记录在 `package-lock.json` 中。它们目前只作为构建和测试依赖存在，不进入站点运行时产物；若后续产物验证显示任何传递依赖随站点分发，必须同步补齐仓库内许可证文本。本文件记录项目直接声明并实际使用的 npm 依赖。
 
 ## 3. 数据
 

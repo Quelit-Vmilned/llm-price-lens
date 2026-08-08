@@ -155,6 +155,27 @@ describe("modelPriceSchema", () => {
     ).toBe(true);
   });
 
+  it("rejects invalid sourceUrl values but allows null", () => {
+    expect(
+      modelPriceSchema.safeParse({
+        ...validModel,
+        sourceUrl: "not-a-url",
+      }).success,
+    ).toBe(false);
+    expect(
+      modelPriceSchema.safeParse({
+        ...validModel,
+        sourceUrl: "",
+      }).success,
+    ).toBe(false);
+    expect(
+      modelPriceSchema.safeParse({
+        ...validModel,
+        sourceUrl: "https://example.com/pricing",
+      }).success,
+    ).toBe(true);
+  });
+
   it("rejects missing required fields, invalid status, and empty required strings", () => {
     const { modelId: _modelId, ...missingModelId } = validModel;
 
@@ -169,6 +190,18 @@ describe("modelPriceSchema", () => {
       modelPriceSchema.safeParse({
         ...validModel,
         provider: " ",
+      }).success,
+    ).toBe(false);
+    expect(
+      modelPriceSchema.safeParse({
+        ...validModel,
+        summary: "",
+      }).success,
+    ).toBe(false);
+    expect(
+      modelPriceSchema.safeParse({
+        ...validModel,
+        summary: " ",
       }).success,
     ).toBe(false);
   });
@@ -216,6 +249,27 @@ describe("priceDatasetSchema", () => {
       }).success,
     ).toBe(false);
   });
+
+  it("rejects empty warning strings", () => {
+    expect(
+      priceDatasetSchema.safeParse({
+        ...validDataset,
+        warnings: [""],
+      }).success,
+    ).toBe(false);
+    expect(
+      priceDatasetSchema.safeParse({
+        ...validDataset,
+        warnings: [" "],
+      }).success,
+    ).toBe(false);
+    expect(
+      priceDatasetSchema.safeParse({
+        ...validDataset,
+        warnings: ["A valid warning"],
+      }).success,
+    ).toBe(true);
+  });
 });
 
 describe("benchmarkSnapshotSchema", () => {
@@ -256,6 +310,32 @@ describe("benchmarkSnapshotSchema", () => {
         ],
       }).success,
     ).toBe(false);
+  });
+
+  it("rejects invalid sourceUrl values", () => {
+    expect(
+      benchmarkSnapshotSchema.safeParse({
+        ...validSnapshot,
+        sourceUrl: "not-a-url",
+      }).success,
+    ).toBe(false);
+    expect(
+      benchmarkSnapshotSchema.safeParse({
+        ...validSnapshot,
+        sourceUrl: "",
+      }).success,
+    ).toBe(false);
+  });
+
+  it("requires source metadata when models are non-empty", () => {
+    for (const field of ["source", "metric", "capturedAt", "sourceUrl"] as const) {
+      expect(
+        benchmarkSnapshotSchema.safeParse({
+          ...validSnapshot,
+          [field]: null,
+        }).success,
+      ).toBe(false);
+    }
   });
 
   it("rejects empty strings in place of null and invalid capturedAt", () => {

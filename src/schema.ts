@@ -3,6 +3,8 @@ import type { BenchmarkSnapshot, ModelPrice, PriceDataset } from "./types";
 
 const nonEmptyString = z.string().trim().min(1);
 const nullableString = nonEmptyString.nullable();
+const urlString = z.url();
+const nullableUrlString = urlString.nullable();
 const isoDateTime = z.iso.datetime({ offset: true, local: true });
 const nullableIsoDateTime = isoDateTime.nullable();
 const nonNegativeNumber = z.number().nonnegative();
@@ -18,13 +20,13 @@ export const modelPriceSchema: z.ZodType<ModelPrice> = z
     apiModelIds: z.array(nonEmptyString),
     aliases: z.array(nonEmptyString),
     tags: z.array(nonEmptyString),
-    summary: z.string(),
+    summary: nonEmptyString,
     inputPerMillionUsd: nullableNonNegativeNumber,
     outputPerMillionUsd: nullableNonNegativeNumber,
     cachedInputPerMillionUsd: nullableNonNegativeNumber,
     contextWindow: nullablePositiveInteger,
     sourceName: nonEmptyString,
-    sourceUrl: nullableString,
+    sourceUrl: nullableUrlString,
     sourceUpdatedAt: nullableIsoDateTime,
     verifiedAt: nullableIsoDateTime,
     status: z.enum(["verified", "imported", "needs-review"]),
@@ -40,7 +42,7 @@ export const priceDatasetSchema: z.ZodType<PriceDataset> = z
     schemaVersion: z.literal(1),
     generatedAt: isoDateTime,
     models: z.array(modelPriceSchema),
-    warnings: z.array(z.string()),
+    warnings: z.array(nonEmptyString),
   })
   .strict();
 
@@ -49,7 +51,7 @@ export const benchmarkSnapshotSchema: z.ZodType<BenchmarkSnapshot> = z
     source: nullableString,
     metric: nullableString,
     capturedAt: nullableIsoDateTime,
-    sourceUrl: nullableString,
+    sourceUrl: nullableUrlString,
     models: z.array(
       z
         .object({
@@ -60,4 +62,19 @@ export const benchmarkSnapshotSchema: z.ZodType<BenchmarkSnapshot> = z
         .strict(),
     ),
   })
-  .strict();
+  .strict()
+  .superRefine((snapshot, ctx) => {
+    if (snapshot.models.length === 0) {
+      return;
+    }
+
+    for (const field of ["source", "metric", "capturedAt", "sourceUrl"] as const) {
+      if (snapshot[field] === null) {
+        ctx.addIssue({
+          code: "custom",
+          path: [field],
+          message: "Non-empty benchmark snapshots require source metadata",
+        });
+      }
+    }
+  });

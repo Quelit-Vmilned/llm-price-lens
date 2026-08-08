@@ -2,7 +2,7 @@
 
 A lightweight static website for comparing LLM API token prices.
 
-Status: Phase 2. The data foundation is in place: Zod schemas, shared types, schema tests, and a schema-valid placeholder benchmark snapshot. Price querying, search, sorting, data sync, and the cost calculator are not implemented yet.
+Status: Phase 3 baseline. Phase 2.5 finalized the data foundation: Zod schemas with non-empty summaries/warnings, source URL validation, source-metadata requirements for non-empty benchmark snapshots, schema tests, and repo-contained third-party license texts. Price querying, search, sorting, data sync, and the cost calculator are not implemented yet.
 
 ## Commands
 
@@ -15,3 +15,7 @@ Status: Phase 2. The data foundation is in place: Zod schemas, shared types, sch
 ## Data
 
 `data/benchmark-snapshot.json` is a schema-valid placeholder with `null` unknown values and an empty models list. No external data is fetched yet.
+
+## Phase Records
+
+- [`PHASE_2_5_RECORD.md`](PHASE_2_5_RECORD.md) records the Phase 2.5 baseline commit, validation commands, hashes, and remaining risks.

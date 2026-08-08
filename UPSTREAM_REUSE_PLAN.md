@@ -1,6 +1,6 @@
 # Upstream Reuse Plan
 
-状态：Phase 2.5。已按 `upstream-license-audit` Skill 对当前直接依赖执行可验证审计：记录官方上游、固定 tag/commit、许可证、npm tarball/integrity 与实际使用状态。zod 当前已实际 import 并用于数据校验；Vite、TypeScript、Vitest 当前已实际用于开发、构建和测试；Fuse.js 已安装但尚未被当前源码 import。尚未复用任何外部价格数据或第三方代码片段。
+状态：Phase 3 起点。已按 `upstream-license-audit` Skill 对当前直接依赖执行可验证审计：记录官方上游、固定 tag/commit、许可证、npm tarball/integrity、仓库内许可证文本与实际使用状态。zod 当前已实际 import 并用于数据校验；Vite、TypeScript、Vitest 当前已实际用于开发、构建和测试；Fuse.js 已安装但尚未被当前源码 import。尚未复用任何外部价格数据或第三方代码片段。
 
 本文件记录 `llm-price-lens` 对第三方代码、数据、文档和品牌内容的复用计划。
 
@@ -46,6 +46,7 @@
 - 固定 GitHub Tag 或 Commit: tag `v8.2.0`；commit `fa79f9ab699f9a22a6f9b50f3d247be6b51f684d`
 - SHA 来源: `git ls-remote https://github.com/vitejs/vite.git 'refs/tags/v8.2.0' 'refs/tags/v8.2.0^{}'` 的 peeled ref
 - 检查文件: `node_modules/vite/package.json`、`node_modules/vite/LICENSE.md`；GitHub `v8.2.0` tag 根目录 LICENSE
+- 仓库内许可证文本: `THIRD_PARTY_LICENSES/vite-MIT-LICENSE.txt`
 - 计划复用内容: 作为 devDependency 安装，用于本地开发服务器与生产构建
 - 判定结果: MIT，允许作为依赖安装和使用
 - 当前状态: 当前已实际使用（开发/构建工具）
@@ -63,6 +64,7 @@
 - 固定 GitHub Tag 或 Commit: tag `v4.1.10`；commit `db616d227b6e0cb07a94f5d1bba262ee95db7e46`
 - SHA 来源: `git ls-remote https://github.com/vitest-dev/vitest.git 'refs/tags/v4.1.10'`；GitHub API `git/ref/tags/v4.1.10` 确认 object type 为 commit
 - 检查文件: `node_modules/vitest/package.json`、`node_modules/vitest/LICENSE.md`；GitHub `v4.1.10` tag 根目录 LICENSE
+- 仓库内许可证文本: `THIRD_PARTY_LICENSES/vitest-MIT-LICENSE.txt`
 - 计划复用内容: 作为 devDependency 安装，用于测试运行
 - 判定结果: MIT，允许作为依赖安装和使用
 - 当前状态: 当前已实际使用（测试工具）
@@ -80,6 +82,7 @@
 - 固定 GitHub Tag 或 Commit: tag `v7.5.0`（tag object `2c34c70dbd2553dfdc241db16126d5d4ca9d6c51`）；commit `45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a`
 - SHA 来源: `git ls-remote https://github.com/krisk/Fuse.git 'refs/tags/v7.5.0' 'refs/tags/v7.5.0^{}'` 的 peeled ref
 - 检查文件: `node_modules/fuse.js/package.json`、`node_modules/fuse.js/LICENSE`；GitHub `v7.5.0` tag LICENSE
+- 仓库内许可证文本: `THIRD_PARTY_LICENSES/fuse-js-APACHE-2.0-LICENSE.txt`
 - 计划复用内容: 作为 dependency 安装，供 Phase 3 客户端模糊搜索使用
 - 判定结果: Apache-2.0，允许作为依赖安装和使用
 - 当前状态: 已安装，尚未被当前源码 import
@@ -97,6 +100,7 @@
 - 固定 GitHub Tag 或 Commit: tag `v4.4.3`；commit `1fb56a5c18c27102dbc92260a4007c7732a0ccca`
 - SHA 来源: `git ls-remote https://github.com/colinhacks/zod.git 'refs/tags/v4.4.3'`；GitHub API `git/ref/tags/v4.4.3` 确认 object type 为 commit
 - 检查文件: `node_modules/zod/package.json`、`node_modules/zod/LICENSE`；GitHub `v4.4.3` tag LICENSE
+- 仓库内许可证文本: `THIRD_PARTY_LICENSES/zod-MIT-LICENSE.txt`
 - 计划复用内容: 作为 dependency 安装，用于全部数据校验
 - 判定结果: MIT，允许作为依赖安装和使用
 - 当前状态: 当前已实际使用（`src/schema.ts` import zod 并执行数据校验）
@@ -123,6 +127,8 @@
   - 对应仓库/tag 的 LICENSE 和 package metadata 声明 Apache-2.0。
 - SHA 来源: `git ls-remote https://github.com/microsoft/typescript-go.git 'refs/tags/typescript/v7.0.2'`；GitHub API 在 `microsoft/TypeScript` 查询同一 SHA 返回 `422 No commit found`
 - 检查文件: `node_modules/typescript/package.json`、`node_modules/typescript/LICENSE`、`node_modules/typescript/NOTICE.txt`；`microsoft/typescript-go` 在 `typescript/v7.0.2` 的 LICENSE 与 package.json
+- 仓库内许可证文本: `THIRD_PARTY_LICENSES/typescript-APACHE-2.0-LICENSE.txt`
+- 仓库内 NOTICE 文本: `THIRD_PARTY_LICENSES/typescript-NOTICE.txt`
 - 计划复用内容: 作为 devDependency 安装，用于 TypeScript 类型检查
 - Decision: 允许作为构建工具依赖使用。
 - Status: Verified with metadata discrepancy documented.
@@ -133,7 +139,7 @@
 
 ## 4. 传递依赖说明
 
-除上述直接依赖外，npm 还会安装传递依赖。传递依赖的 Version、License、`resolved` 与 `integrity` 声明记录在 `package-lock.json` 中，许可证文本随 `node_modules` 保留。本阶段未对每个传递依赖单独执行 GitHub commit 级审计。
+除上述直接依赖外，npm 还会安装传递依赖。传递依赖的 Version、License、`resolved` 与 `integrity` 声明记录在 `package-lock.json` 中。它们目前不进入站点运行时产物；若后续产物验证显示任何传递依赖随站点分发，必须同步补齐仓库内许可证文本。本阶段未对每个传递依赖单独执行 GitHub commit 级审计。
 
 ## 5. 上游数据来源
 
