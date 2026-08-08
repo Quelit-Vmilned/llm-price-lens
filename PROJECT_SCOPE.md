@@ -4,7 +4,7 @@
 
 项目类型：轻量纯静态网站，用于查询世界主流大语言模型 API 的 token 价格。
 
-状态：Phase 3 起点。已完成 Phase 1 前端工程初始化、Phase 2 数据基座与 Phase 2.5 收尾：Zod Schema 一致性修正、来源 URL 校验、Benchmark 来源元数据约束、第三方许可证文本入库与阶段记录。尚未实现价格查询、搜索、排序、同步和成本计算器。
+状态：Phase 3.1 Hardening。已完成 Phase 1 前端工程初始化、Phase 2 数据基座、Phase 2.5 收尾与 Phase 3 静态前端 MVP，并完成发布加固：示例数据加载、许可证进入 `dist/licenses/`、数据校验错误态、成本输入校验、Open models 筛选语义和筛选按钮 `aria-pressed`。生产价格数据仍为 schema-valid 示例占位；真实数据接入、自动同步和上游变更检查尚未实现。
 
 ## 1. MVP 范围
 

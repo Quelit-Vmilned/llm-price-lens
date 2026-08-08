@@ -1,8 +1,8 @@
 # Third-Party Notices
 
-状态：Phase 3 起点。当前项目实际使用 zod 4.4.3 作为数据校验依赖；使用 Vite、TypeScript、Vitest 作为开发、构建和测试工具；Fuse.js 7.5.0 已作为 dependency 安装，尚未被当前源码 import。尚未接入外部数据。
+状态：Phase 3.1 Hardening。当前项目实际使用 zod 4.4.3 作为数据校验依赖；使用 Vite、TypeScript、Vitest 作为开发、构建和测试工具；Fuse.js 7.5.0 已作为 dependency 安装，并已由 `src/search.ts` import 用于客户端模糊搜索。尚未接入外部数据。
 
-本文件记录 `llm-price-lens` 实际复用的第三方材料及其声明。每次实际复用后必须更新本文件。完整许可证文本已随仓库保留在 `THIRD_PARTY_LICENSES/`，不再以 `node_modules` 作为唯一许可证来源；固定 tag/commit 与核实依据见 `UPSTREAM_REUSE_PLAN.md`。
+本文件记录 `llm-price-lens` 实际复用的第三方材料及其声明。每次实际复用后必须更新本文件。完整许可证文本已随仓库保留在 `THIRD_PARTY_LICENSES/`，并复制到 `public/licenses/`，由 Vite 构建复制到 `dist/licenses/` 随站点分发；固定 tag/commit 与核实依据见 `UPSTREAM_REUSE_PLAN.md`。
 
 ## 1. 直接 npm 依赖
 

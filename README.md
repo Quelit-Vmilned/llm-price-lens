@@ -2,7 +2,7 @@
 
 A lightweight static website for comparing LLM API token prices.
 
-Status: Phase 3 baseline. Phase 2.5 finalized the data foundation: Zod schemas with non-empty summaries/warnings, source URL validation, source-metadata requirements for non-empty benchmark snapshots, schema tests, and repo-contained third-party license texts. Price querying, search, sorting, data sync, and the cost calculator are not implemented yet.
+Status: Phase 3.1 Hardening. The static frontend loads a schema-valid sample dataset and provides model price display, Fuse.js fuzzy search, sorting, an example workload cost calculator, responsive layout, and accessible controls. License texts are copied into `dist/licenses/` during build. Real data sync and upstream change checks are not implemented yet.
 
 ## Commands
 
@@ -14,8 +14,10 @@ Status: Phase 3 baseline. Phase 2.5 finalized the data foundation: Zod schemas w
 
 ## Data
 
-`data/benchmark-snapshot.json` is a schema-valid placeholder with `null` unknown values and an empty models list. No external data is fetched yet.
+`data/benchmark-snapshot.json` is a schema-valid placeholder with `null` unknown values and an empty models list. `data/prices.sample.json` is the schema-valid sample dataset loaded by the page. No external data is fetched yet.
 
 ## Phase Records
 
 - [`PHASE_2_5_RECORD.md`](PHASE_2_5_RECORD.md) records the Phase 2.5 baseline commit, validation commands, hashes, and remaining risks.
+- [`PHASE_3_RECORD.md`](PHASE_3_RECORD.md) records the Phase 3 MVP implementation and verification results.
+- [`PHASE_3_1_RECORD.md`](PHASE_3_1_RECORD.md) records the Phase 3.1 hardening changes and verification results.

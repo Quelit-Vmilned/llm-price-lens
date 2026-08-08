@@ -6,10 +6,92 @@
     <title>llm-price-lens</title>
   </head>
   <body>
-    <main>
+    <header class="site-header">
       <h1>llm-price-lens</h1>
-      <p>Project initialized successfully.</p>
+      <p id="dataset-status" class="dataset-status" aria-live="polite"></p>
+    </header>
+    <main>
+      <section class="controls" aria-label="Model controls">
+        <div class="search-field">
+          <label for="model-search">Search models</label>
+          <input id="model-search" type="search" autocomplete="off" />
+        </div>
+        <fieldset class="provider-field">
+          <legend>Provider</legend>
+          <div class="provider-buttons" role="group" aria-label="Providers">
+            <button class="provider-button is-active" type="button" data-provider="all" aria-pressed="true">All</button>
+            <button class="provider-button" type="button" data-provider="openai" aria-pressed="false">OpenAI</button>
+            <button class="provider-button" type="button" data-provider="anthropic" aria-pressed="false">Anthropic</button>
+            <button class="provider-button" type="button" data-provider="google" aria-pressed="false">Google</button>
+            <button class="provider-button" type="button" data-provider="deepseek" aria-pressed="false">DeepSeek</button>
+            <button class="provider-button" type="button" data-provider="open-models" aria-pressed="false">Open models</button>
+          </div>
+        </fieldset>
+        <div class="sort-field">
+          <label for="sort-select">Sort by</label>
+          <select id="sort-select">
+            <option value="name-asc">Name A-Z</option>
+            <option value="name-desc">Name Z-A</option>
+            <option value="input-asc">Input price low to high</option>
+            <option value="input-desc">Input price high to low</option>
+            <option value="output-asc">Output price low to high</option>
+            <option value="output-desc">Output price high to low</option>
+            <option value="benchmark-asc">Benchmark low to high</option>
+            <option value="benchmark-desc">Benchmark high to low</option>
+            <option value="cost-asc">Example cost low to high</option>
+            <option value="cost-desc">Example cost high to low</option>
+          </select>
+        </div>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+      </section>
+      <section class="models-section" aria-labelledby="models-heading">
+        <h2 id="models-heading" class="visually-hidden">Model prices</h2>
+        <div class="table-scroll">
+          <table id="model-table" class="model-table">
+            <thead>
+              <tr>
+                <th scope="col">Model</th>
+                <th scope="col">Provider</th>
+                <th scope="col">Input $/1M</th>
+                <th scope="col">Output $/1M</th>
+                <th scope="col">Cached input</th>
+                <th scope="col">Context</th>
+                <th scope="col">Benchmark</th>
+                <th scope="col">Example cost</th>
+                <th scope="col">Source</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="model-rows"></tbody>
+          </table>
+          <p id="empty-state" class="empty-state" hidden>No model data yet.</p>
+        </div>
+      </section>
+      <section class="calculator-section" aria-labelledby="calculator-heading">
+        <h2 id="calculator-heading">Example workload</h2>
+        <form id="cost-form" class="cost-form">
+          <div class="field">
+            <label for="input-tokens">Input tokens</label>
+            <input id="input-tokens" type="number" min="0" step="1000" value="1000000" />
+          </div>
+          <div class="field">
+            <label for="output-tokens">Output tokens</label>
+            <input id="output-tokens" type="number" min="0" step="1000" value="200000" />
+          </div>
+          <div class="field">
+            <label for="calculator-model">Model</label>
+            <select id="calculator-model"></select>
+          </div>
+          <div class="cost-output">
+            <span>Estimated cost</span>
+            <output id="cost-result" aria-live="polite">Unknown</output>
+          </div>
+        </form>
+      </section>
     </main>
+    <footer class="site-footer">
+      <p id="data-footer"></p>
+    </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 # llm-price-lens Architecture
 
-状态：Phase 3 起点。已完成 Phase 1 工程初始化、Phase 2 数据基座与 Phase 2.5 收尾：采用 Zod 校验全部数据，建立数据 Schema 与基准快照占位结构，并完成 Schema 一致性与许可证文本收尾。尚未实现价格查询、搜索、排序、同步和成本计算器。
+状态：Phase 3.1 Hardening。已完成 Phase 1 工程初始化、Phase 2 数据基座、Phase 2.5 收尾与 Phase 3 静态前端 MVP，并完成发布加固：前端消费经过校验的示例价格数据，支持价格展示、Fuse.js 模糊搜索、排序、示例成本计算器、响应式与可访问性；许可证随 `public/licenses/` 进入构建产物。生产价格数据仍为示例占位；真实数据同步和上游变更检查尚未实现。
 
 ## 1. 总体架构
 

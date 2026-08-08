@@ -1,6 +1,6 @@
 # Upstream Reuse Plan
 
-状态：Phase 3 起点。已按 `upstream-license-audit` Skill 对当前直接依赖执行可验证审计：记录官方上游、固定 tag/commit、许可证、npm tarball/integrity、仓库内许可证文本与实际使用状态。zod 当前已实际 import 并用于数据校验；Vite、TypeScript、Vitest 当前已实际用于开发、构建和测试；Fuse.js 已安装但尚未被当前源码 import。尚未复用任何外部价格数据或第三方代码片段。
+状态：Phase 3.1 Hardening。已按 `upstream-license-audit` Skill 对当前直接依赖执行可验证审计：记录官方上游、固定 tag/commit、许可证、npm tarball/integrity、源码与分发许可证文本及实际使用状态。zod 当前已实际 import 并用于数据校验；Vite、TypeScript、Vitest 当前已实际用于开发、构建和测试；Fuse.js 已由 `src/search.ts` import 并用于客户端模糊搜索。尚未复用任何外部价格数据或第三方代码片段。
 
 本文件记录 `llm-price-lens` 对第三方代码、数据、文档和品牌内容的复用计划。
 
@@ -85,7 +85,7 @@
 - 仓库内许可证文本: `THIRD_PARTY_LICENSES/fuse-js-APACHE-2.0-LICENSE.txt`
 - 计划复用内容: 作为 dependency 安装，供 Phase 3 客户端模糊搜索使用
 - 判定结果: Apache-2.0，允许作为依赖安装和使用
-- 当前状态: 已安装，尚未被当前源码 import
+- 当前状态: 已实际使用（`src/search.ts` import 并执行客户端模糊搜索）
 
 ### zod 4.4.3
 
