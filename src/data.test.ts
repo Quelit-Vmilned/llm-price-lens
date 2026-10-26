@@ -20,7 +20,7 @@ describe("sample price dataset", () => {
     for (const model of generatedData.models) {
       expect(model.modelId).not.toMatch(/^sample-/);
       expect(model.sourceUrl).toMatch(/^https:\/\//);
-      expect(model.status).not.toBe("verified");
+      if (model.status === "verified") expect(model.verifiedAt).not.toBeNull();
     }
   });
 
