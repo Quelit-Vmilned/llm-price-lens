@@ -1,0 +1,68 @@
+{
+  "verifiedAt": "2026-10-26T05:50:40.487Z",
+  "site": "https://quelit-vmilned.github.io/llm-price-lens/",
+  "release": {
+    "phase": 4,
+    "version": "0.4.0",
+    "sourceCommit": "1b65cf3e295a18c42490c4614407648726e58739",
+    "dataMode": "sample"
+  },
+  "workflow": "https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40276157735",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "227588c9517b6e074d78acbba550a642fed51f70d7a19747986b4dc9215c8530",
+      "bytes": 5726
+    },
+    {
+      "path": "release.json",
+      "sha256": "bc27a25bedf423a538721acd1b2adc49802dfd67446f30a3dc10eae8e91a4ea7",
+      "bytes": 125
+    },
+    {
+      "path": "assets/index-Dd3GBA3H.js",
+      "sha256": "73ed60c34db41593fd69b64e64b21023c49a89038b41c48a6c0c528b1e90a086",
+      "bytes": 124740
+    },
+    {
+      "path": "assets/index-Dnlbjgn_.css",
+      "sha256": "8323c0f038afeff5ece5580ae478e97fa891444a949f6126f48f74b7896e3aca",
+      "bytes": 5443
+    },
+    {
+      "path": "licenses/fuse-js-APACHE-2.0-LICENSE.txt",
+      "sha256": "cc807e3caa26cdee316bab2ff6fdb508a2f619b74959fe59e513ef6e61635ebe",
+      "bytes": 11343
+    },
+    {
+      "path": "licenses/index.html",
+      "sha256": "360ec8c9766d17cdca32aff892494b50b307b1f7dd1b454ad3460c82de178df8",
+      "bytes": 975
+    },
+    {
+      "path": "licenses/typescript-APACHE-2.0-LICENSE.txt",
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "bytes": 9197
+    },
+    {
+      "path": "licenses/typescript-NOTICE.txt",
+      "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b",
+      "bytes": 48860
+    },
+    {
+      "path": "licenses/vite-MIT-LICENSE.txt",
+      "sha256": "387dd7baa307083401a27c58c362c30832f5ba1dba84f10cc22c33401523f45c",
+      "bytes": 112425
+    },
+    {
+      "path": "licenses/vitest-MIT-LICENSE.txt",
+      "sha256": "881d660c26831481b697e39724d4a35c9f86e07b67156d4aeb693a0b39910435",
+      "bytes": 37726
+    },
+    {
+      "path": "licenses/zod-MIT-LICENSE.txt",
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+      "bytes": 1072
+    }
+  ]
+}

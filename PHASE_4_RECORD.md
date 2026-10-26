@@ -2,7 +2,7 @@
 
 版本：`0.4.0`。记录日期：2026-10-26（Asia/Shanghai）。
 
-状态：实现与验证进行中；尚未完成本阶段线上确认。
+状态：已上线并通过验收。Phase 4 / v0.4.0，保留示例数据，无真实价格或真实 Benchmark 接入。
 
 ## 授权与边界
 
@@ -59,7 +59,36 @@
 8323c0f038afeff5ece5580ae478e97fa891444a949f6126f48f74b7896e3aca  dist/assets/index-Dnlbjgn_.css
 ```
 
-GitHub 的构建会注入实际完整源 SHA，因此 JS、HTML 和 release.json 的哈希会随发布提交变化。上线提交、Actions 和远程文件校验结果将在实际发布后补充；此时仍不标记发布完成。
+GitHub 构建会注入实际完整源 SHA，因此 JS、HTML 和 release.json 的哈希会随发布提交变化。上述哈希仅用于本地验证，线上证据如下。
+
+## 线上验收（2026-10-26）
+
+- [实现 PR #1](https://github.com/Quelit-Vmilned/llm-price-lens/pull/1)，候选源提交 `4deb671a5ef0e8ba821658beaecfa792675af7ee`。
+- PR CI：[40276084428](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40276084428)，SUCCESS。
+- 首次上线 main 提交：`1b65cf3e295a18c42490c4614407648726e58739`；2026-10-26 13:47:43 +08:00 合并。
+- main CI：[40276157723](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40276157723)，SUCCESS。
+- Pages 发布：[40276157735](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40276157735)，SUCCESS；13:48:31 +08:00 的 `Confirm the published version` 步骤通过。两个 main 版本保护检查均通过，未更改环境审批配置。
+- 本机再次运行 `GITHUB_SHA=1b65cf3e295a18c42490c4614407648726e58739 node scripts/verify-deployment.mjs`：PASS。
+- 13:50:40 +08:00，将公开站点 HTML、release.json、JS、CSS、许可证索引及全部 6 个许可证/NOTICE 与 GitHub Pages 实际构建 artifact 逐个比对，共 11 个文件均 HTTP 200 且 SHA256 相同。完整结果：[first-deployment.json](docs/phase4/first-deployment.json)。
+- 公开网站实测搜索、厂商筛选、价格排序、缺失价格、异常输入和 390 px 移动布局通过，console error/warning 均为 0。
+- 本机 Safari 加载公开网站，显示完整 Phase 4 表格和 $6.00 默认示例成本；DeepSeek 空结果与 All 恢复均正常。
+- [公开网站桌面截图](docs/phase4/first-live-desktop.png)、[移动截图](docs/phase4/first-live-mobile.png)、[Safari 截图](docs/phase4/first-live-safari.png)。截图和测试范围来自实际 in-app 浏览器与本机 Safari；未单独执行 Edge/Firefox。
+
+此处保留首次成功上线的完整证据。补录研发记录的后续提交会重新运行同一发布门禁；当前线上完整源 SHA 以 [release.json](https://quelit-vmilned.github.io/llm-price-lens/release.json) 为准，本版以 `phase4` Git tag 归档。
+
+## 问题关闭与工具
+
+| 原问题 | Phase 4 结果 |
+| --- | --- |
+| 线上停留初始化页，旧部署覆盖新版 | 新版已实际生效；过期源检查、并发取消与线上源 SHA 验证已加入 |
+| 依赖告警 | 6 个受影响包的告警降为 0；锁文件、固定来源与分发许可证已同步 |
+| 浏览器验收缺失 | 本地生产子路径与公开站点均完成实际交互及截图验收 |
+| 未知价格/非法输入、精度与极小成本显示 | Unknown 与 0 保持区分；超安全整数拒绝；极小正数不显示免费 |
+| Benchmark 排名、重复 ID、窄屏与键盘问题 | 已修复并验证 |
+| Phase 状态过期 | 建立 Phase 1–4 索引，历史记录保留并校正推送与测试数量 |
+| 发布认证不可用 | 用户完成官方 GitHub CLI 浏览器授权，认证存于系统 keyring；仓库与构建产物无凭据 |
+
+发布工具 GitHub CLI 2.103.2 通过官方 Homebrew formula 安装，上游 https://github.com/cli/cli，固定 v2.103.2 commit `4f2cfe92e3499f8581bf39db77e0a1431fa7b55c`，已核实 LICENSE 为 MIT。它只用于发布操作，没有加入站点依赖或构建分发内容。
 
 ## 数据状态
 

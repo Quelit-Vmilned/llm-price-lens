@@ -2,7 +2,7 @@
 
 A lightweight static website for comparing LLM API token prices.
 
-Status: Phase 4 release candidate (`v0.4.0`). The static frontend provides model price display, Fuse.js fuzzy search, provider filters, sorting, a token cost calculator, responsive layout, and accessible controls. Deployment revision checks and a public `release.json` identify the published source. Online acceptance is tracked in [PHASE_4_RECORD.md](PHASE_4_RECORD.md).
+Status: Phase 4 published (`v0.4.0`). The static frontend provides model price display, Fuse.js fuzzy search, provider filters, sorting, a token cost calculator, responsive layout, and accessible controls. Deployment revision checks and a public [release identity](https://quelit-vmilned.github.io/llm-price-lens/release.json) identify the published source. Online acceptance is recorded in [PHASE_4_RECORD.md](PHASE_4_RECORD.md).
 
 **Sample data only.** All five displayed models and their prices/benchmark values are demonstration fixtures. No live prices or benchmark results are connected. Missing values remain `Unknown`; zero remains a real zero. Upstream synchronization and scheduled checks belong to the next data phase.
 
