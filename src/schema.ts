@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { BenchmarkSnapshot, ModelPrice, PriceDataset } from "./types";
+import type { BenchmarkSnapshot, ModelPrice, PriceDataset } from "./types.ts";
 
 const nonEmptyString = z.string().trim().min(1);
 const nullableString = nonEmptyString.nullable();

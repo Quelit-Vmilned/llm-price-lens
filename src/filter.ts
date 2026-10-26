@@ -10,7 +10,7 @@ export function filterByProvider(
 
   if (provider === "open-models") {
     return models.filter(
-      (model) => model.provider.toLowerCase() === "open models",
+      (model) => model.provider.toLowerCase() === "open models" || model.tags.includes("open-weights"),
     );
   }
 

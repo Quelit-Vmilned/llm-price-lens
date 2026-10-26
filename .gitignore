@@ -6,6 +6,7 @@ dist/
 
 # Test coverage
 coverage/
+data/.sync-*/
 
 # Logs
 *.log

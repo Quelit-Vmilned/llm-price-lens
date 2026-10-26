@@ -1,7 +1,38 @@
 {
-  "source": null,
-  "metric": null,
-  "capturedAt": null,
-  "sourceUrl": null,
-  "models": []
+  "source": "DeepSeek-R1 report (self-reported; historical six-model snapshot)",
+  "metric": "AIME 2024 Pass@1 (%)",
+  "capturedAt": "2026-10-26T06:44:54.580Z",
+  "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-R1/blob/0cf78561f1d51c84a21b2190626b21116d5c68bb/README.md#deepseek-r1-evaluation",
+  "models": [
+    {
+      "modelId": "claude-3.5-sonnet-1022",
+      "benchmarkScore": 16,
+      "benchmarkRank": 5
+    },
+    {
+      "modelId": "gpt-4o-0513",
+      "benchmarkScore": 9.3,
+      "benchmarkRank": 6
+    },
+    {
+      "modelId": "deepseek-v3",
+      "benchmarkScore": 39.2,
+      "benchmarkRank": 4
+    },
+    {
+      "modelId": "o1-mini",
+      "benchmarkScore": 63.6,
+      "benchmarkRank": 3
+    },
+    {
+      "modelId": "o1-1217",
+      "benchmarkScore": 79.2,
+      "benchmarkRank": 2
+    },
+    {
+      "modelId": "deepseek-r1",
+      "benchmarkScore": 79.8,
+      "benchmarkRank": 1
+    }
+  ]
 }

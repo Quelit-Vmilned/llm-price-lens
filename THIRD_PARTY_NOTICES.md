@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-状态：Phase 4。当前项目实际使用 zod 4.6.6、Fuse.js 7.5.0；开发与验证使用 Vite 8.2.4、Vitest 4.1.12、TypeScript 7.0.2。没有接入外部价格或排行榜数据。2026-10-26 安全更新的固定来源与许可审计见 UPSTREAM_REUSE_PLAN.md 第 7 节。
+状态：Phase 5。当前项目实际使用 zod 4.6.6、Fuse.js 7.5.0；开发与验证使用 Vite 8.2.4、Vitest 4.1.12、TypeScript 7.0.2。本次不新增依赖；接入 models.dev 价格与 DeepSeek-R1 历史评测快照，审计和用户批准见 UPSTREAM_REUSE_PLAN.md 第 8 节。
 
 本文件记录 `llm-price-lens` 实际复用的第三方材料及其声明。每次实际复用后必须更新本文件。完整许可证文本已随仓库保留在 `THIRD_PARTY_LICENSES/`，并复制到 `public/licenses/`，由 Vite 构建复制到 `dist/licenses/` 随站点分发；固定 tag/commit 与核实依据见 `UPSTREAM_REUSE_PLAN.md`。
 
@@ -68,7 +68,9 @@
 
 ## 3. 数据
 
-- 尚无上游数据被复用。
+- models.dev：MIT，Copyright (c) 2025 models.dev。上游 https://github.com/anomalyco/models.dev；许可审计 commit `c08035fc978ae61a2aa395230e855cdc80d9c204`。从 https://models.dev/api.json 导入白名单文本模型名称、ID、价格、缓存读取、上下文、更新时间和开放权重标记；实际复用与规范化文件为 `data/prices.generated.json`，响应 SHA256/ETag 与缺失字段记录在 `data/quality-report.json`。完整许可：`THIRD_PARTY_LICENSES/models-dev-MIT-LICENSE.txt`，随网站 `licenses/models-dev-MIT-LICENSE.txt` 分发。
+- DeepSeek-R1：MIT，Copyright (c) 2023 DeepSeek。上游 https://github.com/deepseek-ai/DeepSeek-R1；固定 commit `0cf78561f1d51c84a21b2190626b21116d5c68bb`。仅人工摘录 README Evaluation Results 的六个 AIME 2024 Pass@1 (%) 数值至 `data/benchmark-snapshot.json`；人工版本映射在 `data/benchmark-aliases.json`。排名仅按这六个分数计算，非完整排行榜；这是历史、自报告评测，无当前端点精确匹配时不补分。完整许可：`THIRD_PARTY_LICENSES/deepseek-r1-MIT-LICENSE.txt`，随网站 `licenses/deepseek-r1-MIT-LICENSE.txt` 分发。
+- 没有复制上游代码、UI、Logo、模型权重或商业排行榜。
 - 任何数据条目必须随站点记录来源 URL、上游更新时间、验证状态和许可证状态。
 - 未确认再发布许可的商业排行榜数据不得复制。
 

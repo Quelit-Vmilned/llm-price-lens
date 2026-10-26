@@ -13,6 +13,8 @@ import { searchModels } from "./search";
 import { sortModels, type SortDirection, type SortKey, type SortSpec } from "./sort";
 import { parseTokenCount } from "./token";
 import type { ModelPrice, PriceDataset } from "./types";
+import benchmarkSnapshot from "../data/benchmark-snapshot.json";
+import qualityReport from "../data/quality-report.json";
 
 interface AppState {
   query: string;
@@ -47,6 +49,10 @@ const elements = {
   dataFooter: document.querySelector<HTMLParagraphElement>("#data-footer")!,
   releaseStatus: document.querySelector<HTMLParagraphElement>("#release-status")!,
   workloadError: document.querySelector<HTMLParagraphElement>("#workload-error")!,
+  benchmarkStatus: document.querySelector<HTMLParagraphElement>("#benchmark-status")!,
+  benchmarkRows: document.querySelector<HTMLTableSectionElement>("#benchmark-rows")!,
+  benchmarkSource: document.querySelector<HTMLAnchorElement>("#benchmark-source")!,
+  warnings: document.querySelector<HTMLUListElement>("#data-warnings")!,
 };
 
 let dataset!: PriceDataset;
@@ -142,7 +148,7 @@ function sourceCell(model: ModelPrice): HTMLDivElement {
 
   const meta = document.createElement("span");
   meta.className = "cell-meta";
-  meta.textContent = `Updated ${formatDate(model.sourceUpdatedAt)}`;
+  meta.textContent = `Model updated ${formatDate(model.sourceUpdatedAt)}`;
   wrapper.append(meta);
 
   return wrapper;
@@ -152,6 +158,11 @@ function statusCell(model: ModelPrice): HTMLSpanElement {
   const badge = document.createElement("span");
   badge.className = `status-badge status-badge--${model.status}`;
   badge.textContent = formatStatus(model.status);
+  badge.title = model.status === "imported"
+    ? "Imported from the community-maintained source and schema-validated; not independently checked with the provider."
+    : model.status === "verified"
+      ? `Manually verified ${formatDate(model.verifiedAt)}`
+      : "One or more fields need review; unknown prices stay Unknown.";
   return badge;
 }
 
@@ -206,12 +217,34 @@ function renderDatasetStatus(): void {
       dataset.warnings[0] ?? "No model data yet.";
     return;
   }
-  elements.datasetStatus.textContent = `${dataset.models.length} sample models / sample snapshot ${formatDate(dataset.generatedAt)} / live sync not connected`;
+  elements.datasetStatus.textContent = `${dataset.models.length} models · ${qualityReport.providerCount} providers · Last successful data sync ${new Date(dataset.generatedAt).toLocaleString()}`;
 }
 
 function renderFooter(): void {
-  const warning = dataset.warnings[0] ?? "No warnings";
-  elements.dataFooter.textContent = `Sample snapshot ${formatDate(dataset.generatedAt)} / ${warning}`;
+  elements.dataFooter.textContent = `Last successful data sync ${new Date(dataset.generatedAt).toLocaleString()} · Upstream checks scheduled around every 30 minutes; GitHub may delay runs.`;
+  elements.warnings.replaceChildren(...dataset.warnings.map((warning) => {
+    const item = document.createElement("li");
+    item.textContent = warning;
+    return item;
+  }));
+  const ageHours = (Date.now() - Date.parse(dataset.generatedAt)) / 3_600_000;
+  if (ageHours > 24) {
+    const stale = document.createElement("li");
+    stale.textContent = "This snapshot is over 24 hours old. The source may be unchanged or synchronization delayed; inspect the update runs before relying on it.";
+    elements.warnings.prepend(stale);
+  }
+}
+
+function renderBenchmarkSnapshot(): void {
+  elements.benchmarkStatus.textContent = `${benchmarkSnapshot.metric} · Captured ${formatDate(benchmarkSnapshot.capturedAt)} · ${qualityReport.benchmark.matchedCount} current endpoints matched. Historical, self-reported results; ranks apply only within this six-model snapshot. Unmatched endpoints show No benchmark data.`;
+  elements.benchmarkSource.href = benchmarkSnapshot.sourceUrl ?? "./data/benchmark-snapshot.json";
+  elements.benchmarkSource.textContent = "DeepSeek-R1 report at the audited revision";
+  for (const model of [...benchmarkSnapshot.models].sort((a, b) => (a.benchmarkRank ?? Infinity) - (b.benchmarkRank ?? Infinity))) {
+    const row = elements.benchmarkRows.insertRow();
+    for (const value of [model.modelId, formatScore(model.benchmarkScore), model.benchmarkRank === null ? "Unknown" : String(model.benchmarkRank)]) {
+      row.insertCell().textContent = value;
+    }
+  }
 }
 
 function selectedModel(): ModelPrice | undefined {
@@ -243,7 +276,7 @@ function populateCalculatorModels(): void {
   for (const model of dataset.models) {
     const option = document.createElement("option");
     option.value = model.modelId;
-    option.textContent = model.displayName;
+    option.textContent = `${model.displayName} (${model.provider})`;
     elements.calculatorModel.append(option);
   }
 
@@ -326,7 +359,7 @@ function renderDataError(message: string): void {
   });
 }
 
-elements.releaseStatus.textContent = `Phase 4 · v${__APP_VERSION__} · Build ${__BUILD_COMMIT__.slice(0, 7)}`;
+elements.releaseStatus.textContent = `Phase 5 · v${__APP_VERSION__} · Build ${__BUILD_COMMIT__.slice(0, 7)}`;
 
 if (priceDataset === null) {
   renderDataError(priceDatasetError ?? "Price data validation failed.");
@@ -334,6 +367,7 @@ if (priceDataset === null) {
   dataset = priceDataset;
   renderDatasetStatus();
   renderFooter();
+  renderBenchmarkSnapshot();
   populateCalculatorModels();
   bindEvents();
   render();

@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-26T07:11:08.180Z",
+  "inputHash": "0f505d399a646317c941026cb346ba988c1b95068964da66e7ccdbb630be6a88",
+  "sourceCount": 1,
+  "providerCount": 13,
+  "recordCount": 190,
+  "sources": [
+    {
+      "name": "models.dev",
+      "url": "https://models.dev/api.json",
+      "repository": "https://github.com/anomalyco/models.dev",
+      "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
+      "license": "MIT",
+      "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
+      "payloadSha256": "4f62486317f9d4bcba42851c9622d89bec552bb070da0d504978215a638ac7a2",
+      "etag": "W/\"4f62486317f9d4bcba42851c9622d89b\"",
+      "lastModified": null
+    }
+  ],
+  "missingFields": {
+    "inputPerMillionUsd": 7,
+    "outputPerMillionUsd": 7,
+    "cachedInputPerMillionUsd": 46,
+    "contextWindow": 0,
+    "sourceUpdatedAt": 3,
+    "verifiedAt": 190,
+    "benchmarkScore": 190
+  },
+  "excluded": [
+    {
+      "modelId": "alibaba/qvq-max",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen-mt-turbo",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen-omni-turbo",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen-omni-turbo-realtime",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen-turbo",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen-vl-max",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen-vl-plus",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen2-5-omni-7b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-14b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-235b-a22b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-32b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-8b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-asr-flash",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "alibaba/qwen3-coder-30b-a3b-instruct",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-coder-480b-a35b-instruct",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-coder-plus",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-livetranslate-flash-realtime",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-max",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-next-80b-a3b-instruct",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-next-80b-a3b-thinking",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-omni-flash",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "alibaba/qwen3-omni-flash-realtime",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3-vl-235b-a22b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwen3.6-max-preview",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "alibaba/qwq-plus",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "deepseek/deepseek-v4-flash",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "deepseek/deepseek-v4-flash-vision-exp",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "google/deep-research-max-preview-04-2026",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/deep-research-preview-04-2026",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/gemini-2.5-flash-image",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/gemini-2.5-flash-preview-tts",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "google/gemini-2.5-pro-preview-tts",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "google/gemini-3-pro-image",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/gemini-3-pro-image-preview",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/gemini-3.1-flash-image",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/gemini-3.1-flash-image-preview",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/gemini-3.1-flash-lite-image",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/gemini-3.1-flash-lite-preview",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "google/gemini-3.1-flash-live-preview",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/gemini-3.1-flash-tts-preview",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "google/gemini-3.5-live-translate-preview",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "google/gemini-embedding-001",
+      "reason": "Embedding, reranking or speech billing is outside token comparison"
+    },
+    {
+      "modelId": "google/gemini-embedding-2",
+      "reason": "Embedding, reranking or speech billing is outside token comparison"
+    },
+    {
+      "modelId": "google/gemini-omni-flash-preview",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "google/lyria-3-clip-preview",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "google/lyria-3-pro-preview",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "groq/canopylabs/orpheus-arabic-saudi",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "groq/canopylabs/orpheus-v1-english",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "groq/llama-3.1-8b-instant",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "groq/llama-3.3-70b-versatile",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "groq/qwen/qwen3.6-27b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "groq/whisper-large-v3",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "groq/whisper-large-v3-turbo",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "minimax/MiniMax-M2",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "minimax/MiniMax-M2.1",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "minimax/MiniMax-M2.5",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "minimax/MiniMax-M2.5-highspeed",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "minimax/MiniMax-M2.7",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "minimax/MiniMax-M2.7-highspeed",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/devstral-2512",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/devstral-latest",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/devstral-medium-latest",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/glm-5-2",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/labs-devstral-small-2512",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/labs-leanstral-1-5-1",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/magistral-medium-latest",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/mistral-embed",
+      "reason": "Embedding, reranking or speech billing is outside token comparison"
+    },
+    {
+      "modelId": "mistral/mistral-medium-2505",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/mistral-medium-2508",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/mistral-small-2506",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/open-mistral-nemo",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/pixtral-12b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "mistral/voxtral-mini-latest",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "mistral/voxtral-mini-tts-latest",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "mistral/zai-glm-5-2",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/chatgpt-image-latest",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "openai/gpt-3.5-turbo",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-4",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-4-turbo",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-4.1-nano",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-4o-2024-05-13",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-image-1",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-image-1-mini",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "openai/gpt-image-1.5",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "openai/gpt-image-2",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "openai/gpt-realtime-2.1",
+      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+    },
+    {
+      "modelId": "openai/o1",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/o1-pro",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/o3-mini",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/o4-mini",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/text-embedding-3-large",
+      "reason": "Embedding, reranking or speech billing is outside token comparison"
+    },
+    {
+      "modelId": "openai/text-embedding-3-small",
+      "reason": "Embedding, reranking or speech billing is outside token comparison"
+    },
+    {
+      "modelId": "openai/text-embedding-ada-002",
+      "reason": "Embedding, reranking or speech billing is outside token comparison"
+    },
+    {
+      "modelId": "togetherai/LiquidAI/LFM2-24B-A2B",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/MiniMaxAI/MiniMax-M2.5",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/MiniMaxAI/MiniMax-M2.7",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/Qwen/Qwen2.5-7B-Instruct-Turbo",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/Qwen/Qwen3-235B-A22B-Instruct-2507-tput",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/Qwen/Qwen3-Coder-Next-FP8",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/Qwen/Qwen3.5-397B-A17B",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/deepseek-ai/DeepSeek-R1",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/deepseek-ai/DeepSeek-V3",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/deepseek-ai/DeepSeek-V3-1",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/essentialai/Rnj-1-Instruct",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/nvidia/nemotron-3-ultra-550b-a55b",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/zai-org/GLM-5",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "togetherai/zai-org/GLM-5.1",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "xai/grok-imagine-image",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "xai/grok-imagine-image-quality",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "xai/grok-imagine-video",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "xai/grok-imagine-video-1.5",
+      "reason": "Not a text-input/text-output model"
+    },
+    {
+      "modelId": "xai/grok-imagine-video-1.5-lite",
+      "reason": "Not a text-input/text-output model"
+    }
+  ],
+  "deduplications": [],
+  "overrides": [
+    {
+      "modelId": "openai/gpt-5.4",
+      "reason": "Manually curated bilingual search vocabulary for this exact model; does not change prices or verification status.",
+      "sourceUrl": "https://models.dev/api.json"
+    },
+    {
+      "modelId": "deepseek/deepseek-flash",
+      "reason": "Manually curated Chinese search terms for the current DeepSeek Flash endpoint; prices remain imported.",
+      "sourceUrl": "https://models.dev/api.json"
+    }
+  ],
+  "benchmark": {
+    "source": "DeepSeek-R1 report (self-reported; historical six-model snapshot)",
+    "metric": "AIME 2024 Pass@1 (%)",
+    "sourceUrl": "https://github.com/deepseek-ai/DeepSeek-R1/blob/0cf78561f1d51c84a21b2190626b21116d5c68bb/README.md#deepseek-r1-evaluation",
+    "capturedAt": "2026-10-26T06:44:54.580Z",
+    "snapshotCount": 6,
+    "matchedCount": 0,
+    "unmatched": [
+      "claude-3.5-sonnet-1022",
+      "gpt-4o-0513",
+      "deepseek-v3",
+      "o1-mini",
+      "o1-1217",
+      "deepseek-r1"
+    ]
+  },
+  "warnings": [
+    "Community-maintained prices imported from models.dev; not independently verified with each provider.",
+    "USD base text-token rates per 1M tokens. Long-context tiers, tools, audio, images, taxes and other charges are excluded; check the provider before purchase.",
+    "Benchmark: historical AIME 2024 Pass@1 (%) self-reported by DeepSeek. Ranks compare only the six-model snapshot; no match means No benchmark data."
+  ]
+}

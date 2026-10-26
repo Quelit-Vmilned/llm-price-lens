@@ -1,6 +1,6 @@
 # Upstream Reuse Plan
 
-状态：Phase 4。以下 Phase 2.5/3.1 依赖审计保留为历史，当前版本以文末 Phase 4 安全更新记录及 package-lock.json 为准。尚未复用任何外部价格数据或第三方代码片段。
+状态：Phase 5 已按用户批准接入真实数据。既有依赖审计保留；本次不新增依赖。第 8 节记录数据来源、许可与复用范围。
 
 本文件记录 `llm-price-lens` 对第三方代码、数据、文档和品牌内容的复用计划。
 
@@ -175,3 +175,20 @@
 - source-map-js: https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz — `sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==`
 
 本次没有导入价格、排行榜、第三方视觉或代码片段。安全检查结果与实际安装版本记录在 PHASE_4_RECORD.md。
+
+## 8. Phase 5 真实数据接入计划（2026-10-26）
+
+用户要求接入实际数据、验证更新并上线 GitHub Pages。本次使用原设计的 GitHub Actions 数据流水线，无需 API 密钥或付费调用。只复用结构化价格事实和少量人工维护的评测数值；实现代码自行编写，不复制上游 UI、Logo、SDK 或模型权重。
+
+| 来源 | 固定审计 commit | 已检查文件 | 许可 | 计划复用 |
+| --- | --- | --- | --- | --- |
+| https://github.com/anomalyco/models.dev | `c08035fc978ae61a2aa395230e855cdc80d9c204` | 根 LICENSE、README.md、递归目录的 LICENSE/COPYING/NOTICE；models/ 与 providers/ 无独立限制 | MIT，Copyright (c) 2025 models.dev | 公开 https://models.dev/api.json 中白名单厂商的文本模型名称、ID、美元/百万 token 价格、缓存读取价格、上下文、模型更新时间；保留 API 响应 SHA256/ETag 与许可哈希 |
+| https://github.com/deepseek-ai/DeepSeek-R1 | `0cf78561f1d51c84a21b2190626b21116d5c68bb` | 根 LICENSE、README.md Evaluation Results 与 License；递归目录无额外文档许可 | MIT，Copyright (c) 2023 DeepSeek | 人工维护少量 AIME 2024 Pass@1 分数与精确模型版本映射；标注为 DeepSeek 自报告、历史快照，排名仅指本快照内比较 |
+
+价格上游的 `open_weights` 只作为信息字段，不代表本项目获得模型权重许可。仅接入美元 token 单价，排除订阅套餐、已弃用、非文本输出模型；按厂商/原始模型 ID 保留不同托管价格，禁止模糊合并不同版本。价格仅为基础 token 费率；长上下文阶梯、工具、图片/音频、税费等另行收费项目不在计算器估算内。
+
+评测不映射 `latest`、可变 API 别名或不同版本。未精确匹配的模型显示 No benchmark data。不会复制商业排行榜。
+
+判定：两项来源均为明确 MIT，可在完整保留许可证、版权与来源后使用。用户已明确回复“同意按此方案接入并上线”，批准后导入。价格许可 SHA256 为 `dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a`；DeepSeek-R1 固定版本许可 SHA256 为 `1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7`。两份完整文本已保存在 THIRD_PARTY_LICENSES/ 和 public/licenses/。
+
+价格 API 为独立更新的公开生成文件，不声称其响应恰好对应审计 commit；每次成功快照用 payloadSha256 与 ETag 标识实际响应。后续同步时请求当前价格上游许可并校验文本哈希，发生变化即停止本次同步，保留有效快照。评测文件固定来源 commit，人工录入六个分数，排名由本六模型的分数降序得到；capturedAt 为录入时间，非评测实验时间。当前白名单价格源已弃用这些历史版本，因此快照独立展示、精确映射数为零，绝不将其分数套用到新版本或可变别名。
