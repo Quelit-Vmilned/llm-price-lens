@@ -19,8 +19,8 @@ export function calculateCost(
     workload.outputTokens === null ||
     !Number.isFinite(workload.inputTokens) ||
     !Number.isFinite(workload.outputTokens) ||
-    !Number.isInteger(workload.inputTokens) ||
-    !Number.isInteger(workload.outputTokens) ||
+    !Number.isSafeInteger(workload.inputTokens) ||
+    !Number.isSafeInteger(workload.outputTokens) ||
     workload.inputTokens < 0 ||
     workload.outputTokens < 0
   ) {

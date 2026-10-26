@@ -45,6 +45,20 @@ describe("sortModels", () => {
     ]);
   });
 
+  it("sorts output price descending with missing values last", () => {
+    expect(sortBy("output", "desc")).toEqual([
+      "claude-sonnet-test", "gpt-test", "gemini-test", "deepseek-test", "open-model-test",
+    ]);
+  });
+
+  it("sorts cost descending and leaves the source dataset unchanged", () => {
+    const originalIds = ids(fixtureModels);
+    expect(sortBy("cost", "desc")).toEqual([
+      "claude-sonnet-test", "gpt-test", "deepseek-test", "gemini-test", "open-model-test",
+    ]);
+    expect(ids(fixtureModels)).toEqual(originalIds);
+  });
+
   it("sorts benchmark score ascending with nulls last", () => {
     expect(sortBy("benchmark", "asc")).toEqual([
       "gemini-test",

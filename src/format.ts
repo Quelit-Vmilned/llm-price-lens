@@ -12,6 +12,9 @@ const numberFormatter = new Intl.NumberFormat("en-US", {
 });
 
 export function formatUsd(value: number | null): string {
+  if (value !== null && value > 0 && value < 0.0001) {
+    return "<$0.0001";
+  }
   return value === null ? "Unknown" : usdFormatter.format(value);
 }
 

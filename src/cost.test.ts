@@ -68,6 +68,11 @@ describe("calculateCost", () => {
     ).toBe(0);
   });
 
+  it("rejects token counts above the safe integer range", () => {
+    expect(calculateCost(gpt, { inputTokens: Number.MAX_SAFE_INTEGER + 1, outputTokens: 0 })).toBeNull();
+    expect(calculateCost(gpt, { inputTokens: 0, outputTokens: Number.MAX_SAFE_INTEGER + 1 })).toBeNull();
+  });
+
   it("returns null instead of Infinity for extreme tokens and prices", () => {
     expect(
       calculateCost(

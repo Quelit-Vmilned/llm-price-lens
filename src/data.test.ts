@@ -1,9 +1,15 @@
 import { describe, expect, it } from "vitest";
 import sampleData from "../data/prices.sample.json";
+import generatedData from "../data/prices.generated.json";
 import { priceDatasetResult } from "./data";
 import { priceDatasetSchema } from "./schema";
 
 describe("sample price dataset", () => {
+  it("keeps the production placeholder schema-valid and empty", () => {
+    expect(priceDatasetSchema.safeParse(generatedData).success).toBe(true);
+    expect(generatedData.models).toEqual([]);
+  });
+
   it("passes schema and meets Phase 3.1 sample requirements", () => {
     expect(priceDatasetSchema.safeParse(sampleData).success).toBe(true);
     expect(priceDatasetResult.success).toBe(true);

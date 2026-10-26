@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>llm-price-lens</title>
+    <meta name="description" content="Phase 4 preview of llm-price-lens. Explore sample model prices, search, sorting and token cost estimates. No live pricing data." />
+    <title>llm-price-lens · Phase 4</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <h1>llm-price-lens</h1>
+      <p class="sample-notice">Phase 4 · Sample data only. <span lang="zh-CN">示例数据，非真实价格与评测。</span></p>
       <p id="dataset-status" class="dataset-status" aria-live="polite"></p>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="controls" aria-label="Model controls">
         <div class="search-field">
           <label for="model-search">Search models</label>
@@ -46,8 +49,8 @@
       </section>
       <section class="models-section" aria-labelledby="models-heading">
         <h2 id="models-heading" class="visually-hidden">Model prices</h2>
-        <div class="table-scroll">
-          <table id="model-table" class="model-table">
+        <div class="table-scroll" role="region" aria-label="Model prices; scroll horizontally for all columns" tabindex="0">
+          <table id="model-table" class="model-table" role="table">
             <thead>
               <tr>
                 <th scope="col">Model</th>
@@ -72,11 +75,11 @@
         <form id="cost-form" class="cost-form">
           <div class="field">
             <label for="input-tokens">Input tokens</label>
-            <input id="input-tokens" type="number" min="0" step="1000" value="1000000" />
+            <input id="input-tokens" type="number" min="0" max="9007199254740991" step="1" value="1000000" aria-describedby="workload-help" />
           </div>
           <div class="field">
             <label for="output-tokens">Output tokens</label>
-            <input id="output-tokens" type="number" min="0" step="1000" value="200000" />
+            <input id="output-tokens" type="number" min="0" max="9007199254740991" step="1" value="200000" aria-describedby="workload-help" />
           </div>
           <div class="field">
             <label for="calculator-model">Model</label>
@@ -87,11 +90,16 @@
             <output id="cost-result" aria-live="polite">Unknown</output>
           </div>
         </form>
+        <p id="workload-help" class="field-help">Enter whole token counts, 0 or more. Missing prices produce an Unknown estimate.</p>
+        <p id="workload-error" class="field-error" role="status" hidden>Enter a whole token count between 0 and 9,007,199,254,740,991 in both fields.</p>
       </section>
     </main>
     <footer class="site-footer">
       <p id="data-footer"></p>
+      <p id="release-status"></p>
+      <p><a href="./licenses/">Third-party licenses</a></p>
     </footer>
+    <noscript>This preview needs JavaScript to display its sample data and calculator.</noscript>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

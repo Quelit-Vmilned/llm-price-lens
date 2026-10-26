@@ -1,6 +1,6 @@
 # Phase 3 Record
 
-状态：Phase 3 MVP 已实现，尚未 commit/push。
+状态：Phase 3 MVP 历史记录。实现已随 `8a89693` 于 2026-08-08 提交并推送；下文保留当时验证和风险，当前验收见 `PHASE_4_RECORD.md`。
 
 记录日期：2026-08-08
 

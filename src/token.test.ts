@@ -13,6 +13,12 @@ describe("parseTokenCount", () => {
     expect(parseTokenCount("1.5")).toBeNull();
   });
 
+  it("rejects integers that cannot be represented exactly", () => {
+    expect(parseTokenCount("9007199254740991")).toBe(Number.MAX_SAFE_INTEGER);
+    expect(parseTokenCount("9007199254740992")).toBeNull();
+    expect(parseTokenCount("9007199254740993")).toBeNull();
+  });
+
   it("accepts non-negative integers", () => {
     expect(parseTokenCount("0")).toBe(0);
     expect(parseTokenCount("1000000")).toBe(1000000);

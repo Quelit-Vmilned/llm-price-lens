@@ -1,29 +1,29 @@
 # Third-Party Notices
 
-状态：Phase 3.1 Hardening。当前项目实际使用 zod 4.4.3 作为数据校验依赖；使用 Vite、TypeScript、Vitest 作为开发、构建和测试工具；Fuse.js 7.5.0 已作为 dependency 安装，并已由 `src/search.ts` import 用于客户端模糊搜索。尚未接入外部数据。
+状态：Phase 4。当前项目实际使用 zod 4.6.6、Fuse.js 7.5.0；开发与验证使用 Vite 8.2.4、Vitest 4.1.12、TypeScript 7.0.2。没有接入外部价格或排行榜数据。2026-10-26 安全更新的固定来源与许可审计见 UPSTREAM_REUSE_PLAN.md 第 7 节。
 
 本文件记录 `llm-price-lens` 实际复用的第三方材料及其声明。每次实际复用后必须更新本文件。完整许可证文本已随仓库保留在 `THIRD_PARTY_LICENSES/`，并复制到 `public/licenses/`，由 Vite 构建复制到 `dist/licenses/` 随站点分发；固定 tag/commit 与核实依据见 `UPSTREAM_REUSE_PLAN.md`。
 
 ## 1. 直接 npm 依赖
 
-### Vite 8.2.0
+### Vite 8.2.4
 
 - 版权声明: `Copyright (c) 2019-present, VoidZero Inc. and Vite contributors`（来自 `node_modules/vite/LICENSE.md`）
 - 上游仓库: https://github.com/vitejs/vite
 - 许可证: MIT
-- Version: 8.2.0
-- 固定 commit: `fa79f9ab699f9a22a6f9b50f3d247be6b51f684d`
-- Source: https://registry.npmjs.org/vite/-/vite-8.2.0.tgz（package-lock.json `resolved`）
+- Version: 8.2.4
+- 固定 commit: `eb3137d38934b557a410c85e54f10682a944440b`
+- Source: https://registry.npmjs.org/vite/-/vite-8.2.4.tgz（package-lock.json `resolved`）
 - 许可证文本: `THIRD_PARTY_LICENSES/vite-MIT-LICENSE.txt`
 
-### Vitest 4.1.10
+### Vitest 4.1.12
 
 - 版权声明: `Copyright (c) 2021-Present VoidZero Inc. and Vitest contributors`（来自 `node_modules/vitest/LICENSE.md`）
 - 上游仓库: https://github.com/vitest-dev/vitest
 - 许可证: MIT
-- Version: 4.1.10
-- 固定 commit: `db616d227b6e0cb07a94f5d1bba262ee95db7e46`
-- Source: https://registry.npmjs.org/vitest/-/vitest-4.1.10.tgz（package-lock.json `resolved`）
+- Version: 4.1.12
+- 固定 commit: `4766ce1e72ded629d3a37637f57eeae643789a8c`
+- Source: https://registry.npmjs.org/vitest/-/vitest-4.1.12.tgz（package-lock.json `resolved`）
 - 许可证文本: `THIRD_PARTY_LICENSES/vitest-MIT-LICENSE.txt`
 
 ### Fuse.js 7.5.0
@@ -36,14 +36,15 @@
 - Source: https://registry.npmjs.org/fuse.js/-/fuse.js-7.5.0.tgz（package-lock.json `resolved`）
 - 许可证文本: `THIRD_PARTY_LICENSES/fuse-js-APACHE-2.0-LICENSE.txt`
 
-### zod 4.4.3
+### zod 4.6.6
 
 - 版权声明: `Copyright (c) 2025 Colin McDonnell`（来自 `node_modules/zod/LICENSE`）
 - 上游仓库: https://github.com/colinhacks/zod
 - 许可证: MIT
-- Version: 4.4.3
-- 固定 commit: `1fb56a5c18c27102dbc92260a4007c7732a0ccca`
-- Source: https://registry.npmjs.org/zod/-/zod-4.4.3.tgz（package-lock.json `resolved`）
+- Version: 4.6.6
+- 固定 tag commit: `9c219833c3a3764fa1f1ea9c5ecec8254a63c0b1`
+- npm gitHead: `284243fb0d6532665afdc9239188773bb624f73c`（与 tag 不同；两个 ref 的 LICENSE 均已核实为 MIT，不声称源码逐字等同）
+- Source: https://registry.npmjs.org/zod/-/zod-4.6.6.tgz（package-lock.json `resolved`）
 - 许可证文本: `THIRD_PARTY_LICENSES/zod-MIT-LICENSE.txt`
 
 ### TypeScript 7.0.2

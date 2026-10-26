@@ -1,6 +1,6 @@
 # Upstream Reuse Plan
 
-状态：Phase 3.1 Hardening。已按 `upstream-license-audit` Skill 对当前直接依赖执行可验证审计：记录官方上游、固定 tag/commit、许可证、npm tarball/integrity、源码与分发许可证文本及实际使用状态。zod 当前已实际 import 并用于数据校验；Vite、TypeScript、Vitest 当前已实际用于开发、构建和测试；Fuse.js 已由 `src/search.ts` import 并用于客户端模糊搜索。尚未复用任何外部价格数据或第三方代码片段。
+状态：Phase 4。以下 Phase 2.5/3.1 依赖审计保留为历史，当前版本以文末 Phase 4 安全更新记录及 package-lock.json 为准。尚未复用任何外部价格数据或第三方代码片段。
 
 本文件记录 `llm-price-lens` 对第三方代码、数据、文档和品牌内容的复用计划。
 
@@ -151,3 +151,27 @@
 ## 6. 复用决策日志
 
 本阶段没有复制第三方代码片段或外部数据；只安装并使用上表 npm 依赖。真正复制第三方代码、数据或文档时，再按第 1 节流程补充上游 URL、commit SHA、许可证、检查文件和计划复用内容。
+
+## 7. Phase 4 安全更新（2026-10-26）
+
+用户授权修复既有问题并完成发布。当前 npm audit 报告 6 个受影响包（4 high、2 moderate），本次在原技术栈内更新现有依赖，不新增直接依赖。安装前已核对官方 npm 元数据、上游固定版本 LICENSE 及 tag/commit；计划允许作为现有构建、测试、校验依赖使用。Vite/Vitest 的 npm 分发包包含 bundled notices，安装后将完整包许可证同步至 THIRD_PARTY_LICENSES/ 和 public/licenses/。
+
+| 包 | 目标版本 | 官方上游 | 固定 commit | 许可证 | 复用范围 |
+| --- | --- | --- | --- | --- | --- |
+| vite | 8.2.4 | https://github.com/vitejs/vite | eb3137d38934b557a410c85e54f10682a944440b（v8.2.4 peeled tag） | MIT | 既有开发与构建工具 |
+| vitest | 4.1.12 | https://github.com/vitest-dev/vitest | 4766ce1e72ded629d3a37637f57eeae643789a8c（v4.1.12） | MIT | 既有测试工具及 mocker 修复 |
+| zod | 4.6.6 | https://github.com/colinhacks/zod | 9c219833c3a3764fa1f1ea9c5ecec8254a63c0b1（v4.6.6） | MIT | 既有运行时数据校验 |
+| nanoid | 3.3.20 | https://github.com/ai/nanoid | d76f633e0201c1299d735a6544c4c4a05c882f0b（npm gitHead） | MIT | 既有构建传递依赖；安装器在原范围内解析到 3.3.20，已补核许可证 |
+| source-map-js | 1.2.2 | https://github.com/7rulnik/source-map-js | 0a1d334fd1e55a47df97fcd60a7915d46df3b08a（npm gitHead） | BSD-3-Clause | 既有构建传递依赖 |
+
+检查文件：各上游固定 ref 的 LICENSE、npm 包元数据；安装后核对 package.json、LICENSE/NOTICE 与锁文件 integrity。zod npm 元数据 gitHead 为 284243fb0d6532665afdc9239188773bb624f73c，与 tag 不同，保留两种证据，不声称源码逐字等同。Fuse.js 7.5.0、TypeScript 7.0.2 及既有 TypeScript 来源差异沿用原审计记录。
+
+官方 npm tarball/integrity：
+
+- vite: https://registry.npmjs.org/vite/-/vite-8.2.4.tgz — `sha512-lfauXnrf2x0p+UoA+wXh0dgFWnUjCyG6Js95KBkgaCwUU9k0DAHI4W6Q0WCx+h+5g+Alce1y4Zi2QjjK0UvGBw==`
+- vitest: https://registry.npmjs.org/vitest/-/vitest-4.1.12.tgz — `sha512-5eWdz2yb3ajxWF3C8C4TjkXl7FGm3n2E/VlazALrQHzK7nYMSGFnCZto0bbPNl77AwkOZVLk0YnBAejUu0NiWA==`
+- zod: https://registry.npmjs.org/zod/-/zod-4.6.6.tgz — `sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==`
+- nanoid: https://registry.npmjs.org/nanoid/-/nanoid-3.3.20.tgz — `sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==`
+- source-map-js: https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz — `sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==`
+
+本次没有导入价格、排行榜、第三方视觉或代码片段。安全检查结果与实际安装版本记录在 PHASE_4_RECORD.md。
