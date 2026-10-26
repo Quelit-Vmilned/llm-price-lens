@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T14:31:26.578Z",
+  "generatedAt": "2026-10-26T20:06:36.343Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -4297,6 +4297,35 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "openai/gpt-6.1-terra",
+      "provider": "OpenAI",
+      "displayName": "GPT-6.1 Terra",
+      "apiModelIds": [
+        "gpt-6.1-terra"
+      ],
+      "aliases": [
+        "GPT",
+        "ChatGPT"
+      ],
+      "tags": [
+        "gpt-terra"
+      ],
+      "summary": "Fast, efficient model for visual reasoning, precise computer use, and clear, natural writing.",
+      "inputPerMillionUsd": 1,
+      "outputPerMillionUsd": 5,
+      "cachedInputPerMillionUsd": 0.05,
+      "contextWindow": 1050000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-10-26T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
