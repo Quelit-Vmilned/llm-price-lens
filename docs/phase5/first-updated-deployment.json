@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-10-26T07:19:22.123Z",
+  "site": "https://quelit-vmilned.github.io/llm-price-lens/",
+  "release": {
+    "phase": 5,
+    "version": "0.5.0",
+    "sourceCommit": "051bffb6d1a4f560643a085f0ebba6be8e92297c",
+    "dataMode": "imported",
+    "dataGeneratedAt": "2026-10-26T07:16:08.988Z",
+    "recordCount": 190,
+    "dataSha256": "b059d2a9abb1768b96c05215999808d7f0360891d8b32269e30a51d5cf3eab88",
+    "qualityReportSha256": "746bd1be204b7f4bda5335028b540e551efb437c45abba166bf75fb5abaf131e"
+  },
+  "runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-10-26T07:13:31Z",
+      "databaseId": 40284479212,
+      "event": "pull_request",
+      "headSha": "10415fce88ffbae8de03095a11b4a270bde524a8",
+      "status": "completed",
+      "updatedAt": "2026-10-26T07:13:48Z",
+      "url": "https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284479212"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-10-26T07:14:41Z",
+      "databaseId": 40284601967,
+      "event": "push",
+      "headSha": "09365e64cd7fb737a6cd0fecfc57350f3db279ce",
+      "status": "completed",
+      "updatedAt": "2026-10-26T07:14:57Z",
+      "url": "https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284601967"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-10-26T07:14:41Z",
+      "databaseId": 40284601976,
+      "event": "push",
+      "headSha": "09365e64cd7fb737a6cd0fecfc57350f3db279ce",
+      "status": "completed",
+      "updatedAt": "2026-10-26T07:15:12Z",
+      "url": "https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284601976"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-10-26T07:15:54Z",
+      "databaseId": 40284732651,
+      "event": "workflow_dispatch",
+      "headSha": "09365e64cd7fb737a6cd0fecfc57350f3db279ce",
+      "status": "completed",
+      "updatedAt": "2026-10-26T07:16:21Z",
+      "url": "https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284732651"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-10-26T07:16:17Z",
+      "databaseId": 40284774425,
+      "event": "workflow_dispatch",
+      "headSha": "051bffb6d1a4f560643a085f0ebba6be8e92297c",
+      "status": "completed",
+      "updatedAt": "2026-10-26T07:17:07Z",
+      "url": "https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284774425"
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-10-26T07:16:55Z",
+      "databaseId": 40284836251,
+      "event": "workflow_dispatch",
+      "headSha": "051bffb6d1a4f560643a085f0ebba6be8e92297c",
+      "status": "completed",
+      "updatedAt": "2026-10-26T07:17:10Z",
+      "url": "https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284836251"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/prices.json",
+      "sha256": "b059d2a9abb1768b96c05215999808d7f0360891d8b32269e30a51d5cf3eab88",
+      "matches": true
+    },
+    {
+      "path": "data/quality-report.json",
+      "sha256": "746bd1be204b7f4bda5335028b540e551efb437c45abba166bf75fb5abaf131e",
+      "matches": true
+    }
+  ],
+  "noChangeCheck": {
+    "runId": 40284836251,
+    "changed": false,
+    "httpStatus": 304,
+    "mainHeadAfterCheck": "051bffb6d1a4f560643a085f0ebba6be8e92297c",
+    "syncTimePreserved": "2026-10-26T07:16:08.988Z"
+  },
+  "screenshot": "live-updated-desktop.png"
+}

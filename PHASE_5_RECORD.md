@@ -2,6 +2,8 @@
 
 版本：`0.5.0`。日期：2026-10-26（Asia/Shanghai）。
 
+状态：已上线，完整设计功能与更新流程已验收；价格覆盖与历史评测边界见下文。
+
 用户要求开始 Phase 5、接入实际数据、验证更新、完成既有设计并上线 GitHub Pages。用户进一步明确批准 models.dev 价格和 DeepSeek-R1 历史评测来源方案。后台处理按原设计采用 GitHub Actions，前端消费生成的静态 JSON；不新增运行时服务、API 密钥、付费模型调用或依赖。
 
 ## 交付
@@ -58,4 +60,11 @@ Benchmark 是 DeepSeek 固定报告自述的 AIME 2024 Pass@1 (%)，不是当前
 
 ## 线上证据
 
-待发布门禁、GitHub Actions 更新与公开网站验证完成后在此补充实际运行 URL、源 SHA、数据 hash 和结果。
+- [实现 PR #2](https://github.com/Quelit-Vmilned/llm-price-lens/pull/2)，候选提交 `10415fce88ffbae8de03095a11b4a270bde524a8`；[PR CI](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284479212) SUCCESS。
+- 首次上线 main：`09365e64cd7fb737a6cd0fecfc57350f3db279ce`。15:14:39 +08:00 合并；[main CI](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284601967) 与 [首次部署](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284601976) SUCCESS。线上完整源 SHA、190 条价格与质量报告哈希均通过验证；浏览器显示正确版本，既有环境保护未修改。
+- [真实刷新任务](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284732651) SUCCESS，`force=true`，实际从许可来源重取并校验。生成时间 `2026-10-26T07:16:08.988Z`（15:16:08 +08:00）；自动创建提交 `051bffb6d1a4f560643a085f0ebba6be8e92297c`，只改动 prices.generated.json 与 quality-report.json。这次源价格未变，仅成功快照时间刷新，不将其描述为厂商价格变动。
+- 更新任务自动 dispatch 的 [后续部署](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284774425) SUCCESS；全套安装、类型检查、98 项测试、构建、哈希/许可校验、审计、main 保护和线上验证再次通过。
+- [普通无变化检查](https://github.com/Quelit-Vmilned/llm-price-lens/actions/runs/40284836251) SUCCESS，`changed=false`，HTTP 304；未提交、未部署、未改写生成时间。检查后 main 仍为 `051bffb`。
+- 本机运行 `GITHUB_SHA=051bffb6d1a4f560643a085f0ebba6be8e92297c node scripts/verify-deployment.mjs` PASS。公开价格 SHA256：`b059d2a9abb1768b96c05215999808d7f0360891d8b32269e30a51d5cf3eab88`；公开质量报告 SHA256：`746bd1be204b7f4bda5335028b540e551efb437c45abba166bf75fb5abaf131e`，与源文件及 release.json 一致。
+- 公开页面实测中文搜索获得两条 DeepSeek 记录，Flash 默认工作量 $0.27，页脚 Build 051bffb、最后同步 15:16:08 均正确；[更新后截图](docs/phase5/live-updated-desktop.png)。
+- 结构化证据：[first-updated-deployment.json](docs/phase5/first-updated-deployment.json)。本记录描述首次上线与真实更新验收；后续文档提交或正常数据更新的当前版本，以公开 release.json 与 Actions 为准。
