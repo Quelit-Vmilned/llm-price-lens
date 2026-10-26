@@ -15,6 +15,11 @@ describe("format", () => {
     expect(formatUsd(0)).toBe("$0.00");
   });
 
+  it("does not round a positive tiny estimate down to a free price", () => {
+    expect(formatUsd(0.000003)).toBe("<$0.0001");
+    expect(formatUsd(0.0001)).toBe("$0.0001");
+  });
+
   it("formats dates and invalid dates", () => {
     expect(formatDate("2026-08-01T00:00:00Z")).toBe("2026-08-01");
     expect(formatDate("2026-08-01T08:00:00+08:00")).toBe("2026-08-01");

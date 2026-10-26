@@ -1,6 +1,6 @@
 # llm-price-lens Architecture
 
-状态：Phase 3.1 Hardening。已完成 Phase 1 工程初始化、Phase 2 数据基座、Phase 2.5 收尾与 Phase 3 静态前端 MVP，并完成发布加固：前端消费经过校验的示例价格数据，支持价格展示、Fuse.js 模糊搜索、排序、示例成本计算器、响应式与可访问性；许可证随 `public/licenses/` 进入构建产物。生产价格数据仍为示例占位；真实数据同步和上游变更检查尚未实现。
+状态：Phase 4 发布候选（v0.4.0）。本版继续消费经过校验的 5 条示例模型数据；加入源提交标识、过期部署拒绝和线上版本验证，并修复前端与依赖问题。验收证据见 PHASE_4_RECORD.md。真实价格、真实 Benchmark 与自动同步按本阶段用户要求暂不接入。
 
 ## 1. 总体架构
 
@@ -30,7 +30,7 @@
 └── vite.config.ts
 ```
 
-以上为当前目录规划；`scripts/` 与 `public/` 在后续阶段按需创建。
+这是总体目录规划。Phase 4 已创建 `scripts/` 用于构建与部署验证，`public/licenses/` 用于分发许可证；数据同步脚本和质量报告尚未实现。
 
 ## 3. 数据同步流程
 
@@ -98,6 +98,15 @@ cost =
 - 只有校验、测试和构建全部成功后才能部署。
 - 不写入 API Key；没有 secret 时不伪造外部 API 接入。
 - 页面展示最后一次成功同步时间，而不是工作流计划时间。
+
+Phase 4 发布实现：
+
+- Vite `base: "./"`；构建输出 `release.json`，包含 phase、version、sourceCommit 和 dataMode。
+- 顶部持续显示示例提示；页脚显示 Phase 4、v0.4.0 和短提交号。示例快照日期不标作真实同步时间。
+- CI 与发布运行安装、类型检查、测试、构建、产物验证与 npm audit。
+- `pages` concurrency 使用 `cancel-in-progress: true`；产物上传前与 environment 审批后均比较源提交和远程 main，阻止过期构建部署。
+- 部署后运行 `verify-deployment.mjs`，要求线上完整 SHA 与本次提交一致，并检查 HTML、JS、CSS 和许可证索引可访问。CDN 传播最多等待 12 次，仍不一致则失败。
+- 历史工作流不包含上述保护，恢复时使用当前 main 的 workflow_dispatch。
 
 ## 8. 失败回退策略
 

@@ -45,6 +45,8 @@ const elements = {
   costResult: document.querySelector<HTMLOutputElement>("#cost-result")!,
   costForm: document.querySelector<HTMLFormElement>("#cost-form")!,
   dataFooter: document.querySelector<HTMLParagraphElement>("#data-footer")!,
+  releaseStatus: document.querySelector<HTMLParagraphElement>("#release-status")!,
+  workloadError: document.querySelector<HTMLParagraphElement>("#workload-error")!,
 };
 
 let dataset!: PriceDataset;
@@ -90,7 +92,7 @@ function modelCell(model: ModelPrice): HTMLDivElement {
 
   const id = document.createElement("span");
   id.className = "model-id";
-  id.textContent = [model.modelId, ...model.apiModelIds].join(" / ");
+  id.textContent = [...new Set([model.modelId, ...model.apiModelIds])].join(" / ");
 
   wrapper.append(name, id);
   return wrapper;
@@ -101,8 +103,17 @@ function benchmarkCell(model: ModelPrice): HTMLDivElement {
   wrapper.className = "benchmark-cell";
 
   const score = document.createElement("span");
-  score.textContent = formatScore(model.benchmarkScore);
+  score.textContent = model.benchmarkScore === null && model.benchmarkRank !== null
+    ? "Score Unknown"
+    : formatScore(model.benchmarkScore);
   wrapper.append(score);
+
+  if (model.benchmarkRank !== null) {
+    const rank = document.createElement("span");
+    rank.className = "cell-meta";
+    rank.textContent = `Rank ${model.benchmarkRank}`;
+    wrapper.append(rank);
+  }
 
   if (model.benchmarkSource) {
     const source = document.createElement("span");
@@ -195,12 +206,12 @@ function renderDatasetStatus(): void {
       dataset.warnings[0] ?? "No model data yet.";
     return;
   }
-  elements.datasetStatus.textContent = `${dataset.models.length} models / generated ${formatDate(dataset.generatedAt)}`;
+  elements.datasetStatus.textContent = `${dataset.models.length} sample models / sample snapshot ${formatDate(dataset.generatedAt)} / live sync not connected`;
 }
 
 function renderFooter(): void {
   const warning = dataset.warnings[0] ?? "No warnings";
-  elements.dataFooter.textContent = `Generated ${formatDate(dataset.generatedAt)} / ${warning}`;
+  elements.dataFooter.textContent = `Sample snapshot ${formatDate(dataset.generatedAt)} / ${warning}`;
 }
 
 function selectedModel(): ModelPrice | undefined {
@@ -282,6 +293,11 @@ function bindEvents(): void {
       inputTokens: readTokenCount(elements.inputTokens),
       outputTokens: readTokenCount(elements.outputTokens),
     };
+    const invalidInput = state.workload.inputTokens === null;
+    const invalidOutput = state.workload.outputTokens === null;
+    elements.inputTokens.setAttribute("aria-invalid", String(invalidInput));
+    elements.outputTokens.setAttribute("aria-invalid", String(invalidOutput));
+    elements.workloadError.hidden = !invalidInput && !invalidOutput;
     render();
   };
 
@@ -305,7 +321,12 @@ function renderDataError(message: string): void {
   elements.calculatorModel.replaceChildren();
   elements.costResult.textContent = "Unknown";
   elements.dataFooter.textContent = "Price data validation failed.";
+  elements.costForm.querySelectorAll("input, select").forEach((control) => {
+    (control as HTMLInputElement | HTMLSelectElement).disabled = true;
+  });
 }
+
+elements.releaseStatus.textContent = `Phase 4 · v${__APP_VERSION__} · Build ${__BUILD_COMMIT__.slice(0, 7)}`;
 
 if (priceDataset === null) {
   renderDataError(priceDatasetError ?? "Price data validation failed.");

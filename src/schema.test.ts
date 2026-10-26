@@ -116,6 +116,14 @@ describe("modelPriceSchema", () => {
     }
   });
 
+  it("rejects non-finite numeric data before it reaches display and sorting", () => {
+    for (const field of ["inputPerMillionUsd", "outputPerMillionUsd", "cachedInputPerMillionUsd", "benchmarkScore"] as const) {
+      for (const value of [NaN, Infinity, -Infinity]) {
+        expect(modelPriceSchema.safeParse({ ...validModel, [field]: value }).success).toBe(false);
+      }
+    }
+  });
+
   it("rejects non-positive or non-integer contextWindow and benchmarkRank", () => {
     for (const field of ["contextWindow", "benchmarkRank"] as const) {
       expect(

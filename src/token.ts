@@ -6,7 +6,7 @@ export function parseTokenCount(raw: string): number | null {
 
   const value = Number(trimmed);
   return Number.isFinite(value) &&
-    Number.isInteger(value) &&
+    Number.isSafeInteger(value) &&
     value >= 0
     ? value
     : null;
