@@ -89,11 +89,26 @@ main,
   color: var(--muted);
 }
 
-.sample-notice {
+.data-notice {
   margin: 0.5rem 0;
   color: var(--accent-strong);
   font-weight: 600;
 }
+
+.data-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.data-section h2 { font-size: 1.1rem; }
+.data-section p, .data-warnings { overflow-wrap: anywhere; }
+.data-warnings { padding-left: 1.25rem; color: var(--muted); font-size: 0.875rem; }
+.data-warnings li + li { margin-top: 0.5rem; }
+summary { cursor: pointer; font-weight: 600; padding-block: 0.5rem; }
+.benchmark-table { width: 100%; border-collapse: collapse; }
+.benchmark-table caption { text-align: left; padding-block: 0.5rem; }
+.benchmark-table th, .benchmark-table td { text-align: left; padding: 0.5rem; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
 
 .field-help,
 .field-error {

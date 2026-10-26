@@ -1,0 +1,302 @@
+{
+  "checkedAt": "2026-10-26T06:55:44.268Z",
+  "search": [
+    {
+      "query": "深度求索",
+      "count": 2,
+      "empty": "No model data yet.",
+      "tableHidden": false
+    },
+    {
+      "query": "谷歌",
+      "count": 19,
+      "empty": "No model data yet.",
+      "tableHidden": false
+    },
+    {
+      "query": "克劳德",
+      "count": 17,
+      "empty": "No model data yet.",
+      "tableHidden": false
+    },
+    {
+      "query": "便宜",
+      "count": 1,
+      "empty": "No model data yet.",
+      "tableHidden": false
+    },
+    {
+      "query": "写代码",
+      "count": 2,
+      "empty": "No model data yet.",
+      "tableHidden": false
+    },
+    {
+      "query": "sonet",
+      "count": 6,
+      "empty": "No model data yet.",
+      "tableHidden": false
+    },
+    {
+      "query": "zzzz-no-such-model-99999",
+      "count": 0,
+      "empty": "No matches.",
+      "tableHidden": true
+    },
+    {
+      "query": "",
+      "count": 190,
+      "empty": "No matches.",
+      "tableHidden": false
+    }
+  ],
+  "providers": [
+    {
+      "provider": "openai",
+      "count": 33,
+      "pressed": [
+        "openai"
+      ],
+      "providers": [
+        "OpenAI"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "count": 17,
+      "pressed": [
+        "anthropic"
+      ],
+      "providers": [
+        "Anthropic"
+      ]
+    },
+    {
+      "provider": "google",
+      "count": 19,
+      "pressed": [
+        "google"
+      ],
+      "providers": [
+        "Google"
+      ]
+    },
+    {
+      "provider": "deepseek",
+      "count": 2,
+      "pressed": [
+        "deepseek"
+      ],
+      "providers": [
+        "DeepSeek"
+      ]
+    },
+    {
+      "provider": "open-models",
+      "count": 87,
+      "pressed": [
+        "open-models"
+      ],
+      "providers": [
+        "Groq",
+        "Cohere",
+        "Together AI",
+        "Mistral",
+        "Alibaba",
+        "DeepSeek",
+        "Google",
+        "Z.AI",
+        "Moonshot AI",
+        "MiniMax (minimax.io)"
+      ]
+    },
+    {
+      "provider": "all",
+      "count": 190,
+      "pressed": [
+        "all"
+      ],
+      "providers": [
+        "Groq",
+        "Cohere",
+        "Together AI",
+        "Anthropic",
+        "Mistral",
+        "OpenAI",
+        "Alibaba",
+        "DeepSeek",
+        "Google",
+        "Z.AI",
+        "xAI",
+        "Moonshot AI",
+        "MiniMax (minimax.io)"
+      ]
+    }
+  ],
+  "sorts": [
+    {
+      "sort": "name-asc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "name-desc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "input-asc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "input-desc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "output-asc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "output-desc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "cost-asc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "cost-desc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "benchmark-asc",
+      "rows": 190,
+      "valid": true
+    },
+    {
+      "sort": "benchmark-desc",
+      "rows": 190,
+      "valid": true
+    }
+  ],
+  "calculator": [
+    {
+      "case": "DeepSeek base workload",
+      "actual": "$0.27",
+      "expected": "$0.27"
+    },
+    {
+      "case": "input 0",
+      "actual": "$0.00",
+      "invalid": "false",
+      "errorVisible": false
+    },
+    {
+      "case": "input empty",
+      "actual": "Unknown",
+      "invalid": "true",
+      "errorVisible": true
+    },
+    {
+      "case": "input -1",
+      "actual": "Unknown",
+      "invalid": "true",
+      "errorVisible": true
+    },
+    {
+      "case": "input 1.5",
+      "actual": "Unknown",
+      "invalid": "true",
+      "errorVisible": true
+    },
+    {
+      "case": "input 9007199254740992",
+      "actual": "Unknown",
+      "invalid": "true",
+      "errorVisible": true
+    },
+    {
+      "case": "groq/allam-2-7b",
+      "actual": "$0.00"
+    },
+    {
+      "case": "cohere/c4ai-aya-vision-32b",
+      "actual": "Unknown"
+    }
+  ],
+  "viewports": [
+    {
+      "benchmarkWidth": 288,
+      "modelLayout": "grid",
+      "overflow": false,
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "benchmarkWidth": 358,
+      "modelLayout": "grid",
+      "overflow": false,
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "benchmarkWidth": 728,
+      "modelLayout": "grid",
+      "overflow": false,
+      "scrollWidth": 760,
+      "width": 760
+    },
+    {
+      "benchmarkWidth": 788,
+      "modelLayout": "table-row",
+      "overflow": false,
+      "scrollWidth": 820,
+      "width": 820
+    },
+    {
+      "benchmarkWidth": 992,
+      "modelLayout": "table-row",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    {
+      "benchmarkWidth": 1216,
+      "modelLayout": "table-row",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ],
+  "benchmark": {
+    "rows": [
+      "deepseek-r179.81",
+      "o1-121779.22",
+      "o1-mini63.63",
+      "deepseek-v339.24",
+      "claude-3.5-sonnet-1022165",
+      "gpt-4o-05139.36"
+    ],
+    "status": "AIME 2024 Pass@1 (%) · Captured 2026-10-26 · 0 current endpoints matched. Historical, self-reported results; ranks apply only within this six-model snapshot. Unmatched endpoints show No benchmark data."
+  },
+  "dark": {
+    "background": "rgb(20, 25, 29)",
+    "overflow": false
+  },
+  "keyboard": {
+    "first": {
+      "id": "",
+      "tag": "A",
+      "text": "Skip to main content"
+    },
+    "afterSkip": "main-content",
+    "afterTab": "model-search"
+  },
+  "console": []
+}

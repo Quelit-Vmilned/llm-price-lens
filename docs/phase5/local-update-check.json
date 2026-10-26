@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-26T07:11:08.605Z",
+  "results": [
+    {
+      "attempt": 1,
+      "result": {
+        "changed": true,
+        "reason": "Source or local inputs changed",
+        "recordCount": 190,
+        "generatedAt": "2026-10-26T07:11:08.180Z",
+        "payloadSha256": "4f62486317f9d4bcba42851c9622d89bec552bb070da0d504978215a638ac7a2"
+      },
+      "before": {
+        "data/prices.generated.json": "44124957b1765cd7f98e81472b4dd4cac82a05037c9d35a968679e89957ce542",
+        "data/quality-report.json": "96ca21e4f61414acddb3329dd4549eb2e5ca2a961a7aeeb6c7cfe673f3fb0e8e"
+      },
+      "after": {
+        "data/prices.generated.json": "dbea4b372ec9775639e8d36cf4e5d8eccb5b5170be75892f6c92777f877be7ae",
+        "data/quality-report.json": "713b10262bfe6c1bcf3da18ef5a15d46313579f995de89cb9a24676cbaf34863"
+      },
+      "unchanged": false
+    },
+    {
+      "attempt": 2,
+      "result": {
+        "changed": false,
+        "reason": "HTTP 304; upstream and local inputs unchanged",
+        "recordCount": 190,
+        "generatedAt": "2026-10-26T07:11:08.180Z"
+      },
+      "before": {
+        "data/prices.generated.json": "dbea4b372ec9775639e8d36cf4e5d8eccb5b5170be75892f6c92777f877be7ae",
+        "data/quality-report.json": "713b10262bfe6c1bcf3da18ef5a15d46313579f995de89cb9a24676cbaf34863"
+      },
+      "after": {
+        "data/prices.generated.json": "dbea4b372ec9775639e8d36cf4e5d8eccb5b5170be75892f6c92777f877be7ae",
+        "data/quality-report.json": "713b10262bfe6c1bcf3da18ef5a15d46313579f995de89cb9a24676cbaf34863"
+      },
+      "unchanged": true
+    },
+    {
+      "attempt": 3,
+      "result": {
+        "changed": false,
+        "reason": "HTTP 304; upstream and local inputs unchanged",
+        "recordCount": 190,
+        "generatedAt": "2026-10-26T07:11:08.180Z"
+      },
+      "before": {
+        "data/prices.generated.json": "dbea4b372ec9775639e8d36cf4e5d8eccb5b5170be75892f6c92777f877be7ae",
+        "data/quality-report.json": "713b10262bfe6c1bcf3da18ef5a15d46313579f995de89cb9a24676cbaf34863"
+      },
+      "after": {
+        "data/prices.generated.json": "dbea4b372ec9775639e8d36cf4e5d8eccb5b5170be75892f6c92777f877be7ae",
+        "data/quality-report.json": "713b10262bfe6c1bcf3da18ef5a15d46313579f995de89cb9a24676cbaf34863"
+      },
+      "unchanged": true
+    }
+  ]
+}

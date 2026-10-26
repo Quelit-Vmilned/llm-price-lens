@@ -1,0 +1,29 @@
+{
+  "name": "models.dev",
+  "url": "https://models.dev/api.json",
+  "repository": "https://github.com/anomalyco/models.dev",
+  "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
+  "license": "MIT",
+  "licenseUrl": "https://raw.githubusercontent.com/anomalyco/models.dev/dev/LICENSE",
+  "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
+  "providers": [
+    "openai", "anthropic", "google", "deepseek", "xai", "mistral", "cohere",
+    "alibaba", "moonshotai", "minimax", "zai", "groq", "togetherai"
+  ],
+  "requiredProviders": ["openai", "anthropic", "google", "deepseek"],
+  "providerAliases": {
+    "openai": ["GPT", "ChatGPT"],
+    "anthropic": ["Claude", "克劳德"],
+    "google": ["Gemini", "谷歌", "双子座"],
+    "deepseek": ["深度求索"],
+    "xai": ["Grok"],
+    "mistral": ["密斯特拉尔"],
+    "cohere": ["Command"],
+    "alibaba": ["阿里", "通义千问", "千问", "Qwen"],
+    "moonshotai": ["月之暗面", "Kimi"],
+    "minimax": ["海螺"],
+    "zai": ["智谱", "GLM"],
+    "groq": ["Groq"],
+    "togetherai": ["Together AI"]
+  }
+}

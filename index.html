@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Phase 4 preview of llm-price-lens. Explore sample model prices, search, sorting and token cost estimates. No live pricing data." />
-    <title>llm-price-lens · Phase 4</title>
+    <meta name="description" content="Compare community-maintained LLM API token prices, search models and estimate base text-token costs. Scheduled source checks with visible provenance and sync dates." />
+    <title>llm-price-lens · Phase 5</title>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <h1>llm-price-lens</h1>
-      <p class="sample-notice">Phase 4 · Sample data only. <span lang="zh-CN">示例数据，非真实价格与评测。</span></p>
+      <p class="data-notice">Phase 5 · Imported model prices. <span lang="zh-CN">真实来源价格，定期检查更新。</span></p>
       <p id="dataset-status" class="dataset-status" aria-live="polite"></p>
     </header>
     <main id="main-content" tabindex="-1">
@@ -90,8 +90,26 @@
             <output id="cost-result" aria-live="polite">Unknown</output>
           </div>
         </form>
-        <p id="workload-help" class="field-help">Enter whole token counts, 0 or more. Missing prices produce an Unknown estimate.</p>
+        <p id="workload-help" class="field-help">Enter whole token counts, 0 or more. Missing prices produce an Unknown estimate. Estimates use base text-token rates; tiered context pricing, tools, audio, images and taxes are excluded.</p>
         <p id="workload-error" class="field-error" role="status" hidden>Enter a whole token count between 0 and 9,007,199,254,740,991 in both fields.</p>
+      </section>
+      <section class="data-section" aria-labelledby="data-heading">
+        <h2 id="data-heading">Data sources &amp; coverage</h2>
+        <p>Prices are imported from <a href="https://models.dev/" target="_blank" rel="noopener noreferrer">models.dev</a> under the MIT license. “Imported” means schema-validated; provider pricing has not been independently verified. Model update dates are supplied by the source and may differ from price update dates.</p>
+        <ul id="data-warnings" class="data-warnings"></ul>
+        <p><a href="./data/prices.json">Download prices</a> · <a href="./data/quality-report.json">Data quality report</a> · <a href="https://github.com/Quelit-Vmilned/llm-price-lens/actions/workflows/sync.yml" target="_blank" rel="noopener noreferrer">Update runs</a></p>
+        <details>
+          <summary>Historical benchmark snapshot</summary>
+          <p id="benchmark-status"></p>
+          <p><a id="benchmark-source" target="_blank" rel="noopener noreferrer">Benchmark source</a> · <a href="./data/benchmark-snapshot.json">Download snapshot</a></p>
+          <div class="table-scroll" role="region" aria-label="Historical AIME benchmark snapshot" tabindex="0">
+            <table class="benchmark-table">
+              <caption>AIME 2024 Pass@1 (%) · historical six-model snapshot</caption>
+              <thead><tr><th scope="col">Exact model version</th><th scope="col">Benchmark score</th><th scope="col">Snapshot rank</th></tr></thead>
+              <tbody id="benchmark-rows"></tbody>
+            </table>
+          </div>
+        </details>
       </section>
     </main>
     <footer class="site-footer">
@@ -99,7 +117,7 @@
       <p id="release-status"></p>
       <p><a href="./licenses/">Third-party licenses</a></p>
     </footer>
-    <noscript>This preview needs JavaScript to display its sample data and calculator.</noscript>
+    <noscript>Enable JavaScript for search and the calculator, or <a href="./data/prices.json">download the price dataset</a>.</noscript>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
