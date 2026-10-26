@@ -20,7 +20,13 @@ assert.match(html, /Imported model prices/);
 assert.doesNotMatch(html, /Sample data only/);
 const assets = [...html.matchAll(/(?:src|href)="(\.\/assets\/[^"?#]+)"/g)];
 assert.ok(assets.length >= 2, "The page must use relative JS and CSS assets.");
-for (const [, asset] of assets) assert.ok(existsSync(resolve("dist", asset)));
+assert.equal(hash("dist/index.html"), release.pageSha256, "The release must identify the final HTML page.");
+for (const [, asset] of assets) assert.ok(release.assetSha256[asset.slice(2)], `Missing release hash for ${asset}`);
+for (const [path, expectedHash] of Object.entries(release.assetSha256)) {
+  assert.match(path, /^assets\/[A-Za-z0-9_.-]+\.(?:js|css)$/);
+  assert.match(expectedHash, /^[a-f0-9]{64}$/);
+  assert.equal(hash(`dist/${path}`), expectedHash, `Release hash mismatch for ${path}`);
+}
 
 const dataset = priceDatasetSchema.parse(JSON.parse(read("dist/data/prices.json")));
 const report = qualityReportSchema.parse(JSON.parse(read("dist/data/quality-report.json")));

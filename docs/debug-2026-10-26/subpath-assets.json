@@ -1,0 +1,67 @@
+[
+  {
+    "path": "",
+    "status": 200,
+    "bytes": 7510
+  },
+  {
+    "path": "data/prices.json",
+    "status": 200,
+    "bytes": 162766
+  },
+  {
+    "path": "data/quality-report.json",
+    "status": 200,
+    "bytes": 17480
+  },
+  {
+    "path": "data/benchmark-snapshot.json",
+    "status": 200,
+    "bytes": 922
+  },
+  {
+    "path": "licenses/",
+    "status": 200,
+    "bytes": 1262
+  },
+  {
+    "path": "licenses/deepseek-r1-MIT-LICENSE.txt",
+    "status": 200,
+    "bytes": 1064
+  },
+  {
+    "path": "licenses/fuse-js-APACHE-2.0-LICENSE.txt",
+    "status": 200,
+    "bytes": 11343
+  },
+  {
+    "path": "licenses/models-dev-MIT-LICENSE.txt",
+    "status": 200,
+    "bytes": 1067
+  },
+  {
+    "path": "licenses/typescript-APACHE-2.0-LICENSE.txt",
+    "status": 200,
+    "bytes": 9197
+  },
+  {
+    "path": "licenses/typescript-NOTICE.txt",
+    "status": 200,
+    "bytes": 48860
+  },
+  {
+    "path": "licenses/vite-MIT-LICENSE.txt",
+    "status": 200,
+    "bytes": 112425
+  },
+  {
+    "path": "licenses/vitest-MIT-LICENSE.txt",
+    "status": 200,
+    "bytes": 37726
+  },
+  {
+    "path": "licenses/zod-MIT-LICENSE.txt",
+    "status": 200,
+    "bytes": 1072
+  }
+]

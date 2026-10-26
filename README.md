@@ -2,7 +2,7 @@
 
 A lightweight static website for comparing LLM API token prices.
 
-Status: Phase 5 published (`v0.5.0`). The frontend consumes validated prices imported from models.dev, with search, provider filters, sorting, a base token cost calculator, responsive layout, and accessible controls. GitHub Actions checks the source around every 30 minutes, publishes successful changes, and verifies the exact deployed revision and data hashes. The public [release identity](https://quelit-vmilned.github.io/llm-price-lens/release.json) and [quality report](https://quelit-vmilned.github.io/llm-price-lens/data/quality-report.json) identify the published snapshot. Acceptance is recorded in [PHASE_5_RECORD.md](PHASE_5_RECORD.md).
+Status: Phase 5, current application version `v0.5.1`. The frontend consumes validated prices imported from models.dev, with search, provider filters, sorting, a base token cost calculator, responsive layout, and accessible controls. GitHub Actions checks the source around every 30 minutes, publishes successful changes, and verifies the exact deployed revision and page, asset and data hashes. The public [release identity](https://quelit-vmilned.github.io/llm-price-lens/release.json) and [quality report](https://quelit-vmilned.github.io/llm-price-lens/data/quality-report.json) identify the published snapshot. Initial acceptance is recorded in [PHASE_5_RECORD.md](PHASE_5_RECORD.md); deployment integrity changes are recorded in [RELEASE_0_5_1.md](RELEASE_0_5_1.md).
 
 Prices are community-maintained imports, not independently verified quotations from each provider. Missing values remain `Unknown`; zero remains a real zero. Estimates use USD base text-token rates and exclude long-context tiers, tools, audio/images, taxes and other charges. Benchmark scores are a separately displayed, historical six-model AIME 2024 snapshot self-reported by DeepSeek; they are never assigned to different model versions. Current endpoints have no exact match to those retired versions and show `No benchmark data`.
 
@@ -40,7 +40,7 @@ An unchanged check (including HTTP 304) retains files and the last successful da
 
 Run `npm ci`, `npm run typecheck`, `npm test`, `npm run build`, `npm run verify:build`, and `npm audit --audit-level=low`. Check desktop/mobile layouts, keyboard navigation, dark mode, search, filters, sorting, calculator inputs, and no-result behavior in a browser. Push the reviewed revision to `main`, or dispatch deployment on current `main`.
 
-Deployment rejects a revision that no longer matches `main`, including after the GitHub environment approval gate, then verifies the live release identity, page and assets. Keep environment approval requirements in place. For recovery, use the current `main` workflow; historical Phase 2/3 workflows predate the revision guard.
+Deployment rejects a revision that no longer matches `main`, including after the GitHub environment approval gate, then verifies the live release identity and SHA256 of the HTML, all JS/CSS assets, data and report. HTTP 200 with stale content or an error page fails verification. Keep environment approval requirements in place. For recovery, use the current `main` workflow; historical Phase 2/3 workflows predate the revision guard.
 
 ## Phase Records
 
@@ -50,3 +50,5 @@ Deployment rejects a revision that no longer matches `main`, including after the
 - [`PHASE_3_1_RECORD.md`](PHASE_3_1_RECORD.md) records the Phase 3.1 hardening changes and verification results.
 - [`PHASE_4_RECORD.md`](PHASE_4_RECORD.md) records fixes, validation, release evidence, and the sample-data limitation.
 - [`PHASE_5_RECORD.md`](PHASE_5_RECORD.md) records real data integration, update/rollback tests, and online evidence.
+- [`DEBUG_AUDIT_2026-10-26.md`](DEBUG_AUDIT_2026-10-26.md) records the completion audit, deployment integrity fix, regression tests, and remaining coverage limits.
+- [`RELEASE_0_5_1.md`](RELEASE_0_5_1.md) records the v0.5.1 patch scope, release checks and verification procedure.

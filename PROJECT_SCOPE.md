@@ -4,7 +4,7 @@
 
 项目类型：轻量纯静态网站，用于查询世界主流大语言模型 API 的 token 价格。
 
-状态：Phase 5（v0.5.0）已上线并完成真实更新验收。用户已授权真实数据接入、检查更新并发布到 GitHub Pages，且明确批准 models.dev 价格与 DeepSeek-R1 历史评测来源。按原设计通过 Actions 实现后台数据流水线，浏览器消费校验后的静态快照；实现和验收见 PHASE_5_RECORD.md。Phase 4 示例版本作为历史保留。
+状态：Phase 5 已上线并完成真实更新验收，当前应用版本 v0.5.1。用户已授权真实数据接入、检查更新并发布到 GitHub Pages，且明确批准 models.dev 价格与 DeepSeek-R1 历史评测来源；本次另行授权将调试修复上线。按原设计通过 Actions 实现后台数据流水线，浏览器消费校验后的静态快照；初次实现和验收见 PHASE_5_RECORD.md，部署内容校验补丁见 RELEASE_0_5_1.md。Phase 4 示例版本作为历史保留。
 
 ## 1. MVP 范围
 

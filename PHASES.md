@@ -11,6 +11,7 @@
 | Phase 3.1 | 示例数据、错误态、许可证分发、输入与可访问性加固 | 同属 `8a89693`；[记录](PHASE_3_1_RECORD.md) | 历史实现，旧推送状态已校正 |
 | Phase 4 | 前端调试、安全更新、部署版本一致性、浏览器验收、上线确认和阶段整理 | [Phase 4 记录](PHASE_4_RECORD.md)；线上 `release.json` 与 Actions | 已上线并验收，v0.4.0，仅示例数据 |
 | Phase 5 | 真实价格、许可来源、规范化/覆盖/校验/质量报告、历史评测、自动更新与失败保留、Pages 上线 | [Phase 5 记录](PHASE_5_RECORD.md)；sync.yml、release.json、公开数据/报告 | 已上线并完成更新验收，v0.5.0 |
+| Phase 5 补丁 | 调试审计与部署 HTML/JS/CSS 内容哈希验证 | [审计记录](DEBUG_AUDIT_2026-10-26.md)、[v0.5.1 说明](RELEASE_0_5_1.md) | 当前应用版本 v0.5.1；线上版本由公开 release.json 与 Actions 标识 |
 
 ## Phase 4 验收口径
 

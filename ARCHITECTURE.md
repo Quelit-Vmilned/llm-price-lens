@@ -1,6 +1,6 @@
 # llm-price-lens Architecture
 
-状态：Phase 5（v0.5.0）已上线并通过更新验收。已用 models.dev 真实价格替换页面示例数据，加入经过许可审计的手动历史评测快照、质量报告、失败保留和约 30 分钟更新检查。用户所称后台接入按既有 Actions 静态数据流水线实现；未新增常驻服务。Phase 4 为历史示例版本，当前验收见 PHASE_5_RECORD.md。
+状态：Phase 5 已上线并通过更新验收，当前应用版本 v0.5.1。已用 models.dev 真实价格替换页面示例数据，加入经过许可审计的手动历史评测快照、质量报告、失败保留和约 30 分钟更新检查。v0.5.1 增加最终页面和全部 JS/CSS 的发布内容哈希验证，补丁说明见 RELEASE_0_5_1.md。用户所称后台接入按既有 Actions 静态数据流水线实现；未新增常驻服务。Phase 4 为历史示例版本，初次验收见 PHASE_5_RECORD.md。
 
 ## 1. 总体架构
 
@@ -107,11 +107,11 @@ Phase 5 经用户批准人工摘录 MIT 许可的 DeepSeek-R1 固定 README 中�
 
 当前发布实现（继承 Phase 4 保护）：
 
-- Vite `base: "./"`；构建输出 `release.json`，包含 phase、version、sourceCommit、dataMode、dataGeneratedAt、recordCount 和数据/报告 SHA256；发布可下载静态 JSON。
-- 顶部显示真实来源价格与最后成功同步时间；页脚显示 Phase 5、v0.5.0 和短提交号；数据超过 24 小时显示快照年龄提示。
+- Vite `base: "./"`；构建输出 `release.json`，包含 phase、version、sourceCommit、dataMode、dataGeneratedAt、recordCount、数据/报告 SHA256，以及最终 HTML 和 JS/CSS 资源 SHA256；发布可下载静态 JSON。
+- 顶部显示真实来源价格与最后成功同步时间；页脚显示 Phase 5、应用版本和短提交号；数据超过 24 小时显示快照年龄提示。
 - CI 与发布运行安装、类型检查、测试、构建、产物验证与 npm audit。
 - `pages` concurrency 使用 `cancel-in-progress: true`；产物上传前与 environment 审批后均比较源提交和远程 main，阻止过期构建部署。
-- 部署后运行 `verify-deployment.mjs`，要求线上完整 SHA 与本次提交一致，并检查 HTML、JS、CSS 和许可证索引可访问。CDN 传播最多等待 12 次，仍不一致则失败。
+- 部署后运行 `verify-deployment.mjs`，要求线上完整 SHA 与本次提交一致，并逐一校验 HTML、全部 JS/CSS、数据及报告的内容哈希，检查许可证索引可访问。HTTP 200 返回旧页面或错误资源仍会失败。CDN 传播最多等待 12 次，仍不一致则失败。
 - 历史工作流不包含上述保护，恢复时使用当前 main 的 workflow_dispatch。
 - `sync.yml` 在每小时第 7/37 分钟或手动触发，以最小的 contents:write/actions:write 权限提交校验通过的两个生成文件，并显式 dispatch deploy.yml；无变更不提交不部署，失败停止。并发 main 更新使非 fast-forward 推送失败，禁止重置或覆盖新代码。部署后同时核验线上源 SHA 和数据/报告哈希。
 

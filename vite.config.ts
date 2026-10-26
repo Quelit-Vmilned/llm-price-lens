@@ -26,7 +26,19 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [{
       name: "release-identity",
-      async generateBundle() {
+      enforce: "post",
+      async generateBundle(_, bundle) {
+        const page = bundle["index.html"];
+        if (page?.type !== "asset" || typeof page.source !== "string") {
+          throw new Error("Release identity requires the final HTML page.");
+        }
+        const assetSha256 = Object.fromEntries(await Promise.all(
+          Object.entries(bundle)
+            .filter(([path]) => path.startsWith("assets/") && /\.(?:js|css)$/.test(path))
+            .map(async ([path, asset]) => [path, await sha256(asset.type === "chunk"
+              ? asset.code
+              : typeof asset.source === "string" ? asset.source : new TextDecoder().decode(asset.source))]),
+        ));
         const datasetText = JSON.stringify(generatedPrices, null, 2) + "\n";
         const reportText = JSON.stringify(generatedReport, null, 2) + "\n";
         const benchmarkText = JSON.stringify(benchmark, null, 2) + "\n";
@@ -51,6 +63,8 @@ export default defineConfig(({ mode }) => {
             recordCount: dataset.models.length,
             dataSha256: await sha256(datasetText),
             qualityReportSha256: await sha256(reportText),
+            pageSha256: await sha256(page.source),
+            assetSha256,
           }, null, 2) + "\n",
         });
       },
