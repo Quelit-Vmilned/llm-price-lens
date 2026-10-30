@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T00:14:12.344Z",
+  "generatedAt": "2026-10-30T06:21:06.267Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -3032,9 +3032,37 @@
         "mistral-large"
       ],
       "summary": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
-      "inputPerMillionUsd": 1.36,
-      "outputPerMillionUsd": 4.18,
-      "cachedInputPerMillionUsd": 0.14,
+      "inputPerMillionUsd": 0.7,
+      "outputPerMillionUsd": 2.1,
+      "cachedInputPerMillionUsd": 0.07,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-10-06T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "mistral/mistral-large-4-0-8",
+      "provider": "Mistral",
+      "displayName": "Mistral Large 4.0.8",
+      "apiModelIds": [
+        "mistral-large-4-0-8"
+      ],
+      "aliases": [
+        "密斯特拉尔"
+      ],
+      "tags": [
+        "mistral-large"
+      ],
+      "summary": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
+      "inputPerMillionUsd": 0.7,
+      "outputPerMillionUsd": 2.1,
+      "cachedInputPerMillionUsd": 0.07,
       "contextWindow": 1048576,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
