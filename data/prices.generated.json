@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T06:32:01.738Z",
+  "generatedAt": "2026-11-03T14:36:33.813Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -2741,7 +2741,8 @@
         "海螺"
       ],
       "tags": [
-        "minimax"
+        "minimax",
+        "open-weights"
       ],
       "summary": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
       "inputPerMillionUsd": 0.15,
