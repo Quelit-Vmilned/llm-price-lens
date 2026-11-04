@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T16:10:30.659Z",
-  "inputHash": "8e24f07c875763c4cf0171643f0d96513d58f03a8a5b8bf5e51464f9e26c0102",
+  "generatedAt": "2026-11-04T22:07:11.438Z",
+  "inputHash": "9a8eeb7f52d9cf69f7c377944a148f551b6fc0134dfd2aebe3ba15772b2340dc",
   "sourceCount": 1,
   "providerCount": 13,
-  "recordCount": 193,
+  "recordCount": 194,
   "sources": [
     {
       "name": "models.dev",
@@ -13,8 +13,8 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "be8cedc0674a419058a690f904d3b18cba99025842f4b37fa9477fe046504a16",
-      "etag": "W/\"be8cedc0674a419058a690f904d3b18c\"",
+      "payloadSha256": "39571da26aa558d728a398f603e2f4d632c2c1e56a53ba338291b329019f163d",
+      "etag": "W/\"39571da26aa558d728a398f603e2f4d6\"",
       "lastModified": null
     }
   ],
@@ -24,8 +24,8 @@
     "cachedInputPerMillionUsd": 46,
     "contextWindow": 0,
     "sourceUpdatedAt": 3,
-    "verifiedAt": 193,
-    "benchmarkScore": 193
+    "verifiedAt": 194,
+    "benchmarkScore": 194
   },
   "excluded": [
     {
