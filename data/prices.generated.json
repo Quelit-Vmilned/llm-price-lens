@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T10:17:57.790Z",
+  "generatedAt": "2026-11-09T21:01:37.328Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -931,6 +931,35 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-09-01T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "anthropic/claude-fable-5-2",
+      "provider": "Anthropic",
+      "displayName": "Claude Fable 5.2",
+      "apiModelIds": [
+        "claude-fable-5-2"
+      ],
+      "aliases": [
+        "Claude",
+        "克劳德"
+      ],
+      "tags": [
+        "claude-fable"
+      ],
+      "summary": "Claude model for demanding reasoning and long-horizon agentic work",
+      "inputPerMillionUsd": 8,
+      "outputPerMillionUsd": 40,
+      "cachedInputPerMillionUsd": 0.2,
+      "contextWindow": 1000000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-09T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
