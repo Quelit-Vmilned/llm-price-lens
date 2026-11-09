@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T02:36:13.999Z",
+  "generatedAt": "2026-11-09T10:17:57.790Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -3468,7 +3468,8 @@
         "Kimi"
       ],
       "tags": [
-        "kimi-k3"
+        "kimi-k3",
+        "open-weights"
       ],
       "summary": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
       "inputPerMillionUsd": 2,
@@ -3497,7 +3498,8 @@
         "Kimi"
       ],
       "tags": [
-        "kimi-k3"
+        "kimi-k3",
+        "open-weights"
       ],
       "summary": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
       "inputPerMillionUsd": 4,
@@ -4748,7 +4750,8 @@
         "Together AI"
       ],
       "tags": [
-        "kimi-k3"
+        "kimi-k3",
+        "open-weights"
       ],
       "summary": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
       "inputPerMillionUsd": 2,
