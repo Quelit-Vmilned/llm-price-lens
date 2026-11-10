@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T21:01:37.328Z",
+  "generatedAt": "2026-11-10T03:25:59.901Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -3500,7 +3500,7 @@
         "kimi-k3",
         "open-weights"
       ],
-      "summary": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+      "summary": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
       "inputPerMillionUsd": 2,
       "outputPerMillionUsd": 10,
       "cachedInputPerMillionUsd": 0.2,
@@ -3530,7 +3530,7 @@
         "kimi-k3",
         "open-weights"
       ],
-      "summary": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+      "summary": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
       "inputPerMillionUsd": 4,
       "outputPerMillionUsd": 20,
       "cachedInputPerMillionUsd": 0.2,
@@ -4782,7 +4782,7 @@
         "kimi-k3",
         "open-weights"
       ],
-      "summary": "Multimodal Kimi model with 1M context and always-on reasoning for coding, 3D creation, financial research, and agentic work",
+      "summary": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
       "inputPerMillionUsd": 2,
       "outputPerMillionUsd": 10,
       "cachedInputPerMillionUsd": 0.2,
