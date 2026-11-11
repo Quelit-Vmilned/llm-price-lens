@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T00:34:55.917Z",
-  "inputHash": "0ec6893fff31a6b6c5432cc4c54c686efdc680c41e0040cc398c8343f5ebec93",
+  "generatedAt": "2026-11-11T07:02:18.616Z",
+  "inputHash": "b7a05d9512fc5c4d3b974aebcc7d11023e596d80e55c1f9a1a9a5fd70b1ad212",
   "sourceCount": 1,
   "providerCount": 13,
-  "recordCount": 196,
+  "recordCount": 194,
   "sources": [
     {
       "name": "models.dev",
@@ -13,8 +13,8 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "8e22ffdf885cf64d56225acdae6029a61b9d126fa0dbacf2e650d0d52cef3ea1",
-      "etag": "W/\"8e22ffdf885cf64d56225acdae6029a6\"",
+      "payloadSha256": "1ef5d9546bd3b32bd4123d226f4a422df3b717970f90103e5ba3fad8106c751b",
+      "etag": "W/\"1ef5d9546bd3b32bd4123d226f4a422d\"",
       "lastModified": null
     }
   ],
@@ -24,8 +24,8 @@
     "cachedInputPerMillionUsd": 46,
     "contextWindow": 0,
     "sourceUpdatedAt": 3,
-    "verifiedAt": 196,
-    "benchmarkScore": 196
+    "verifiedAt": 194,
+    "benchmarkScore": 194
   },
   "excluded": [
     {
@@ -126,6 +126,14 @@
     },
     {
       "modelId": "alibaba/qwq-plus",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "anthropic/claude-sonnet-4-5",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "anthropic/claude-sonnet-4-5-20250929",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {

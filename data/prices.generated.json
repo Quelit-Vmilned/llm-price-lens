@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T00:34:55.917Z",
+  "generatedAt": "2026-11-11T07:02:18.616Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -1250,64 +1250,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-09-22T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "anthropic/claude-sonnet-4-5",
-      "provider": "Anthropic",
-      "displayName": "Claude Sonnet 4.5 (latest)",
-      "apiModelIds": [
-        "claude-sonnet-4-5"
-      ],
-      "aliases": [
-        "Claude",
-        "克劳德"
-      ],
-      "tags": [
-        "claude-sonnet"
-      ],
-      "summary": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
-      "inputPerMillionUsd": 3,
-      "outputPerMillionUsd": 15,
-      "cachedInputPerMillionUsd": 0.3,
-      "contextWindow": 200000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-09-29T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "anthropic/claude-sonnet-4-5-20250929",
-      "provider": "Anthropic",
-      "displayName": "Claude Sonnet 4.5",
-      "apiModelIds": [
-        "claude-sonnet-4-5-20250929"
-      ],
-      "aliases": [
-        "Claude",
-        "克劳德"
-      ],
-      "tags": [
-        "claude-sonnet"
-      ],
-      "summary": "Balanced Claude model for coding, analysis, agent workflows, and cost control",
-      "inputPerMillionUsd": 3,
-      "outputPerMillionUsd": 15,
-      "cachedInputPerMillionUsd": 0.3,
-      "contextWindow": 200000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-09-29T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
