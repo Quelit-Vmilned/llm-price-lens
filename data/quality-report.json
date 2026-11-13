@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T18:49:31.539Z",
-  "inputHash": "43e15e88a7a41a83c72f2d8911059322a8a67a6d7aea799a5b1eb2c381386ef5",
+  "generatedAt": "2026-11-13T00:08:49.873Z",
+  "inputHash": "4711b92b85803bd7556663e84808933d9ef56f18c5261c81043b88490ba4fd3d",
   "sourceCount": 1,
   "providerCount": 13,
   "recordCount": 195,
@@ -13,14 +13,14 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "9bbabafe1bc53b5712b38565a8252c9ec9ed5c3cda1202cc9251bbbba1493d00",
-      "etag": "W/\"9bbabafe1bc53b5712b38565a8252c9e\"",
+      "payloadSha256": "d8d6a6c7d851b6985de7651fd2fa87355b0896b43dc170e923eb7f4ebb97d065",
+      "etag": "W/\"d8d6a6c7d851b6985de7651fd2fa8735\"",
       "lastModified": null
     }
   ],
   "missingFields": {
-    "inputPerMillionUsd": 7,
-    "outputPerMillionUsd": 7,
+    "inputPerMillionUsd": 5,
+    "outputPerMillionUsd": 5,
     "cachedInputPerMillionUsd": 46,
     "contextWindow": 0,
     "sourceUpdatedAt": 3,
@@ -199,10 +199,6 @@
     {
       "modelId": "google/gemini-embedding-2",
       "reason": "Embedding, reranking or speech billing is outside token comparison"
-    },
-    {
-      "modelId": "google/gemini-omni-flash-preview",
-      "reason": "Not a text-input/text-output model"
     },
     {
       "modelId": "google/lyria-3-clip-preview",
