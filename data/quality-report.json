@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T20:37:32.848Z",
-  "inputHash": "b01ea020a1bebf885b371831a51a7451200f5035e8b9127dbea1b8dbf07825ac",
+  "generatedAt": "2026-11-15T00:58:15.025Z",
+  "inputHash": "cefb00b43345a036481df2a4ae5b556d66533eec57bd7e1c0ae8e3e86f43deee",
   "sourceCount": 1,
   "providerCount": 13,
   "recordCount": 195,
@@ -13,8 +13,8 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "725298272fcf93b22e4fc453a69a3f99c249dd330a342138d652e24651875b32",
-      "etag": "W/\"725298272fcf93b22e4fc453a69a3f99\"",
+      "payloadSha256": "75d7f8b39c5f4eeaa2c91bd65ab6da7ee0695a5ca439e0ae125b52a704b6051b",
+      "etag": "W/\"75d7f8b39c5f4eeaa2c91bd65ab6da7e\"",
       "lastModified": null
     }
   ],
@@ -199,6 +199,10 @@
     {
       "modelId": "google/gemini-embedding-2",
       "reason": "Embedding, reranking or speech billing is outside token comparison"
+    },
+    {
+      "modelId": "google/gemini-omni-flash-preview",
+      "reason": "Not a text-input/text-output model"
     },
     {
       "modelId": "google/lyria-3-clip-preview",
