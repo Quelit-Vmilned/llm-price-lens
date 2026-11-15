@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T07:46:10.721Z",
-  "inputHash": "0508370fc4775fd99a49428275daeedebfc38dd14d67c478ae49a62777b07f77",
+  "generatedAt": "2026-11-15T15:35:40.369Z",
+  "inputHash": "464395cd7f7f058682e3a2802d59a7882f2d6a97c67d5f84714f4b7ebc707e87",
   "sourceCount": 1,
   "providerCount": 13,
   "recordCount": 195,
@@ -13,8 +13,8 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "8109d24d0d424266b610e96a1af76b8a3cc7e2da7c0bf12df1359c3a2c86f641",
-      "etag": "W/\"8109d24d0d424266b610e96a1af76b8a\"",
+      "payloadSha256": "9fabd07856d8107b1a4df7eec63ea4feee8ae0eb08703e53f285b8c06ee899bf",
+      "etag": "W/\"9fabd07856d8107b1a4df7eec63ea4fe\"",
       "lastModified": null
     }
   ],
