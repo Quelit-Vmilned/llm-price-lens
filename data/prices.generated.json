@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T09:03:42.549Z",
+  "generatedAt": "2026-11-18T17:56:49.337Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -4416,6 +4416,64 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-10-26T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "openai/gpt-6.2-astra",
+      "provider": "OpenAI",
+      "displayName": "GPT-6.2 Astra",
+      "apiModelIds": [
+        "gpt-6.2-astra"
+      ],
+      "aliases": [
+        "GPT",
+        "ChatGPT"
+      ],
+      "tags": [
+        "gpt-astra"
+      ],
+      "summary": "A frontier reasoning model for coding, computer use, and professional work such as slides, spreadsheets, and documents.",
+      "inputPerMillionUsd": 8,
+      "outputPerMillionUsd": 40,
+      "cachedInputPerMillionUsd": 0.4,
+      "contextWindow": 1050000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-17T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "openai/gpt-6.2-sol",
+      "provider": "OpenAI",
+      "displayName": "GPT-6.2 Sol",
+      "apiModelIds": [
+        "gpt-6.2-sol"
+      ],
+      "aliases": [
+        "GPT",
+        "ChatGPT"
+      ],
+      "tags": [
+        "gpt-sol"
+      ],
+      "summary": "An efficient reasoning model for everyday work, multistep agentic workflows, and coding.",
+      "inputPerMillionUsd": 2,
+      "outputPerMillionUsd": 10,
+      "cachedInputPerMillionUsd": 0.1,
+      "contextWindow": 1050000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-17T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
