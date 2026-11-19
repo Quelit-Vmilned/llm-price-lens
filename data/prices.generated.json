@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-18T17:56:49.337Z",
+  "generatedAt": "2026-11-19T00:14:50.916Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -2371,6 +2371,36 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-11-12T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "google/gemini-4-neon",
+      "provider": "Google",
+      "displayName": "Gemini 4 Neon",
+      "apiModelIds": [
+        "gemini-4-neon"
+      ],
+      "aliases": [
+        "Gemini",
+        "谷歌",
+        "双子座"
+      ],
+      "tags": [
+        "gemini"
+      ],
+      "summary": "Google's Gemini 4 model for fast, frontier-level coding, knowledge work and science workflows, with four thinking levels and a 1M-token context window",
+      "inputPerMillionUsd": 3,
+      "outputPerMillionUsd": 15,
+      "cachedInputPerMillionUsd": 0.15,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-18T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
