@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T22:37:21.285Z",
+  "generatedAt": "2026-11-21T03:53:16.788Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -80,7 +80,7 @@
         "Qwen"
       ],
       "tags": [
-        "kimi-k3",
+        "kimi",
         "open-weights"
       ],
       "summary": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
@@ -112,7 +112,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-flash"
       ],
       "summary": "Efficient Qwen model for fast chat, extraction, and high-volume workloads",
       "inputPerMillionUsd": 0.05,
@@ -143,7 +143,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-max"
       ],
       "summary": "Flagship Qwen model for complex reasoning, coding, and agentic workflows",
       "inputPerMillionUsd": 1.6,
@@ -174,7 +174,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-mt-plus"
       ],
       "summary": "Translation model for multilingual conversion, localization, and cross-language workflows",
       "inputPerMillionUsd": 2.46,
@@ -205,7 +205,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-plus"
       ],
       "summary": "Qwen instruction model for multilingual chat, reasoning, and tool use",
       "inputPerMillionUsd": 0.4,
@@ -236,7 +236,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-plus"
       ],
       "summary": "Qwen instruction model for multilingual chat, reasoning, and tool use",
       "inputPerMillionUsd": 0.5,
@@ -267,7 +267,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-vl"
       ],
       "summary": "OCR model for extracting structured text from documents and screenshots",
       "inputPerMillionUsd": 0.07,
@@ -298,7 +298,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-coder-flash"
       ],
       "summary": "Qwen coding model for software agents, repository edits, and code reasoning",
       "inputPerMillionUsd": 0.3,
@@ -329,7 +329,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen",
+        "qwen-vl",
         "open-weights"
       ],
       "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
@@ -361,7 +361,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-vl-plus"
       ],
       "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "inputPerMillionUsd": 0.2,
@@ -520,7 +520,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-flash"
       ],
       "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "inputPerMillionUsd": 0.1,
@@ -551,7 +551,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-plus"
       ],
       "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "inputPerMillionUsd": 0.4,
@@ -646,7 +646,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen3.6"
+        "qwen-flash"
       ],
       "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "inputPerMillionUsd": 0.25,
@@ -677,7 +677,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-plus"
       ],
       "summary": "Earlier Qwen multimodal workhorse for million-token agent and document tasks",
       "inputPerMillionUsd": 0.5,
@@ -708,7 +708,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-flash"
       ],
       "summary": "Lightweight multimodal Qwen model for high-throughput text, image, and video tasks",
       "inputPerMillionUsd": 0.03,
@@ -739,7 +739,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-max"
       ],
       "summary": "Qwen frontier model tuned for agent frameworks, coding assistants, and long tasks",
       "inputPerMillionUsd": 2.5,
@@ -770,7 +770,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-plus"
       ],
       "summary": "Multimodal Qwen workhorse for long-context agents, visual inputs, and coding",
       "inputPerMillionUsd": 0.4,
@@ -801,7 +801,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-flash"
       ],
       "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
       "inputPerMillionUsd": 0.15,
@@ -832,7 +832,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-max"
       ],
       "summary": "2.4-trillion-parameter MoE flagship for coding, professional work, multimodal understanding, and long-horizon agentic workflows",
       "inputPerMillionUsd": 2,
@@ -863,7 +863,7 @@
         "Qwen"
       ],
       "tags": [
-        "qwen"
+        "qwen-omni-flash"
       ],
       "summary": "Qwen omni model for text, vision, audio, and multimodal agent tasks",
       "inputPerMillionUsd": 0.15,
@@ -1355,6 +1355,7 @@
         "Command"
       ],
       "tags": [
+        "aya",
         "open-weights"
       ],
       "summary": "Open multilingual model optimized for generation across 23 languages",
@@ -1383,6 +1384,7 @@
         "Command"
       ],
       "tags": [
+        "aya-vision",
         "open-weights"
       ],
       "summary": "Open multilingual vision model for OCR, visual reasoning, and image question answering",
@@ -1440,7 +1442,7 @@
         "Command"
       ],
       "tags": [
-        "command-a",
+        "command-a-plus",
         "open-weights"
       ],
       "summary": "Cohere's stronger command model for multilingual agents and enterprise workflows",
@@ -1585,7 +1587,7 @@
         "Command"
       ],
       "tags": [
-        "command-r",
+        "command-r-plus",
         "open-weights"
       ],
       "summary": "Cohere's RAG workhorse for long-context enterprise search and tool use",
@@ -1672,7 +1674,7 @@
         "Command"
       ],
       "tags": [
-        "north",
+        "north-mini",
         "open-weights"
       ],
       "summary": "Cohere coding model for practical software engineering and agentic edits",
@@ -1701,7 +1703,7 @@
         "Command"
       ],
       "tags": [
-        "north",
+        "north-small",
         "open-weights"
       ],
       "summary": "Open-weight translation model for more than 50 languages and locale variants",
@@ -1730,6 +1732,7 @@
         "Command"
       ],
       "tags": [
+        "aya-tiny",
         "open-weights"
       ],
       "summary": "Compact multilingual model specialized for West Asian and African languages",
@@ -1758,6 +1761,7 @@
         "Command"
       ],
       "tags": [
+        "aya-tiny",
         "open-weights"
       ],
       "summary": "Compact multilingual model specialized for South Asian languages",
@@ -1786,6 +1790,7 @@
         "Command"
       ],
       "tags": [
+        "aya-tiny",
         "open-weights"
       ],
       "summary": "Compact multilingual model balanced across 70 languages and regions",
@@ -1814,6 +1819,7 @@
         "Command"
       ],
       "tags": [
+        "aya-tiny",
         "open-weights"
       ],
       "summary": "Compact multilingual model specialized for European and Asia-Pacific languages",
@@ -1880,7 +1886,7 @@
         "深度求索"
       ],
       "tags": [
-        "deepseek-thinking",
+        "deepseek-pro",
         "open-weights"
       ],
       "summary": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
@@ -1911,7 +1917,7 @@
         "双子座"
       ],
       "tags": [
-        "gemini-pro"
+        "gemini-computer-use"
       ],
       "summary": "Specialized Gemini 2.5 model for browser-control agents that automate UI tasks",
       "inputPerMillionUsd": 1.25,
@@ -2571,6 +2577,7 @@
         "Groq"
       ],
       "tags": [
+        "allam",
         "open-weights"
       ],
       "summary": "ALLaM-2-7b instruction tuned model by SDAIA",
@@ -2599,7 +2606,7 @@
         "Groq"
       ],
       "tags": [
-        "llama",
+        "llama-prompt-guard",
         "open-weights"
       ],
       "summary": "Safety model for policy screening, moderation, and risk-aware routing workflows",
@@ -2628,7 +2635,7 @@
         "Groq"
       ],
       "tags": [
-        "llama",
+        "llama-prompt-guard",
         "open-weights"
       ],
       "summary": "Safety model for policy screening, moderation, and risk-aware routing workflows",
@@ -2715,7 +2722,7 @@
         "Groq"
       ],
       "tags": [
-        "gpt-oss",
+        "gpt-oss-safeguard",
         "open-weights"
       ],
       "summary": "Safety model for policy screening, moderation, and risk-aware routing workflows",
@@ -2773,7 +2780,7 @@
         "海螺"
       ],
       "tags": [
-        "minimax",
+        "minimax-m",
         "open-weights"
       ],
       "summary": "MiniMax multimodal model for long-context coding, perception, and agent planning",
@@ -2802,7 +2809,7 @@
         "海螺"
       ],
       "tags": [
-        "minimax",
+        "minimax-m-flash",
         "open-weights"
       ],
       "summary": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
@@ -3291,7 +3298,7 @@
         "密斯特拉尔"
       ],
       "tags": [
-        "voxtral",
+        "voxtral-small",
         "open-weights"
       ],
       "summary": "Instruct model with native audio input for speech understanding and tool use",
@@ -3320,7 +3327,7 @@
         "密斯特拉尔"
       ],
       "tags": [
-        "voxtral",
+        "voxtral-small",
         "open-weights"
       ],
       "summary": "Instruct model with native audio input for speech understanding and tool use",
@@ -3408,7 +3415,7 @@
         "Kimi"
       ],
       "tags": [
-        "kimi-k2",
+        "kimi",
         "open-weights"
       ],
       "summary": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
@@ -3438,7 +3445,7 @@
         "Kimi"
       ],
       "tags": [
-        "kimi-k2",
+        "kimi-code",
         "open-weights"
       ],
       "summary": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
@@ -3468,7 +3475,7 @@
         "Kimi"
       ],
       "tags": [
-        "kimi-k2",
+        "kimi-code",
         "open-weights"
       ],
       "summary": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
@@ -3498,7 +3505,7 @@
         "Kimi"
       ],
       "tags": [
-        "kimi-k3",
+        "kimi",
         "open-weights"
       ],
       "summary": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
@@ -3528,7 +3535,7 @@
         "Kimi"
       ],
       "tags": [
-        "kimi-k3",
+        "kimi-pro",
         "open-weights"
       ],
       "summary": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
@@ -3558,7 +3565,7 @@
         "Kimi"
       ],
       "tags": [
-        "kimi-k3",
+        "kimi-pro",
         "open-weights"
       ],
       "summary": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
@@ -4638,7 +4645,7 @@
         "Together AI"
       ],
       "tags": [
-        "minimax",
+        "minimax-m",
         "open-weights"
       ],
       "summary": "MiniMax multimodal model for long-context coding, perception, and agent planning",
@@ -4696,7 +4703,7 @@
         "Together AI"
       ],
       "tags": [
-        "qwen"
+        "qwen-plus"
       ],
       "summary": "Earlier Qwen multimodal workhorse for million-token agent and document tasks",
       "inputPerMillionUsd": 0.5,
@@ -4724,7 +4731,7 @@
         "Together AI"
       ],
       "tags": [
-        "qwen"
+        "qwen-max"
       ],
       "summary": "Qwen frontier model tuned for agent frameworks, coding assistants, and long tasks",
       "inputPerMillionUsd": 2.5,
@@ -4752,7 +4759,7 @@
         "Together AI"
       ],
       "tags": [
-        "deepseek-thinking",
+        "deepseek-pro",
         "open-weights"
       ],
       "summary": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
@@ -4810,7 +4817,7 @@
         "Together AI"
       ],
       "tags": [
-        "muse",
+        "muse-spark",
         "open-weights"
       ],
       "summary": "Muse Spark Open is an 816B total / 42B active open-weight multimodal reasoning model from Meta for coding and long-horizon agentic work, with 1M-token context.",
@@ -4839,7 +4846,7 @@
         "Together AI"
       ],
       "tags": [
-        "kimi-k3",
+        "kimi",
         "open-weights"
       ],
       "summary": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
@@ -4868,7 +4875,7 @@
         "Together AI"
       ],
       "tags": [
-        "kimi-k3",
+        "kimi-pro",
         "open-weights"
       ],
       "summary": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
@@ -4897,7 +4904,7 @@
         "Together AI"
       ],
       "tags": [
-        "nemotron",
+        "nemotron-super",
         "open-weights"
       ],
       "summary": "NVIDIA vision-language reasoning model for text, image, and video understanding and agentic tool use",
@@ -4984,7 +4991,7 @@
         "Together AI"
       ],
       "tags": [
-        "ling",
+        "inkling",
         "open-weights"
       ],
       "summary": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
@@ -5386,7 +5393,7 @@
         "GLM"
       ],
       "tags": [
-        "glm",
+        "glmv",
         "open-weights"
       ],
       "summary": "GLM vision model for visual reasoning, documents, and multimodal agents",
@@ -5446,7 +5453,7 @@
         "GLM"
       ],
       "tags": [
-        "glm",
+        "glmv",
         "open-weights"
       ],
       "summary": "GLM vision model for visual reasoning, documents, and multimodal agents",
@@ -5476,7 +5483,7 @@
         "GLM"
       ],
       "tags": [
-        "glm-flash",
+        "glmv-flash",
         "open-weights"
       ],
       "summary": "Lightweight GLM vision model for visual reasoning, documents, and multimodal agents",
@@ -5626,7 +5633,7 @@
         "GLM"
       ],
       "tags": [
-        "glm"
+        "glm-turbo"
       ],
       "summary": "Faster GLM-5 lane for coding agents that need lower latency",
       "inputPerMillionUsd": 1.2,
@@ -5805,7 +5812,7 @@
         "GLM"
       ],
       "tags": [
-        "glm"
+        "glmv-turbo"
       ],
       "summary": "Fast GLM vision model for screenshots, documents, and multimodal agent tasks",
       "inputPerMillionUsd": 1.2,
