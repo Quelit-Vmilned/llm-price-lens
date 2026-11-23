@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T10:39:22.235Z",
+  "generatedAt": "2026-11-23T22:33:31.269Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -1905,66 +1905,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "google/gemini-2.5-computer-use-preview-10-2025",
-      "provider": "Google",
-      "displayName": "Gemini 2.5 Computer Use Preview 10-2025",
-      "apiModelIds": [
-        "gemini-2.5-computer-use-preview-10-2025"
-      ],
-      "aliases": [
-        "Gemini",
-        "谷歌",
-        "双子座"
-      ],
-      "tags": [
-        "gemini-computer-use"
-      ],
-      "summary": "Specialized Gemini 2.5 model for browser-control agents that automate UI tasks",
-      "inputPerMillionUsd": 1.25,
-      "outputPerMillionUsd": 10,
-      "cachedInputPerMillionUsd": null,
-      "contextWindow": 128000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-10-07T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "google/gemini-2.5-flash",
-      "provider": "Google",
-      "displayName": "Gemini 2.5 Flash",
-      "apiModelIds": [
-        "gemini-2.5-flash"
-      ],
-      "aliases": [
-        "Gemini",
-        "谷歌",
-        "双子座"
-      ],
-      "tags": [
-        "gemini-flash"
-      ],
-      "summary": "Fast Gemini workhorse for multimodal apps where latency and price matter",
-      "inputPerMillionUsd": 0.3,
-      "outputPerMillionUsd": 2.5,
-      "cachedInputPerMillionUsd": 0.03,
-      "contextWindow": 1048576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-06-17T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "google/gemini-2.5-flash-lite",
       "provider": "Google",
       "displayName": "Gemini 2.5 Flash-Lite",
@@ -1983,36 +1923,6 @@
       "inputPerMillionUsd": 0.1,
       "outputPerMillionUsd": 0.4,
       "cachedInputPerMillionUsd": 0.01,
-      "contextWindow": 1048576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-06-17T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "google/gemini-2.5-pro",
-      "provider": "Google",
-      "displayName": "Gemini 2.5 Pro",
-      "apiModelIds": [
-        "gemini-2.5-pro"
-      ],
-      "aliases": [
-        "Gemini",
-        "谷歌",
-        "双子座"
-      ],
-      "tags": [
-        "gemini-pro"
-      ],
-      "summary": "Google's proven reasoning model for coding, math, and multimodal analysis",
-      "inputPerMillionUsd": 1.25,
-      "outputPerMillionUsd": 10,
-      "cachedInputPerMillionUsd": 0.125,
       "contextWindow": 1048576,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
@@ -2047,36 +1957,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2025-12-17T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "google/gemini-3.1-flash-lite",
-      "provider": "Google",
-      "displayName": "Gemini 3.1 Flash Lite",
-      "apiModelIds": [
-        "gemini-3.1-flash-lite"
-      ],
-      "aliases": [
-        "Gemini",
-        "谷歌",
-        "双子座"
-      ],
-      "tags": [
-        "gemini-flash-lite"
-      ],
-      "summary": "Low-latency Gemini model for high-volume multimodal and agent workloads",
-      "inputPerMillionUsd": 0.25,
-      "outputPerMillionUsd": 1.5,
-      "cachedInputPerMillionUsd": 0.025,
-      "contextWindow": 1048576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-05-07T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -2145,36 +2025,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "google/gemini-3.5-flash",
-      "provider": "Google",
-      "displayName": "Gemini 3.5 Flash",
-      "apiModelIds": [
-        "gemini-3.5-flash"
-      ],
-      "aliases": [
-        "Gemini",
-        "谷歌",
-        "双子座"
-      ],
-      "tags": [
-        "gemini-flash"
-      ],
-      "summary": "Fast Gemini model balancing multimodal reasoning, tool use, and cost",
-      "inputPerMillionUsd": 1.5,
-      "outputPerMillionUsd": 9,
-      "cachedInputPerMillionUsd": 0.15,
-      "contextWindow": 1048576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-05-19T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "google/gemini-3.5-flash-lite",
       "provider": "Google",
       "displayName": "Gemini 3.5 Flash Lite",
@@ -2227,36 +2077,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-07-21T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "google/gemini-3.7-flash",
-      "provider": "Google",
-      "displayName": "Gemini 3.7 Flash",
-      "apiModelIds": [
-        "gemini-3.7-flash"
-      ],
-      "aliases": [
-        "Gemini",
-        "谷歌",
-        "双子座"
-      ],
-      "tags": [
-        "gemini-flash"
-      ],
-      "summary": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
-      "inputPerMillionUsd": 0.75,
-      "outputPerMillionUsd": 3.75,
-      "cachedInputPerMillionUsd": 0.075,
-      "contextWindow": 1048576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-08-13T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -2429,14 +2249,14 @@
       "tags": [
         "gemini-flash"
       ],
-      "summary": "High-efficiency Gemini model for agentic workflows, coding, and multimodal reasoning",
+      "summary": "Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows",
       "inputPerMillionUsd": 0.75,
       "outputPerMillionUsd": 3.75,
       "cachedInputPerMillionUsd": 0.075,
       "contextWindow": 1048576,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-08-13T00:00:00Z",
+      "sourceUpdatedAt": "2026-09-02T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -2943,6 +2763,35 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "mistral/ministral-14b-latest",
+      "provider": "Mistral",
+      "displayName": "Ministral 3 14B (latest)",
+      "apiModelIds": [
+        "ministral-14b-latest"
+      ],
+      "aliases": [
+        "密斯特拉尔"
+      ],
+      "tags": [
+        "ministral",
+        "open-weights"
+      ],
+      "summary": "Open vision-language model for efficient local deployment, instruction following, and tool use",
+      "inputPerMillionUsd": 0.2,
+      "outputPerMillionUsd": 0.2,
+      "cachedInputPerMillionUsd": 0.02,
+      "contextWindow": 262144,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2025-12-02T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "mistral/ministral-3b-2512",
       "provider": "Mistral",
       "displayName": "Ministral 3 3B",
@@ -2974,7 +2823,7 @@
     {
       "modelId": "mistral/ministral-3b-latest",
       "provider": "Mistral",
-      "displayName": "Ministral 3B (latest)",
+      "displayName": "Ministral 3 3B (latest)",
       "apiModelIds": [
         "ministral-3b-latest"
       ],
@@ -2985,14 +2834,14 @@
         "ministral",
         "open-weights"
       ],
-      "summary": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
+      "summary": "Compact open vision-language model for edge deployment, instruction following, and tool use",
       "inputPerMillionUsd": 0.1,
       "outputPerMillionUsd": 0.1,
       "cachedInputPerMillionUsd": 0.01,
       "contextWindow": 131072,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2024-10-04T00:00:00Z",
+      "sourceUpdatedAt": "2025-12-02T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -3032,7 +2881,7 @@
     {
       "modelId": "mistral/ministral-8b-latest",
       "provider": "Mistral",
-      "displayName": "Ministral 8B (latest)",
+      "displayName": "Ministral 3 8B (latest)",
       "apiModelIds": [
         "ministral-8b-latest"
       ],
@@ -3043,39 +2892,10 @@
         "ministral",
         "open-weights"
       ],
-      "summary": "Compact Mistral model for edge, latency-sensitive, and cost-efficient workloads",
+      "summary": "Compact open vision-language model for edge deployment, instruction following, and tool use",
       "inputPerMillionUsd": 0.15,
       "outputPerMillionUsd": 0.15,
       "cachedInputPerMillionUsd": 0.015,
-      "contextWindow": 262144,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2024-10-04T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "mistral/mistral-large-2512",
-      "provider": "Mistral",
-      "displayName": "Mistral Large 3",
-      "apiModelIds": [
-        "mistral-large-2512"
-      ],
-      "aliases": [
-        "密斯特拉尔"
-      ],
-      "tags": [
-        "mistral-large",
-        "open-weights"
-      ],
-      "summary": "Mistral's largest general model for enterprise agents, coding, and multilingual reasoning",
-      "inputPerMillionUsd": 0.5,
-      "outputPerMillionUsd": 1.5,
-      "cachedInputPerMillionUsd": 0.05,
       "contextWindow": 262144,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
@@ -3093,34 +2913,6 @@
       "displayName": "Mistral Large 4",
       "apiModelIds": [
         "mistral-large-4"
-      ],
-      "aliases": [
-        "密斯特拉尔"
-      ],
-      "tags": [
-        "mistral-large"
-      ],
-      "summary": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
-      "inputPerMillionUsd": 0.7,
-      "outputPerMillionUsd": 2.1,
-      "cachedInputPerMillionUsd": 0.07,
-      "contextWindow": 1048576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-10-06T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "mistral/mistral-large-4-0-8",
-      "provider": "Mistral",
-      "displayName": "Mistral Large 4.0.8",
-      "apiModelIds": [
-        "mistral-large-4-0-8"
       ],
       "aliases": [
         "密斯特拉尔"
@@ -3164,64 +2956,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-10-06T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "mistral/mistral-medium-2604",
-      "provider": "Mistral",
-      "displayName": "Mistral Medium 3.5",
-      "apiModelIds": [
-        "mistral-medium-2604"
-      ],
-      "aliases": [
-        "密斯特拉尔"
-      ],
-      "tags": [
-        "mistral-medium",
-        "open-weights"
-      ],
-      "summary": "Balanced Mistral model for enterprise assistants, multilingual work, and tools",
-      "inputPerMillionUsd": 1.5,
-      "outputPerMillionUsd": 7.5,
-      "cachedInputPerMillionUsd": 0.15,
-      "contextWindow": 262144,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-04-29T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "mistral/mistral-medium-latest",
-      "provider": "Mistral",
-      "displayName": "Mistral Medium (latest)",
-      "apiModelIds": [
-        "mistral-medium-latest"
-      ],
-      "aliases": [
-        "密斯特拉尔"
-      ],
-      "tags": [
-        "mistral-medium",
-        "open-weights"
-      ],
-      "summary": "Balanced Mistral model for enterprise assistants, multilingual work, and tools",
-      "inputPerMillionUsd": 1.5,
-      "outputPerMillionUsd": 7.5,
-      "cachedInputPerMillionUsd": 0.15,
-      "contextWindow": 262144,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-04-29T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -3584,325 +3318,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "openai/gpt-4.1",
-      "provider": "OpenAI",
-      "displayName": "GPT-4.1",
-      "apiModelIds": [
-        "gpt-4.1"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt"
-      ],
-      "summary": "Long-lived GPT workhorse for coding, instruction following, and production apps",
-      "inputPerMillionUsd": 2,
-      "outputPerMillionUsd": 8,
-      "cachedInputPerMillionUsd": 0.5,
-      "contextWindow": 1047576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-04-14T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-4.1-mini",
-      "provider": "OpenAI",
-      "displayName": "GPT-4.1 mini",
-      "apiModelIds": [
-        "gpt-4.1-mini"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt-mini"
-      ],
-      "summary": "Affordable GPT-4.1 lane for fast coding help and structured extraction",
-      "inputPerMillionUsd": 0.4,
-      "outputPerMillionUsd": 1.6,
-      "cachedInputPerMillionUsd": 0.1,
-      "contextWindow": 1047576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-04-14T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-4o",
-      "provider": "OpenAI",
-      "displayName": "GPT-4o",
-      "apiModelIds": [
-        "gpt-4o"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt"
-      ],
-      "summary": "Omni-era GPT for multimodal chat, practical coding, and general assistants",
-      "inputPerMillionUsd": 2.5,
-      "outputPerMillionUsd": 10,
-      "cachedInputPerMillionUsd": 1.25,
-      "contextWindow": 128000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2024-08-06T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-4o-2024-08-06",
-      "provider": "OpenAI",
-      "displayName": "GPT-4o (2024-08-06)",
-      "apiModelIds": [
-        "gpt-4o-2024-08-06"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt"
-      ],
-      "summary": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
-      "inputPerMillionUsd": 2.5,
-      "outputPerMillionUsd": 10,
-      "cachedInputPerMillionUsd": 1.25,
-      "contextWindow": 128000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2024-08-06T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-4o-2024-11-20",
-      "provider": "OpenAI",
-      "displayName": "GPT-4o (2024-11-20)",
-      "apiModelIds": [
-        "gpt-4o-2024-11-20"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt"
-      ],
-      "summary": "GPT model for general reasoning, writing, coding, and tool-assisted tasks",
-      "inputPerMillionUsd": 2.5,
-      "outputPerMillionUsd": 10,
-      "cachedInputPerMillionUsd": 1.25,
-      "contextWindow": 128000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2024-11-20T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-4o-mini",
-      "provider": "OpenAI",
-      "displayName": "GPT-4o mini",
-      "apiModelIds": [
-        "gpt-4o-mini"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt-mini"
-      ],
-      "summary": "Small omni GPT for cheap multimodal assistance and production-scale traffic",
-      "inputPerMillionUsd": 0.15,
-      "outputPerMillionUsd": 0.6,
-      "cachedInputPerMillionUsd": 0.075,
-      "contextWindow": 128000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2024-07-18T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-5",
-      "provider": "OpenAI",
-      "displayName": "GPT-5",
-      "apiModelIds": [
-        "gpt-5"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt"
-      ],
-      "summary": "Original GPT-5 workhorse for reasoning, coding, writing, and tool workflows",
-      "inputPerMillionUsd": 1.25,
-      "outputPerMillionUsd": 10,
-      "cachedInputPerMillionUsd": 0.125,
-      "contextWindow": 400000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-08-07T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-5-mini",
-      "provider": "OpenAI",
-      "displayName": "GPT-5 Mini",
-      "apiModelIds": [
-        "gpt-5-mini"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt-mini"
-      ],
-      "summary": "Small GPT-5 for responsive agents, coding help, and everyday automation",
-      "inputPerMillionUsd": 0.25,
-      "outputPerMillionUsd": 2,
-      "cachedInputPerMillionUsd": 0.025,
-      "contextWindow": 400000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-08-07T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-5-nano",
-      "provider": "OpenAI",
-      "displayName": "GPT-5 Nano",
-      "apiModelIds": [
-        "gpt-5-nano"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt-nano"
-      ],
-      "summary": "Tiny GPT-5 lane for routing, extraction, classification, and bulk jobs",
-      "inputPerMillionUsd": 0.05,
-      "outputPerMillionUsd": 0.4,
-      "cachedInputPerMillionUsd": 0.005,
-      "contextWindow": 400000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-08-07T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-5-pro",
-      "provider": "OpenAI",
-      "displayName": "GPT-5 Pro",
-      "apiModelIds": [
-        "gpt-5-pro"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt-pro"
-      ],
-      "summary": "Higher-accuracy GPT-5 tier for tough analysis, coding reviews, and planning",
-      "inputPerMillionUsd": 15,
-      "outputPerMillionUsd": 120,
-      "cachedInputPerMillionUsd": null,
-      "contextWindow": 400000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-10-06T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-5.1",
-      "provider": "OpenAI",
-      "displayName": "GPT-5.1",
-      "apiModelIds": [
-        "gpt-5.1"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt"
-      ],
-      "summary": "Sharper GPT-5 generation for coding, product work, and tool-assisted tasks",
-      "inputPerMillionUsd": 1.25,
-      "outputPerMillionUsd": 10,
-      "cachedInputPerMillionUsd": 0.125,
-      "contextWindow": 400000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-11-13T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "openai/gpt-5.2",
       "provider": "OpenAI",
       "displayName": "GPT-5.2",
@@ -3953,64 +3368,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2025-12-11T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-5.3-codex",
-      "provider": "OpenAI",
-      "displayName": "GPT-5.3 Codex",
-      "apiModelIds": [
-        "gpt-5.3-codex"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt-codex"
-      ],
-      "summary": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-      "inputPerMillionUsd": 1.75,
-      "outputPerMillionUsd": 14,
-      "cachedInputPerMillionUsd": 0.175,
-      "contextWindow": 400000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-02-05T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-5.3-codex-spark",
-      "provider": "OpenAI",
-      "displayName": "GPT-5.3 Codex Spark",
-      "apiModelIds": [
-        "gpt-5.3-codex-spark"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt-codex-spark"
-      ],
-      "summary": "Coding-optimized GPT model for repository edits, reviews, and agentic software work",
-      "inputPerMillionUsd": 1.75,
-      "outputPerMillionUsd": 14,
-      "cachedInputPerMillionUsd": 0.175,
-      "contextWindow": 128000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-02-05T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -4072,35 +3429,6 @@
       "inputPerMillionUsd": 0.75,
       "outputPerMillionUsd": 4.5,
       "cachedInputPerMillionUsd": 0.075,
-      "contextWindow": 400000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-03-17T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/gpt-5.4-nano",
-      "provider": "OpenAI",
-      "displayName": "GPT-5.4 nano",
-      "apiModelIds": [
-        "gpt-5.4-nano"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "gpt-nano"
-      ],
-      "summary": "Cheapest GPT-5.4 lane for simple routing, extraction, and bulk automation",
-      "inputPerMillionUsd": 0.2,
-      "outputPerMillionUsd": 1.25,
-      "cachedInputPerMillionUsd": 0.02,
       "contextWindow": 400000,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
@@ -4577,64 +3905,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "openai/o3",
-      "provider": "OpenAI",
-      "displayName": "o3",
-      "apiModelIds": [
-        "o3"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "o"
-      ],
-      "summary": "Deliberate o-series reasoner for hard math, coding, and multi-step analysis",
-      "inputPerMillionUsd": 2,
-      "outputPerMillionUsd": 8,
-      "cachedInputPerMillionUsd": 0.5,
-      "contextWindow": 200000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-04-16T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "openai/o3-pro",
-      "provider": "OpenAI",
-      "displayName": "o3-pro",
-      "apiModelIds": [
-        "o3-pro"
-      ],
-      "aliases": [
-        "GPT",
-        "ChatGPT"
-      ],
-      "tags": [
-        "o-pro"
-      ],
-      "summary": "High-effort o3 tier for difficult technical reasoning and careful answers",
-      "inputPerMillionUsd": 20,
-      "outputPerMillionUsd": 80,
-      "cachedInputPerMillionUsd": null,
-      "contextWindow": 200000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-06-10T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "togetherai/MiniMaxAI/MiniMax-M3",
       "provider": "Together AI",
       "displayName": "MiniMax-M3",
@@ -4656,6 +3926,35 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-06-01T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "togetherai/MiniMaxAI/MiniMax-M3.1-Flash",
+      "provider": "Together AI",
+      "displayName": "MiniMax-M3.1-Flash",
+      "apiModelIds": [
+        "MiniMaxAI/MiniMax-M3.1-Flash"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "minimax-m-flash",
+        "open-weights"
+      ],
+      "summary": "Frontier multimodal coding model with 1M context window and tunable thinking depth",
+      "inputPerMillionUsd": 0.15,
+      "outputPerMillionUsd": 0.6,
+      "cachedInputPerMillionUsd": 0.015,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-10-19T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -4749,6 +4048,34 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "togetherai/Qwen/Qwen4-Max",
+      "provider": "Together AI",
+      "displayName": "Qwen4 Max",
+      "apiModelIds": [
+        "Qwen/Qwen4-Max"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "qwen-max"
+      ],
+      "summary": "Flagship multimodal model for coding, office productivity, frontend design, and complex agentic tasks",
+      "inputPerMillionUsd": 1.05,
+      "outputPerMillionUsd": 3.15,
+      "cachedInputPerMillionUsd": 0.0525,
+      "contextWindow": 1000000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-16T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "togetherai/deepseek-ai/DeepSeek-V4-Pro-0813",
       "provider": "Together AI",
       "displayName": "DeepSeek V4 Pro 0813",
@@ -4799,6 +4126,64 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-09-10T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "togetherai/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "provider": "Together AI",
+      "displayName": "DeepSeek V4.1 Flash 1017",
+      "apiModelIds": [
+        "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "deepseek-flash",
+        "open-weights"
+      ],
+      "summary": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "inputPerMillionUsd": 0.3,
+      "outputPerMillionUsd": 1.2,
+      "cachedInputPerMillionUsd": 0.006,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-10-17T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "togetherai/meta-models/Muse-Glimmer-30B",
+      "provider": "Together AI",
+      "displayName": "Muse Glimmer 30B",
+      "apiModelIds": [
+        "meta-models/Muse-Glimmer-30B"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "muse-glimmer",
+        "open-weights"
+      ],
+      "summary": "Muse Glimmer is a 30-billion-parameter open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark for always-on local agents, tool use, coding, and image understanding.",
+      "inputPerMillionUsd": 0.35,
+      "outputPerMillionUsd": 1.5,
+      "cachedInputPerMillionUsd": 0.04,
+      "contextWindow": 131072,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-08-10T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -4981,6 +4366,34 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "togetherai/tencent/Hy4",
+      "provider": "Together AI",
+      "displayName": "Hy4",
+      "apiModelIds": [
+        "tencent/Hy4"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "hy"
+      ],
+      "summary": "A next-generation multimodal productivity model with significantly enhanced Agent and complex task execution capabilities.",
+      "inputPerMillionUsd": 0.834,
+      "outputPerMillionUsd": 2.501,
+      "cachedInputPerMillionUsd": 0.042,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-04T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "togetherai/thinkingmachines/Inkling",
       "provider": "Together AI",
       "displayName": "Inkling",
@@ -5002,6 +4415,35 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-07-15T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "togetherai/thinkingmachines/Inkling-2-Small",
+      "provider": "Together AI",
+      "displayName": "Inkling 2 Small",
+      "apiModelIds": [
+        "thinkingmachines/Inkling-2-Small"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "inkling-small",
+        "open-weights"
+      ],
+      "summary": "Multimodal MoE reasoning model (594B total, 17B active) for agentic coding, vision, and knowledge work",
+      "inputPerMillionUsd": 0.3,
+      "outputPerMillionUsd": 1,
+      "cachedInputPerMillionUsd": 0.03,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-12T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,

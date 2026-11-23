@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T10:39:22.235Z",
-  "inputHash": "2b44ad23a4c8c8b9b865993e800f2e67406799a9e30391220b7d94fad272d805",
+  "generatedAt": "2026-11-23T22:33:31.269Z",
+  "inputHash": "3b5dfafa3237e0688750ba1bbe17a024420b085b722a1d311a02f0dc50af4530",
   "sourceCount": 1,
   "providerCount": 13,
-  "recordCount": 197,
+  "recordCount": 178,
   "sources": [
     {
       "name": "models.dev",
@@ -13,19 +13,19 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "1927fb69e462e15bf928e4dc747d67aef692990ab1cbfac6e20b3d7be3a43ab7",
-      "etag": "W/\"1927fb69e462e15bf928e4dc747d67ae\"",
+      "payloadSha256": "f0d29ece072e2a74ef9e436fbb4e288628dd1d05163e1e808802d0bc73dec01a",
+      "etag": "W/\"f0d29ece072e2a74ef9e436fbb4e2886\"",
       "lastModified": null
     }
   ],
   "missingFields": {
     "inputPerMillionUsd": 5,
     "outputPerMillionUsd": 5,
-    "cachedInputPerMillionUsd": 46,
+    "cachedInputPerMillionUsd": 43,
     "contextWindow": 0,
     "sourceUpdatedAt": 3,
-    "verifiedAt": 197,
-    "benchmarkScore": 197
+    "verifiedAt": 178,
+    "benchmarkScore": 178
   },
   "excluded": [
     {
@@ -153,16 +153,24 @@
       "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
     },
     {
+      "modelId": "google/gemini-2.5-flash",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
       "modelId": "google/gemini-2.5-flash-image",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "google/gemini-2.5-flash-preview-tts",
-      "reason": "Not a text-input/text-output model"
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "google/gemini-2.5-pro",
+      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "google/gemini-2.5-pro-preview-tts",
-      "reason": "Not a text-input/text-output model"
+      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "google/gemini-3-pro-image",
@@ -170,15 +178,15 @@
     },
     {
       "modelId": "google/gemini-3.1-flash-image",
-      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "google/gemini-3.1-flash-lite",
+      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "google/gemini-3.1-flash-lite-image",
       "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
-    },
-    {
-      "modelId": "google/gemini-3.1-flash-lite-preview",
-      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "google/gemini-3.1-flash-live-preview",
@@ -186,23 +194,27 @@
     },
     {
       "modelId": "google/gemini-3.1-flash-tts-preview",
-      "reason": "Not a text-input/text-output model"
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "google/gemini-3.5-flash",
+      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "google/gemini-3.5-live-translate-preview",
       "reason": "Not a text-input/text-output model"
     },
     {
+      "modelId": "google/gemini-3.7-flash",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
       "modelId": "google/gemini-embedding-001",
-      "reason": "Embedding, reranking or speech billing is outside token comparison"
+      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "google/gemini-embedding-2",
       "reason": "Embedding, reranking or speech billing is outside token comparison"
-    },
-    {
-      "modelId": "google/gemini-omni-flash-preview",
-      "reason": "Not a text-input/text-output model"
     },
     {
       "modelId": "google/lyria-3-clip-preview",
@@ -265,27 +277,7 @@
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "mistral/devstral-2512",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "mistral/devstral-latest",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "mistral/devstral-medium-latest",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
       "modelId": "mistral/glm-5-2",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "mistral/labs-devstral-small-2512",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "mistral/labs-leanstral-1-5-1",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
@@ -297,32 +289,24 @@
       "reason": "Embedding, reranking or speech billing is outside token comparison"
     },
     {
-      "modelId": "mistral/mistral-medium-2505",
+      "modelId": "mistral/mistral-large-2512",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "mistral/mistral-medium-2508",
+      "modelId": "mistral/mistral-medium-2604",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "mistral/mistral-small-2506",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "mistral/open-mistral-nemo",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "mistral/pixtral-12b",
+      "modelId": "mistral/mistral-medium-latest",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "mistral/voxtral-mini-latest",
-      "reason": "Not a text-input/text-output model"
+      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "mistral/voxtral-mini-tts-latest",
-      "reason": "Not a text-input/text-output model"
+      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "mistral/zai-glm-5-2",
@@ -333,23 +317,55 @@
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "openai/gpt-3.5-turbo",
+      "modelId": "openai/gpt-4.1",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "openai/gpt-4",
+      "modelId": "openai/gpt-4.1-mini",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "openai/gpt-4-turbo",
+      "modelId": "openai/gpt-4o",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "openai/gpt-4.1-nano",
+      "modelId": "openai/gpt-4o-2024-08-06",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "openai/gpt-4o-2024-05-13",
+      "modelId": "openai/gpt-4o-2024-11-20",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-4o-mini",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-5",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-5-mini",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-5-nano",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-5-pro",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-5.1",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-5.3-codex",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "openai/gpt-5.4-nano",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
@@ -362,26 +378,18 @@
     },
     {
       "modelId": "openai/gpt-image-2",
-      "reason": "Not a text-input/text-output model"
+      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "openai/gpt-realtime-2.1",
       "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
     },
     {
-      "modelId": "openai/o1",
+      "modelId": "openai/o3",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "openai/o1-pro",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "openai/o3-mini",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "openai/o4-mini",
+      "modelId": "openai/o3-pro",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
