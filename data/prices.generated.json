@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T06:20:35.993Z",
+  "generatedAt": "2026-11-24T18:12:14.699Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -22,7 +22,7 @@
       "summary": "Official DeepSeek V4 Flash release with enhanced agentic capabilities and integrated DSpark speculative decoding",
       "inputPerMillionUsd": 0.44,
       "outputPerMillionUsd": 1.32,
-      "cachedInputPerMillionUsd": 0.088,
+      "cachedInputPerMillionUsd": 0.044,
       "contextWindow": 1000000,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
@@ -67,6 +67,38 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "alibaba/glm-5.3-prime",
+      "provider": "Alibaba",
+      "displayName": "GLM-5.3 Prime",
+      "apiModelIds": [
+        "glm-5.3-prime"
+      ],
+      "aliases": [
+        "阿里",
+        "通义千问",
+        "千问",
+        "Qwen"
+      ],
+      "tags": [
+        "glm",
+        "open-weights"
+      ],
+      "summary": "Flagship GLM model for long-horizon coding, agents, and complex project delivery",
+      "inputPerMillionUsd": 2.8,
+      "outputPerMillionUsd": 8.8,
+      "cachedInputPerMillionUsd": 0.56,
+      "contextWindow": 1000000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-08-14T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "alibaba/kimi-k3",
       "provider": "Alibaba",
       "displayName": "Kimi K3",
@@ -83,7 +115,7 @@
         "kimi",
         "open-weights"
       ],
-      "summary": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+      "summary": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
       "inputPerMillionUsd": 3,
       "outputPerMillionUsd": 15,
       "cachedInputPerMillionUsd": 0.3,
@@ -91,6 +123,70 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-07-16T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "alibaba/kimi-k3.1-pro",
+      "provider": "Alibaba",
+      "displayName": "Kimi K3.1 Pro",
+      "apiModelIds": [
+        "kimi-k3.1-pro"
+      ],
+      "aliases": [
+        "阿里",
+        "通义千问",
+        "千问",
+        "Qwen"
+      ],
+      "tags": [
+        "kimi-pro",
+        "open-weights"
+      ],
+      "summary": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+      "inputPerMillionUsd": 2,
+      "outputPerMillionUsd": 10,
+      "cachedInputPerMillionUsd": 0.2,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-10-23T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "alibaba/kimi-k3.1-pro-prime",
+      "provider": "Alibaba",
+      "displayName": "Kimi K3.1 Pro Prime",
+      "apiModelIds": [
+        "kimi-k3.1-pro-prime"
+      ],
+      "aliases": [
+        "阿里",
+        "通义千问",
+        "千问",
+        "Qwen"
+      ],
+      "tags": [
+        "kimi-pro",
+        "open-weights"
+      ],
+      "summary": "Multimodal Kimi model with a 1M-token context window and always-on reasoning, for coding, 3D creation and financial research",
+      "inputPerMillionUsd": 4,
+      "outputPerMillionUsd": 20,
+      "cachedInputPerMillionUsd": 0.2,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-10-23T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -316,38 +412,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "alibaba/qwen3-vl-30b-a3b",
-      "provider": "Alibaba",
-      "displayName": "Qwen3-VL 30B-A3B",
-      "apiModelIds": [
-        "qwen3-vl-30b-a3b"
-      ],
-      "aliases": [
-        "阿里",
-        "通义千问",
-        "千问",
-        "Qwen"
-      ],
-      "tags": [
-        "qwen-vl",
-        "open-weights"
-      ],
-      "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "inputPerMillionUsd": 0.2,
-      "outputPerMillionUsd": 0.8,
-      "cachedInputPerMillionUsd": null,
-      "contextWindow": 131072,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": null,
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "alibaba/qwen3-vl-plus",
       "provider": "Alibaba",
       "displayName": "Qwen3-VL Plus",
@@ -475,38 +539,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "alibaba/qwen3.5-397b-a17b",
-      "provider": "Alibaba",
-      "displayName": "Qwen3.5 397B-A17B",
-      "apiModelIds": [
-        "qwen3.5-397b-a17b"
-      ],
-      "aliases": [
-        "阿里",
-        "通义千问",
-        "千问",
-        "Qwen"
-      ],
-      "tags": [
-        "qwen",
-        "open-weights"
-      ],
-      "summary": "Large open Qwen multimodal MoE for visual agents and long technical tasks",
-      "inputPerMillionUsd": 0.6,
-      "outputPerMillionUsd": 3.6,
-      "cachedInputPerMillionUsd": null,
-      "contextWindow": 262144,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-02-15T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "alibaba/qwen3.5-flash",
       "provider": "Alibaba",
       "displayName": "Qwen3.5 Flash",
@@ -530,37 +562,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-02-23T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "alibaba/qwen3.5-plus",
-      "provider": "Alibaba",
-      "displayName": "Qwen3.5 Plus",
-      "apiModelIds": [
-        "qwen3.5-plus"
-      ],
-      "aliases": [
-        "阿里",
-        "通义千问",
-        "千问",
-        "Qwen"
-      ],
-      "tags": [
-        "qwen-plus"
-      ],
-      "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
-      "inputPerMillionUsd": 0.4,
-      "outputPerMillionUsd": 2.4,
-      "cachedInputPerMillionUsd": null,
-      "contextWindow": 1000000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-02-16T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -873,6 +874,37 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-09-17T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "alibaba/qwen4-max",
+      "provider": "Alibaba",
+      "displayName": "Qwen4 Max",
+      "apiModelIds": [
+        "qwen4-max"
+      ],
+      "aliases": [
+        "阿里",
+        "通义千问",
+        "千问",
+        "Qwen"
+      ],
+      "tags": [
+        "qwen-max"
+      ],
+      "summary": "Flagship multimodal model for coding, office productivity, frontend design, and complex agentic tasks",
+      "inputPerMillionUsd": 1.5,
+      "outputPerMillionUsd": 4.5,
+      "cachedInputPerMillionUsd": 0.075,
+      "contextWindow": 1000000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-16T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -1635,11 +1667,69 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "cohere/north-mini-code-1.0",
+      "provider": "Cohere",
+      "displayName": "North Mini Code",
+      "apiModelIds": [
+        "north-mini-code-1.0"
+      ],
+      "aliases": [
+        "Command"
+      ],
+      "tags": [
+        "north-mini",
+        "open-weights"
+      ],
+      "summary": "Cohere coding model for practical software engineering and agentic edits",
+      "inputPerMillionUsd": 0,
+      "outputPerMillionUsd": 0,
+      "cachedInputPerMillionUsd": null,
+      "contextWindow": 256000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-06-09T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "cohere/north-small-translate-09-2026",
       "provider": "Cohere",
       "displayName": "North Small Translate",
       "apiModelIds": [
         "north-small-translate-09-2026"
+      ],
+      "aliases": [
+        "Command"
+      ],
+      "tags": [
+        "north-small",
+        "open-weights"
+      ],
+      "summary": "Open-weight translation model for more than 50 languages and locale variants",
+      "inputPerMillionUsd": 0,
+      "outputPerMillionUsd": 0,
+      "cachedInputPerMillionUsd": null,
+      "contextWindow": 32768,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-09-09T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "cohere/north-small-translate-1.0",
+      "provider": "Cohere",
+      "displayName": "North Small Translate",
+      "apiModelIds": [
+        "north-small-translate-1.0"
       ],
       "aliases": [
         "Command"
@@ -2860,7 +2950,8 @@
         "密斯特拉尔"
       ],
       "tags": [
-        "mistral-large"
+        "mistral-large",
+        "open-weights"
       ],
       "summary": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
       "inputPerMillionUsd": 0.7,
@@ -2869,7 +2960,7 @@
       "contextWindow": 1048576,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-10-06T00:00:00Z",
+      "sourceUpdatedAt": "2026-10-05T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -2888,7 +2979,8 @@
         "密斯特拉尔"
       ],
       "tags": [
-        "mistral-large"
+        "mistral-large",
+        "open-weights"
       ],
       "summary": "Mistral's 1T-parameter multimodal MoE for reasoning, coding, and agentic work",
       "inputPerMillionUsd": 0.7,
@@ -2897,7 +2989,7 @@
       "contextWindow": 1048576,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-10-06T00:00:00Z",
+      "sourceUpdatedAt": "2026-10-05T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -3184,7 +3276,7 @@
         "kimi",
         "open-weights"
       ],
-      "summary": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+      "summary": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
       "inputPerMillionUsd": 3,
       "outputPerMillionUsd": 15,
       "cachedInputPerMillionUsd": 0.3,
@@ -3847,35 +3939,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "togetherai/MiniMaxAI/MiniMax-M3",
-      "provider": "Together AI",
-      "displayName": "MiniMax-M3",
-      "apiModelIds": [
-        "MiniMaxAI/MiniMax-M3"
-      ],
-      "aliases": [
-        "Together AI"
-      ],
-      "tags": [
-        "minimax-m",
-        "open-weights"
-      ],
-      "summary": "MiniMax multimodal model for long-context coding, perception, and agent planning",
-      "inputPerMillionUsd": 0.3,
-      "outputPerMillionUsd": 1.2,
-      "cachedInputPerMillionUsd": 0.06,
-      "contextWindow": 524288,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-06-01T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "togetherai/MiniMaxAI/MiniMax-M3.1-Flash",
       "provider": "Together AI",
       "displayName": "MiniMax-M3.1-Flash",
@@ -3990,6 +4053,62 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "togetherai/Qwen/Qwen3.7-Plus",
+      "provider": "Together AI",
+      "displayName": "Qwen3.7 Plus",
+      "apiModelIds": [
+        "Qwen/Qwen3.7-Plus"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "qwen-plus"
+      ],
+      "summary": "Multimodal Qwen workhorse for long-context agents, visual inputs, and coding",
+      "inputPerMillionUsd": 0.32,
+      "outputPerMillionUsd": 1.28,
+      "cachedInputPerMillionUsd": null,
+      "contextWindow": 1000000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-06-02T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "togetherai/Qwen/Qwen3.8-Flash",
+      "provider": "Together AI",
+      "displayName": "Qwen3.8 Flash",
+      "apiModelIds": [
+        "Qwen/Qwen3.8-Flash"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "qwen-flash"
+      ],
+      "summary": "Qwen vision-language model for visual reasoning, documents, and agent tasks",
+      "inputPerMillionUsd": 0.15,
+      "outputPerMillionUsd": 0.47,
+      "cachedInputPerMillionUsd": null,
+      "contextWindow": 1000000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-08-26T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "togetherai/Qwen/Qwen4-Max",
       "provider": "Together AI",
       "displayName": "Qwen4 Max",
@@ -4003,9 +4122,9 @@
         "qwen-max"
       ],
       "summary": "Flagship multimodal model for coding, office productivity, frontend design, and complex agentic tasks",
-      "inputPerMillionUsd": 1.05,
-      "outputPerMillionUsd": 3.15,
-      "cachedInputPerMillionUsd": 0.0525,
+      "inputPerMillionUsd": 1.5,
+      "outputPerMillionUsd": 4.5,
+      "cachedInputPerMillionUsd": 0.075,
       "contextWindow": 1000000,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
@@ -4105,6 +4224,63 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "togetherai/deepseek-ai/DeepSeek-V4.1-Flash-1017-fast",
+      "provider": "Together AI",
+      "displayName": "DeepSeek V4.1 Flash 1017 Fast",
+      "apiModelIds": [
+        "deepseek-ai/DeepSeek-V4.1-Flash-1017-fast"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "deepseek-flash",
+        "open-weights"
+      ],
+      "summary": "October 17 update of DeepSeek V4.1 Flash with improved reasoning, coding, agentic tasks, and visual understanding",
+      "inputPerMillionUsd": 0.6,
+      "outputPerMillionUsd": 2.4,
+      "cachedInputPerMillionUsd": 0.012,
+      "contextWindow": 1048576,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-10-17T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "togetherai/elorian-labs/glimpse-1.0",
+      "provider": "Together AI",
+      "displayName": "Glimpse 1.0",
+      "apiModelIds": [
+        "elorian-labs/glimpse-1.0"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "glimpse"
+      ],
+      "summary": "Visual thinking model that reasons over images and video, post-trained by Elorian on an open-weights base",
+      "inputPerMillionUsd": 0.6,
+      "outputPerMillionUsd": 3,
+      "cachedInputPerMillionUsd": 0.06,
+      "contextWindow": 262144,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-10-16T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "togetherai/meta-models/Muse-Glimmer-30B",
       "provider": "Together AI",
       "displayName": "Muse Glimmer 30B",
@@ -4176,7 +4352,7 @@
         "kimi",
         "open-weights"
       ],
-      "summary": "Multimodal Kimi model with 1M context and toggleable max-effort thinking for long-horizon agent work",
+      "summary": "Multimodal Kimi model with 1M context and always-on thinking for long-horizon agent work",
       "inputPerMillionUsd": 3,
       "outputPerMillionUsd": 15,
       "cachedInputPerMillionUsd": 0.3,
@@ -4318,7 +4494,8 @@
         "Together AI"
       ],
       "tags": [
-        "hy"
+        "hy",
+        "open-weights"
       ],
       "summary": "A next-generation multimodal productivity model with significantly enhanced Agent and complex task execution capabilities.",
       "inputPerMillionUsd": 0.834,
@@ -4328,35 +4505,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-11-04T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "togetherai/thinkingmachines/Inkling",
-      "provider": "Together AI",
-      "displayName": "Inkling",
-      "apiModelIds": [
-        "thinkingmachines/Inkling"
-      ],
-      "aliases": [
-        "Together AI"
-      ],
-      "tags": [
-        "inkling",
-        "open-weights"
-      ],
-      "summary": "Multimodal MoE reasoning model (975B total, 41B active) for text, image, and audio",
-      "inputPerMillionUsd": 1,
-      "outputPerMillionUsd": 4.05,
-      "cachedInputPerMillionUsd": 0.17,
-      "contextWindow": 524288,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-07-15T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -5177,6 +5325,35 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-09-18T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "zai/glm-5.3-flashx-legal",
+      "provider": "Z.AI",
+      "displayName": "GLM-5.3-FlashX-Legal",
+      "apiModelIds": [
+        "glm-5.3-flashx-legal"
+      ],
+      "aliases": [
+        "智谱",
+        "GLM"
+      ],
+      "tags": [
+        "glm-flash-legal"
+      ],
+      "summary": "GLM-5.3-FlashX tuned for legal workflows: legal research, contract review and document drafting",
+      "inputPerMillionUsd": 0.37,
+      "outputPerMillionUsd": 1.25,
+      "cachedInputPerMillionUsd": 0.075,
+      "contextWindow": 1000000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-02T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,

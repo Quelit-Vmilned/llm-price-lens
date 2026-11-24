@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T06:20:35.993Z",
-  "inputHash": "a59527fca72ac345d720e75da94074046a6694f301d61607b7003902d53e70c4",
+  "generatedAt": "2026-11-24T18:12:14.699Z",
+  "inputHash": "70a27a9266a30fb9cf295dc0e323b6fcac913c52f882d8046a40cef4c5608709",
   "sourceCount": 1,
   "providerCount": 13,
-  "recordCount": 176,
+  "recordCount": 182,
   "sources": [
     {
       "name": "models.dev",
@@ -13,119 +13,39 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "279fa7e077c934fb4839cd15e54dee67f25bcfc4b0d888ab0033474e1c3ac694",
-      "etag": "W/\"279fa7e077c934fb4839cd15e54dee67\"",
+      "payloadSha256": "1ed9d40ae9e4665f1dc118817454e4d77fae3c6fd0198d400977dbb8114d86ec",
+      "etag": "W/\"1ed9d40ae9e4665f1dc118817454e4d7\"",
       "lastModified": null
     }
   ],
   "missingFields": {
     "inputPerMillionUsd": 5,
     "outputPerMillionUsd": 5,
-    "cachedInputPerMillionUsd": 43,
+    "cachedInputPerMillionUsd": 44,
     "contextWindow": 0,
-    "sourceUpdatedAt": 3,
-    "verifiedAt": 176,
-    "benchmarkScore": 176
+    "sourceUpdatedAt": 2,
+    "verifiedAt": 182,
+    "benchmarkScore": 182
   },
   "excluded": [
     {
-      "modelId": "alibaba/qvq-max",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen-mt-turbo",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen-omni-turbo",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen-omni-turbo-realtime",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen-turbo",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen-vl-max",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen-vl-plus",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen2-5-omni-7b",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-14b",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-235b-a22b",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-32b",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-8b",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
       "modelId": "alibaba/qwen3-asr-flash",
       "reason": "Not a text-input/text-output model"
-    },
-    {
-      "modelId": "alibaba/qwen3-coder-30b-a3b-instruct",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-coder-480b-a35b-instruct",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-coder-plus",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-livetranslate-flash-realtime",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-max",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-next-80b-a3b-instruct",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwen3-next-80b-a3b-thinking",
-      "reason": "Deprecated endpoint; historical price excluded"
     },
     {
       "modelId": "alibaba/qwen3-omni-flash",
       "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
     },
     {
-      "modelId": "alibaba/qwen3-omni-flash-realtime",
+      "modelId": "alibaba/qwen3-vl-30b-a3b",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "alibaba/qwen3-vl-235b-a22b",
+      "modelId": "alibaba/qwen3.5-397b-a17b",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
-      "modelId": "alibaba/qwen3.6-max-preview",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "alibaba/qwq-plus",
+      "modelId": "alibaba/qwen3.5-plus",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
@@ -409,71 +329,7 @@
       "reason": "Embedding, reranking or speech billing is outside token comparison"
     },
     {
-      "modelId": "togetherai/LiquidAI/LFM2-24B-A2B",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/MiniMaxAI/MiniMax-M2.5",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/MiniMaxAI/MiniMax-M2.7",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/Qwen/Qwen2.5-7B-Instruct-Turbo",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/Qwen/Qwen3-235B-A22B-Instruct-2507-tput",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/Qwen/Qwen3-Coder-Next-FP8",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/Qwen/Qwen3.5-397B-A17B",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/deepseek-ai/DeepSeek-R1",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/deepseek-ai/DeepSeek-V3",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/deepseek-ai/DeepSeek-V3-1",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/deepseek-ai/DeepSeek-V4-Flash-0731",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/essentialai/Rnj-1-Instruct",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/meta-llama/Llama-3.3-70B-Instruct-Turbo",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/nvidia/nemotron-3-ultra-550b-a55b",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/zai-org/GLM-5",
-      "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "togetherai/zai-org/GLM-5.1",
+      "modelId": "togetherai/thinkingmachines/Inkling",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
