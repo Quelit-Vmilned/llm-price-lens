@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T22:33:31.269Z",
+  "generatedAt": "2026-11-24T06:20:35.993Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -1047,64 +1047,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-10-07T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "anthropic/claude-opus-4-5",
-      "provider": "Anthropic",
-      "displayName": "Claude Opus 4.5 (latest)",
-      "apiModelIds": [
-        "claude-opus-4-5"
-      ],
-      "aliases": [
-        "Claude",
-        "克劳德"
-      ],
-      "tags": [
-        "claude-opus"
-      ],
-      "summary": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-      "inputPerMillionUsd": 5,
-      "outputPerMillionUsd": 25,
-      "cachedInputPerMillionUsd": 0.5,
-      "contextWindow": 200000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-11-24T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "anthropic/claude-opus-4-5-20251101",
-      "provider": "Anthropic",
-      "displayName": "Claude Opus 4.5",
-      "apiModelIds": [
-        "claude-opus-4-5-20251101"
-      ],
-      "aliases": [
-        "Claude",
-        "克劳德"
-      ],
-      "tags": [
-        "claude-opus"
-      ],
-      "summary": "Flagship Claude model for deep reasoning, coding, and long-horizon agents",
-      "inputPerMillionUsd": 5,
-      "outputPerMillionUsd": 25,
-      "cachedInputPerMillionUsd": 0.5,
-      "contextWindow": 200000,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-11-01T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,

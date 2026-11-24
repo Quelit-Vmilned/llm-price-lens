@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T22:33:31.269Z",
-  "inputHash": "3b5dfafa3237e0688750ba1bbe17a024420b085b722a1d311a02f0dc50af4530",
+  "generatedAt": "2026-11-24T06:20:35.993Z",
+  "inputHash": "a59527fca72ac345d720e75da94074046a6694f301d61607b7003902d53e70c4",
   "sourceCount": 1,
   "providerCount": 13,
-  "recordCount": 178,
+  "recordCount": 176,
   "sources": [
     {
       "name": "models.dev",
@@ -13,8 +13,8 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "f0d29ece072e2a74ef9e436fbb4e288628dd1d05163e1e808802d0bc73dec01a",
-      "etag": "W/\"f0d29ece072e2a74ef9e436fbb4e2886\"",
+      "payloadSha256": "279fa7e077c934fb4839cd15e54dee67f25bcfc4b0d888ab0033474e1c3ac694",
+      "etag": "W/\"279fa7e077c934fb4839cd15e54dee67\"",
       "lastModified": null
     }
   ],
@@ -24,8 +24,8 @@
     "cachedInputPerMillionUsd": 43,
     "contextWindow": 0,
     "sourceUpdatedAt": 3,
-    "verifiedAt": 178,
-    "benchmarkScore": 178
+    "verifiedAt": 176,
+    "benchmarkScore": 176
   },
   "excluded": [
     {
@@ -126,6 +126,14 @@
     },
     {
       "modelId": "alibaba/qwq-plus",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "anthropic/claude-opus-4-5",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "anthropic/claude-opus-4-5-20251101",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {
@@ -379,10 +387,6 @@
     {
       "modelId": "openai/gpt-image-2",
       "reason": "Deprecated endpoint; historical price excluded"
-    },
-    {
-      "modelId": "openai/gpt-realtime-2.1",
-      "reason": "Image generation, audio or realtime billing is outside base text-token comparison"
     },
     {
       "modelId": "openai/o3",
