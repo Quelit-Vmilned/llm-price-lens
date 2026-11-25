@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T02:44:36.324Z",
+  "generatedAt": "2026-11-25T12:36:02.619Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -4504,6 +4504,34 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-10-16T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "togetherai/ricursive-ai/Ripple-65B-Preview",
+      "provider": "Together AI",
+      "displayName": "Ripple 65B Preview",
+      "apiModelIds": [
+        "ricursive-ai/Ripple-65B-Preview"
+      ],
+      "aliases": [
+        "Together AI"
+      ],
+      "tags": [
+        "open-weights"
+      ],
+      "summary": "Dense 65B open-weight model pretrained from scratch on 12T tokens and post-trained for agentic coding",
+      "inputPerMillionUsd": 0.2,
+      "outputPerMillionUsd": 0.6,
+      "cachedInputPerMillionUsd": 0.02,
+      "contextWindow": 131072,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-04T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
