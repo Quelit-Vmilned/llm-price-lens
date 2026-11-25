@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T12:36:02.619Z",
-  "inputHash": "437a25809fc7840cf7449e94e5df2d2a735b68d7d94507c32aa45ebfd06d7e4c",
+  "generatedAt": "2026-11-25T21:57:36.825Z",
+  "inputHash": "46e11c13640bf28a3975547cf994d1ef029bf6f0ee90ab43a1380e97bbb078a8",
   "sourceCount": 1,
   "providerCount": 13,
-  "recordCount": 184,
+  "recordCount": 186,
   "sources": [
     {
       "name": "models.dev",
@@ -13,19 +13,19 @@
       "auditedCommit": "c08035fc978ae61a2aa395230e855cdc80d9c204",
       "license": "MIT",
       "licenseSha256": "dc2dc41c9fea2fd3c41c21c6f484844cab367800b88ff24781f980ad3a9d160a",
-      "payloadSha256": "55bbf117601a96a770eb1adb02c11d565a24a24f5ec2e03822fa7141ba3fef09",
-      "etag": "W/\"55bbf117601a96a770eb1adb02c11d56\"",
+      "payloadSha256": "0e9a324d88b32ad6e14075997b9f1a0f71e367be0bebfb25b8404701ca03bd1f",
+      "etag": "W/\"0e9a324d88b32ad6e14075997b9f1a0f\"",
       "lastModified": null
     }
   ],
   "missingFields": {
     "inputPerMillionUsd": 5,
     "outputPerMillionUsd": 5,
-    "cachedInputPerMillionUsd": 43,
+    "cachedInputPerMillionUsd": 44,
     "contextWindow": 0,
     "sourceUpdatedAt": 2,
-    "verifiedAt": 184,
-    "benchmarkScore": 184
+    "verifiedAt": 186,
+    "benchmarkScore": 186
   },
   "excluded": [
     {
@@ -238,6 +238,18 @@
     },
     {
       "modelId": "mistral/zai-glm-5-2",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "moonshotai/kimi-k2.6",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "moonshotai/kimi-k2.7-code",
+      "reason": "Deprecated endpoint; historical price excluded"
+    },
+    {
+      "modelId": "moonshotai/kimi-k2.7-code-highspeed",
       "reason": "Deprecated endpoint; historical price excluded"
     },
     {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T12:36:02.619Z",
+  "generatedAt": "2026-11-25T21:57:36.825Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -369,7 +369,7 @@
       "inputPerMillionUsd": 0.07,
       "outputPerMillionUsd": 0.16,
       "cachedInputPerMillionUsd": null,
-      "contextWindow": 34096,
+      "contextWindow": 38192,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2025-04-13T00:00:00Z",
@@ -1958,7 +1958,7 @@
       "contextWindow": 1048576,
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-06-17T00:00:00Z",
+      "sourceUpdatedAt": "2025-07-22T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -3172,96 +3172,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "moonshotai/kimi-k2.6",
-      "provider": "Moonshot AI",
-      "displayName": "Kimi K2.6",
-      "apiModelIds": [
-        "kimi-k2.6"
-      ],
-      "aliases": [
-        "月之暗面",
-        "Kimi"
-      ],
-      "tags": [
-        "kimi",
-        "open-weights"
-      ],
-      "summary": "Multimodal Kimi workhorse for agent loops, coding tasks, and visual context",
-      "inputPerMillionUsd": 0.95,
-      "outputPerMillionUsd": 4,
-      "cachedInputPerMillionUsd": 0.16,
-      "contextWindow": 262144,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-04-20T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "moonshotai/kimi-k2.7-code",
-      "provider": "Moonshot AI",
-      "displayName": "Kimi K2.7 Code",
-      "apiModelIds": [
-        "kimi-k2.7-code"
-      ],
-      "aliases": [
-        "月之暗面",
-        "Kimi"
-      ],
-      "tags": [
-        "kimi-code",
-        "open-weights"
-      ],
-      "summary": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "inputPerMillionUsd": 0.95,
-      "outputPerMillionUsd": 4,
-      "cachedInputPerMillionUsd": 0.19,
-      "contextWindow": 262144,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-06-12T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "moonshotai/kimi-k2.7-code-highspeed",
-      "provider": "Moonshot AI",
-      "displayName": "Kimi K2.7 Code HighSpeed",
-      "apiModelIds": [
-        "kimi-k2.7-code-highspeed"
-      ],
-      "aliases": [
-        "月之暗面",
-        "Kimi"
-      ],
-      "tags": [
-        "kimi-code",
-        "open-weights"
-      ],
-      "summary": "Coding-focused Kimi model, stronger on long-horizon repo work with less overthinking",
-      "inputPerMillionUsd": 1.9,
-      "outputPerMillionUsd": 8,
-      "cachedInputPerMillionUsd": 0.38,
-      "contextWindow": 262144,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-06-12T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "moonshotai/kimi-k3",
       "provider": "Moonshot AI",
       "displayName": "Kimi K3",
@@ -3707,6 +3617,35 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "openai/gpt-6-astra-healthcare",
+      "provider": "OpenAI",
+      "displayName": "GPT-6 Astra Healthcare",
+      "apiModelIds": [
+        "gpt-6-astra-healthcare"
+      ],
+      "aliases": [
+        "GPT",
+        "ChatGPT"
+      ],
+      "tags": [
+        "gpt-astra"
+      ],
+      "summary": "GPT-6 Astra paired with a harness tailored to clinical questions; its web search uses a dedicated index of medical sources.",
+      "inputPerMillionUsd": 10,
+      "outputPerMillionUsd": 50,
+      "cachedInputPerMillionUsd": 1,
+      "contextWindow": 1050000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-24T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "openai/gpt-6-luna",
       "provider": "OpenAI",
       "displayName": "GPT-6 Luna",
@@ -3794,6 +3733,35 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "openai/gpt-6.1-sol-healthcare",
+      "provider": "OpenAI",
+      "displayName": "GPT-6.1 Sol Healthcare",
+      "apiModelIds": [
+        "gpt-6.1-sol-healthcare"
+      ],
+      "aliases": [
+        "GPT",
+        "ChatGPT"
+      ],
+      "tags": [
+        "gpt-sol"
+      ],
+      "summary": "GPT-6.1 Sol paired with a harness tailored to clinical questions; its web search uses a dedicated index of medical sources.",
+      "inputPerMillionUsd": 2,
+      "outputPerMillionUsd": 10,
+      "cachedInputPerMillionUsd": 0.1,
+      "contextWindow": 1050000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-24T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "openai/gpt-6.1-terra",
       "provider": "OpenAI",
       "displayName": "GPT-6.1 Terra",
@@ -3852,6 +3820,35 @@
       "benchmarkCapturedAt": null
     },
     {
+      "modelId": "openai/gpt-6.2-astra-healthcare",
+      "provider": "OpenAI",
+      "displayName": "GPT-6.2 Astra Healthcare",
+      "apiModelIds": [
+        "gpt-6.2-astra-healthcare"
+      ],
+      "aliases": [
+        "GPT",
+        "ChatGPT"
+      ],
+      "tags": [
+        "gpt-astra"
+      ],
+      "summary": "GPT-6.2 Astra paired with a harness tailored to clinical questions; its web search uses a dedicated index of medical sources.",
+      "inputPerMillionUsd": 8,
+      "outputPerMillionUsd": 40,
+      "cachedInputPerMillionUsd": 0.4,
+      "contextWindow": 1050000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-24T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
       "modelId": "openai/gpt-6.2-sol",
       "provider": "OpenAI",
       "displayName": "GPT-6.2 Sol",
@@ -3873,6 +3870,35 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-11-17T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "openai/gpt-6.2-sol-healthcare",
+      "provider": "OpenAI",
+      "displayName": "GPT-6.2 Sol Healthcare",
+      "apiModelIds": [
+        "gpt-6.2-sol-healthcare"
+      ],
+      "aliases": [
+        "GPT",
+        "ChatGPT"
+      ],
+      "tags": [
+        "gpt-sol"
+      ],
+      "summary": "GPT-6.2 Sol paired with a harness tailored to clinical questions; its web search uses a dedicated index of medical sources.",
+      "inputPerMillionUsd": 2,
+      "outputPerMillionUsd": 10,
+      "cachedInputPerMillionUsd": 0.1,
+      "contextWindow": 1050000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2026-11-24T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
@@ -4873,6 +4899,36 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-09-21T00:00:00Z",
+      "verifiedAt": null,
+      "status": "imported",
+      "benchmarkScore": null,
+      "benchmarkRank": null,
+      "benchmarkSource": null,
+      "benchmarkCapturedAt": null
+    },
+    {
+      "modelId": "zai/glm-4-32b-0414-128k",
+      "provider": "Z.AI",
+      "displayName": "GLM-4-32B-0414-128K",
+      "apiModelIds": [
+        "glm-4-32b-0414-128k"
+      ],
+      "aliases": [
+        "智谱",
+        "GLM"
+      ],
+      "tags": [
+        "glm",
+        "open-weights"
+      ],
+      "summary": "32B GLM-4 foundation model tuned for instruction following, code generation, function calling and search-based Q&A",
+      "inputPerMillionUsd": 0.1,
+      "outputPerMillionUsd": 0.1,
+      "cachedInputPerMillionUsd": null,
+      "contextWindow": 128000,
+      "sourceName": "models.dev",
+      "sourceUrl": "https://models.dev/api.json",
+      "sourceUpdatedAt": "2025-04-14T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
