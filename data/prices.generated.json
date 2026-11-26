@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T21:57:36.825Z",
+  "generatedAt": "2026-11-26T04:05:25.853Z",
   "models": [
     {
       "modelId": "alibaba/deepseek-v4-flash-0731",
@@ -4191,35 +4191,6 @@
       "benchmarkCapturedAt": null
     },
     {
-      "modelId": "togetherai/deepseek-ai/DeepSeek-V4-Pro-0813",
-      "provider": "Together AI",
-      "displayName": "DeepSeek V4 Pro 0813",
-      "apiModelIds": [
-        "deepseek-ai/DeepSeek-V4-Pro-0813"
-      ],
-      "aliases": [
-        "Together AI"
-      ],
-      "tags": [
-        "deepseek-pro",
-        "open-weights"
-      ],
-      "summary": "DeepSeek V4 Pro snapshot with million-token context and support for thinking and non-thinking modes",
-      "inputPerMillionUsd": 1.32,
-      "outputPerMillionUsd": 3.96,
-      "cachedInputPerMillionUsd": 0.13,
-      "contextWindow": 1048576,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2026-08-22T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
       "modelId": "togetherai/deepseek-ai/DeepSeek-V4.1-Flash",
       "provider": "Together AI",
       "displayName": "DeepSeek V4.1 Flash",
@@ -4472,35 +4443,6 @@
       "sourceName": "models.dev",
       "sourceUrl": "https://models.dev/api.json",
       "sourceUpdatedAt": "2026-10-15T00:00:00Z",
-      "verifiedAt": null,
-      "status": "imported",
-      "benchmarkScore": null,
-      "benchmarkRank": null,
-      "benchmarkSource": null,
-      "benchmarkCapturedAt": null
-    },
-    {
-      "modelId": "togetherai/openai/gpt-oss-120b",
-      "provider": "Together AI",
-      "displayName": "GPT OSS 120B",
-      "apiModelIds": [
-        "openai/gpt-oss-120b"
-      ],
-      "aliases": [
-        "Together AI"
-      ],
-      "tags": [
-        "gpt-oss",
-        "open-weights"
-      ],
-      "summary": "Open GPT reasoning model for self-hosted agents and controllable deployments",
-      "inputPerMillionUsd": 0.15,
-      "outputPerMillionUsd": 0.6,
-      "cachedInputPerMillionUsd": null,
-      "contextWindow": 131072,
-      "sourceName": "models.dev",
-      "sourceUrl": "https://models.dev/api.json",
-      "sourceUpdatedAt": "2025-08-05T00:00:00Z",
       "verifiedAt": null,
       "status": "imported",
       "benchmarkScore": null,
